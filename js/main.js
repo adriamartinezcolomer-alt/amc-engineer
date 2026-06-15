@@ -253,15 +253,37 @@ contactForm?.addEventListener('submit', async e => {
   }
 
   // Simulate submission (replace with actual endpoint)
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> ${tf('form.sending', 'Sending…')}`;
+   submitBtn.disabled = true;
+submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> ${tf('form.sending', 'Sending…')}`;
 
-  await new Promise(resolve => setTimeout(resolve, 1800));
+try {
+  const response = await fetch("https://formspree.io/f/mqeonjaj", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
 
-  submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> ${tf('form.sent', 'Message Sent!')}`;
-  showFormFeedback(tf('form.success', 'Thank you! I\'ll get back to you within 24 hours.'), 'success');
-  contactForm.reset();
+  if (response.ok) {
+    submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> ${tf('form.sent', 'Message Sent!')}`;
 
+    showFormFeedback(
+      tf('form.success', 'Thank you! I\'ll get back to you within 24 hours.'),
+      'success'
+    );
+
+    contactForm.reset();
+  } else {
+    throw new Error('Submission failed');
+  }
+} catch (err) {
+  showFormFeedback(
+    'Error sending message. Please try again.',
+    'error'
+  );
+}
   setTimeout(() => {
     submitBtn.disabled = false;
     submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> ${tf('contact.submit', 'Send Message')}`;

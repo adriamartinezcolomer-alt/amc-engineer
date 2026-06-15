@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "title": "Adrià Martínez Colomer | Ingeniero Industrial y de Automatización · IA Aplicada",
+    "description": "Ingeniero industrial y de automatización que conecta fabricación, software e inteligencia artificial. Más de 9 años en carrocería (BIW) de automoción, además de desarrollo en Python, flujos con IA/LLM e ingeniería basada en datos. Barcelona, España.",
+    "keywords": "Ingeniero Industrial, Ingeniero de Automatización, IA Industrial, IA para Fabricación, Inteligencia Artificial para la Industria, Industria 4.0, Fabricación Inteligente, Ingeniería de Procesos, Desarrollador Python, LLM, IA Generativa, Ingeniería Basada en Datos, Transformación Digital, Soldadura BIW, Barcelona",
+    "ogTitle": "Adrià Martínez Colomer | Ingeniero Industrial y de Automatización · IA Aplicada",
+    "ogDescription": "Ingeniero en la intersección de fabricación, automatización, software e IA. Más de 9 años en carrocería (BIW), además de automatización en Python, flujos con LLM e ingeniería basada en datos.",
+    "twitterTitle": "Adrià Martínez Colomer | Ingeniería · Automatización · IA Aplicada",
+    "twitterDescription": "Ingeniero Industrial y de Automatización | IA Aplicada | Python | Industria 4.0 | Barcelona"
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Competencias",
+    "certifications": "Certificaciones",
+    "contact": "Contacto",
+    "themeToggle": "Cambiar modo claro/oscuro",
+    "menuToggle": "Abrir menú móvil",
+    "langLabel": "Seleccionar idioma",
+    "ai": "IA e Innovación"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "banner": "Abierto a oportunidades en España y Europa.",
+    "rolePrefix": "Especializado en ",
+    "roles": [
+      "Soldadura de Carrocería (BIW)",
+      "Automatización Industrial",
+      "Inteligencia Artificial Aplicada",
+      "Automatización con Python",
+      "Ingeniería Asistida por IA",
+      "Industrialización de Procesos",
+      "Ingeniería Basada en Datos",
+      "Sistemas de Industria 4.0"
+    ],
+    "description": "Ingeniero industrial y de automatización que conecta <strong>fabricación</strong>, <strong>software</strong> e <strong>inteligencia artificial</strong>. Más de 9 años en carrocería (BIW) de automoción y, ahora, desarrollando automatización en Python y soluciones de ingeniería impulsadas por IA.",
+    "ctaContact": "Contactar",
+    "ctaExperience": "Ver Experiencia",
+    "ctaCV": "Descargar CV",
+    "cvHref": "../cvs/CV_ES_Adria_Martinez_Colomer.docx",
+    "statYears": "Años de Experiencia",
+    "statCompanies": "Empresas",
+    "statDegrees": "Títulos de Ingeniería",
+    "statLanguages": "Idiomas",
+    "scroll": "Desplázate"
+  },
+  "about": {
+    "label": "Sobre mí",
+    "title": "Excelencia en Ingeniería <span class=\"gradient-text\">Impulsada por la Pasión</span>",
+    "photo": "Foto Profesional",
+    "badge1": "Ingeniero Mecatrónico",
+    "badge2": "Especialista en Automatización",
+    "badge3": "Industria 4.0",
+    "lead": "Soy Ingeniero de Procesos de Barcelona, con doble titulación en <strong>Ingeniería Mecatrónica</strong> e <strong>Ingeniería Electrónica Industrial y Automática</strong>, combinando una sólida base teórica con experiencia práctica en planta.",
+    "text1": "Mi trayectoria se ha forjado durante una década en los entornos de automoción más exigentes de España —principalmente dando soporte a SEAT S.A. y al Grupo Volkswagen— donde he trabajado en todo el ciclo de vida de la fabricación: desde los procesos de ensamblaje de carrocería y los sistemas de soldadura robotizada hasta el diseño y la puesta en marcha de células de producción automatizadas.",
+    "text2": "Actualmente, en Jordan Group, lidero la industrialización de conjuntos soldados de nueva generación que integran soldadura por resistencia, remaches autoperforantes y adhesivos estructurales: las tecnologías que definen las estrategias modernas de aligeramiento en automoción.",
+    "v1t": "Precisión en la Ingeniería",
+    "v1p": "Cada proceso que diseño se basa en estándares medibles, datos validados y rigor en la ingeniería.",
+    "v2t": "Mejora Continua",
+    "v2p": "Creo que toda línea de producción esconde un potencial de eficiencia que se libera mediante el análisis sistemático.",
+    "v3t": "Colaboración Multidisciplinar",
+    "v3p": "Las mejores soluciones surgen cuando ingeniería, calidad, mantenimiento y producción hablan el mismo idioma.",
+    "location": "Barcelona, Cataluña, España — Disponible para reubicación y oportunidades internacionales",
+    "badge4": "Desarrollador de IA",
+    "text3": "Más allá de la planta, trabajo de forma práctica con software e inteligencia artificial: desarrollo automatización en Python, aplico modelos de lenguaje (LLM) e IA generativa a los flujos de ingeniería y utilizo el análisis de datos para tomar mejores decisiones técnicas. Opero en la intersección entre fabricación, automatización, software e IA."
+  },
+  "exp": {
+    "label": "Trayectoria Profesional",
+    "title": "Experiencia <span class=\"gradient-text\">Profesional</span>",
+    "jobs": [
+      {
+        "role": "Ingeniero de Procesos",
+        "company": "Jordan Group",
+        "client": "",
+        "dates": "2023 – Actualidad",
+        "location": "Barcelona, España",
+        "bullets": [
+          "Lideré la industrialización de conjuntos soldados integrando Soldadura por Resistencia (RSW), Remaches Autoperforantes (SPR) y adhesivos estructurales para programas de automoción",
+          "Diseñé e implementé células de producción automatizadas de principio a fin: desde la especificación técnica y la homologación de proveedores hasta la puesta en marcha y la entrega a producción",
+          "Gestioné los procesos de selección de proveedores y realicé revisiones técnicas con integradores de automatización en programas concurrentes",
+          "Elaboré documentación completa de proceso: PFMEA, planes de control, estudios de tiempos de ciclo e instrucciones de trabajo"
+        ],
+        "tags": [
+          "RSW",
+          "SPR",
+          "Adhesivos Estructurales",
+          "Diseño de Células",
+          "Puesta en Marcha",
+          "PFMEA"
+        ]
+      },
+      {
+        "role": "Ingeniero de Procesos",
+        "company": "Volkswagen Group Services",
+        "client": "@ SEAT, S.A.",
+        "dates": "2022 – 2023",
+        "location": "Martorell, España",
+        "bullets": [
+          "Di soporte a las actividades de validación de procesos para las operaciones de ensamblaje de carrocería (BIW) en el complejo de fabricación de SEAT en Martorell",
+          "Diagnostiqué y resolví defectos en línea de producción, reduciendo las paradas no planificadas y apoyando los objetivos de mejora del OEE",
+          "Contribuí a proyectos de mejora continua orientados a la reducción de tiempos de ciclo y al aumento de la productividad",
+          "Colaboré con equipos multidisciplinares de calidad, mantenimiento y planificación de la producción"
+        ],
+        "tags": [
+          "Validación de Procesos",
+          "OEE",
+          "Resolución de Incidencias",
+          "Mejora Continua",
+          "BIW"
+        ]
+      },
+      {
+        "role": "Ingeniero de Procesos",
+        "company": "Quality Continent, SL",
+        "client": "@ SEAT, S.A.",
+        "dates": "2017 – 2022",
+        "location": "Martorell, España",
+        "bullets": [
+          "Presté 5 años de soporte especializado en ingeniería de procesos para el ensamblaje de Carrocería en Blanco (BIW) de SEAT, una de las naves de carrocería de mayor volumen de Europa",
+          "Optimicé los parámetros del proceso de soldadura en múltiples estaciones de producción, mejorando los KPI de calidad de soldadura y reduciendo la chatarra",
+          "Apoyé revisiones de FMEA, Análisis de Sistemas de Medición (MSA) y aprobaciones PPAP para nuevos utillajes y cambios de proceso",
+          "Formé a operarios y técnicos en estándares de soldadura actualizados, puntos de control de calidad y procedimientos de producción"
+        ],
+        "tags": [
+          "Soldadura BIW",
+          "FMEA",
+          "PPAP",
+          "MSA",
+          "5 Años",
+          "SEAT"
+        ]
+      },
+      {
+        "role": "Becario de Ingeniería de Mantenimiento",
+        "company": "SEAT, S.A.",
+        "client": "",
+        "dates": "2015 – 2016",
+        "location": "Martorell, España",
+        "bullets": [
+          "Di soporte a la oficina técnica del departamento de mantenimiento de Carrocería en una de las mayores plantas de fabricación de automoción de Europa",
+          "Colaboré en la documentación, planificación y ejecución de programas de mantenimiento preventivo de estaciones de soldadura robotizadas",
+          "Primer contacto con entornos de producción de carrocería (BIW) a gran escala, sistemas robotizados y flujos de trabajo de ingeniería"
+        ],
+        "tags": [
+          "Carrocería",
+          "Mantenimiento Preventivo",
+          "Soldadura Robotizada",
+          "SEAT S.A."
+        ]
+      }
+    ]
+  },
+  "proj": {
+    "label": "Portafolio",
+    "title": "Proyectos de <span class=\"gradient-text\">Ingeniería</span>",
+    "cards": [
+      {
+        "tag": "Automatización · 2023–Actualidad",
+        "title": "Diseño y Puesta en Marcha de Células de Ensamblaje Automatizadas",
+        "description": "Industrialización integral de células de producción automatizadas que integran tecnologías RSW, SPR y de adhesivos estructurales. Gestión del ciclo de vida completo, desde la especificación conceptual hasta la entrega a producción, coordinando con integradores de automatización en múltiples programas simultáneos.",
+        "highlights": [
+          "Integración de procesos de unión multitecnología",
+          "Homologación de proveedores y gestión de revisiones técnicas",
+          "PFMEA, planes de control y documentación de proceso"
+        ]
+      },
+      {
+        "tag": "Ingeniería de Procesos · 2017–2022",
+        "title": "Optimización del Proceso de Soldadura BIW — Carrocería SEAT",
+        "description": "Programa de mejora continua de cinco años para el ensamblaje de Carrocería en Blanco de SEAT, una de las naves de carrocería de mayor volumen de Europa. Optimización sistemática de los parámetros del proceso de soldadura, los KPI de calidad y la eficiencia de las estaciones en múltiples plataformas de vehículos.",
+        "highlights": [
+          "Optimización y estandarización de parámetros de calidad de soldadura",
+          "Iniciativas de reducción de chatarra y mejora del OEE",
+          "Formación de operarios e implantación de trabajo estándar"
+        ]
+      },
+      {
+        "tag": "Calidad y Validación · 2022–2023",
+        "title": "Validación de Producción en Automoción — Grupo VW",
+        "description": "Ingeniería de validación de procesos para las operaciones de ensamblaje del Grupo Volkswagen en SEAT Martorell. Enfocada en el análisis de causa raíz de defectos, la resolución de incidencias de producción y la implantación de acciones correctivas para mantener los objetivos de calidad y productividad.",
+        "highlights": [
+          "Validación y aprobación de la capacidad de proceso",
+          "Despliegue de la metodología de resolución de problemas 8D",
+          "Equipos multidisciplinares de resolución de incidencias"
+        ]
+      },
+      {
+        "tag": "Industria 4.0 · Iniciativa Futura",
+        "title": "Fabricación Inteligente y Transformación Digital",
+        "description": "Aplicación de los principios de la Industria 4.0 a las operaciones de fabricación: células de producción conectadas, monitorización de procesos en tiempo real, analítica predictiva de calidad y conceptos de gemelo digital para entornos de ensamblaje automatizados.",
+        "highlights": [
+          "Monitorización de producción conectada (IoT)",
+          "Optimización de procesos basada en datos",
+          "Gemelo digital para la validación de células de ensamblaje"
+        ]
+      },
+      {
+        "tag": "Robótica · En curso",
+        "title": "Integración de Sistemas de Soldadura Robotizada",
+        "description": "Especificación técnica, selección e integración de sistemas de soldadura robotizada en líneas de ensamblaje de carrocería. Coordinación con fabricantes de robots (KUKA, FANUC, ABB) y proveedores de PLC para la puesta en marcha completa de células y la entrega a producción.",
+        "highlights": [
+          "Especificaciones técnicas independientes de la marca de robot",
+          "Integración PLC/SCADA",
+          "Validación de sistemas de seguridad y conformidad CE"
+        ]
+      },
+      {
+        "tag": "Académico · 2016–2018",
+        "title": "Investigación en Ingeniería — Universidad de Vic",
+        "description": "Doble formación en ingeniería que combina un grado de 4 años en Ingeniería Mecatrónica con una especialización en Electrónica Industrial y Automática. Proyectos académicos que conectan las disciplinas de ingeniería mecánica, electrónica y de software.",
+        "highlights": [
+          "Diseño y prototipado de sistemas mecatrónicos",
+          "Programación de PLC y sistemas de control",
+          "Integración de sensores y sistemas embebidos"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "label": "Especialización",
+    "title": "Competencias <span class=\"gradient-text\">Técnicas</span>",
+    "cat1": "Ingeniería y Procesos",
+    "cat2": "Software y Herramientas",
+    "cat3": "Idiomas",
+    "cat4": "Competencias Clave",
+    "bars1": [
+      "Soldadura BIW (RSW, SPR, Adhesivos)",
+      "Industrialización de Procesos",
+      "Automatización Industrial y Diseño de Células",
+      "Lean y Mejora Continua",
+      "FMEA / Sistemas de Calidad (IATF 16949)",
+      "Gestión de Proveedores y Revisiones Técnicas"
+    ],
+    "bars2": [
+      "CAD (AutoCAD / SolidWorks / CATIA)",
+      "Microsoft Office (Excel Avanzado)",
+      "Software PLC (Siemens TIA / Allen-Bradley)",
+      "Sistemas SAP / ERP",
+      "Industria 4.0 / IoT / MES"
+    ],
+    "langs": [
+      {
+        "name": "Catalán",
+        "level": "Nativo"
+      },
+      {
+        "name": "Castellano",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "B2 Intermedio Alto"
+      },
+      {
+        "name": "Alemán",
+        "level": "A1 Básico"
+      }
+    ],
+    "cloud": [
+      "Fabricación BIW",
+      "Soldadura por Puntos",
+      "Industrialización de Procesos",
+      "Remaches Autoperforantes",
+      "Adhesivos Estructurales",
+      "Diseño de Automatización",
+      "PFMEA",
+      "Planes de Control",
+      "Optimización de Tiempo de Ciclo",
+      "Gestión de Proveedores",
+      "IATF 16949",
+      "Resolución de Problemas 8D",
+      "Kaizen",
+      "OEE",
+      "PPAP",
+      "Diseño CAD",
+      "Industria 4.0",
+      "Gestión de Proyectos Técnicos"
+    ],
+    "cat5": "Tecnologías Digitales e IA",
+    "bars5": [
+      "Desarrollo en Python",
+      "IA Generativa y LLMs",
+      "Ingeniería de Prompts",
+      "Análisis de Datos y Automatización",
+      "Flujos de Trabajo con IA",
+      "Integración de APIs y Scripting",
+      "Fundamentos de Machine Learning"
+    ]
+  },
+  "certs": {
+    "label": "Credenciales",
+    "title": "Formación y <span class=\"gradient-text\">Certificaciones</span>",
+    "cards": [
+      {
+        "type": "Grado Universitario",
+        "title": "Ingeniería Electrónica Industrial y Automática",
+        "issuer": "Universidad de Vic – Universidad Central de Cataluña",
+        "date": "2016 – 2018 · Barcelona, España"
+      },
+      {
+        "type": "Grado Universitario",
+        "title": "Ingeniería Mecatrónica",
+        "issuer": "Universidad de Vic – Universidad Central de Cataluña",
+        "date": "2012 – 2016 · Barcelona, España"
+      },
+      {
+        "type": "Permiso",
+        "title": "Permiso de Conducir – Categoría B",
+        "issuer": "Dirección General de Tráfico",
+        "date": "España"
+      },
+      {
+        "type": "Titulación",
+        "title": "PER – Patrón de Embarcaciones de Recreo",
+        "issuer": "Ministerio de Transportes, Movilidad y Agenda Urbana",
+        "date": "España"
+      },
+      {
+        "type": "Recomendado",
+        "title": "Six Sigma Green Belt",
+        "issuer": "ASQ / IASSC",
+        "date": "Objetivo: 2025"
+      },
+      {
+        "type": "Recomendado",
+        "title": "Especialista en Industria 4.0",
+        "issuer": "SFIA / Fabricación Digital",
+        "date": "Objetivo: 2025"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Conectemos",
+    "title": "Ponte en <span class=\"gradient-text\">Contacto</span>",
+    "subtitle": "Abierto a nuevas oportunidades, colaboraciones y retos de ingeniería.",
+    "emailH": "Correo electrónico",
+    "phoneH": "Teléfono",
+    "locationH": "Ubicación",
+    "locationV": "Barcelona, Cataluña, España",
+    "linkedin": "LinkedIn",
+    "emailMe": "Escríbeme",
+    "fName": "Nombre completo",
+    "fEmail": "Correo electrónico",
+    "fCompany": "Empresa / Organización",
+    "fSubject": "Asunto",
+    "fMessage": "Mensaje",
+    "pName": "Tu nombre completo",
+    "pEmail": "tu@correo.com",
+    "pCompany": "Nombre de la empresa (opcional)",
+    "pMessage": "Cuéntame sobre la oportunidad o cómo puedo ayudarte…",
+    "selDefault": "Selecciona un asunto…",
+    "optJob": "Oferta de Empleo",
+    "optCollab": "Colaboración",
+    "optConsulting": "Solicitud de Consultoría",
+    "optOther": "Otro",
+    "submit": "Enviar Mensaje",
+    "note": "Normalmente respondo en menos de 24 horas."
+  },
+  "footer": {
+    "tagline": "Ingeniero de Procesos · Especialista en Automatización Industrial · Industria 4.0 · Barcelona, España",
+    "navH": "Navegación",
+    "contactH": "Contacto",
+    "copyright": "© 2025 Adrià Martínez Colomer. Todos los derechos reservados.",
+    "built": "Construido con precisión. Como cada línea de producción."
+  },
+  "form": {
+    "errRequired": "Por favor, completa todos los campos obligatorios.",
+    "errEmail": "Por favor, introduce un correo electrónico válido.",
+    "sending": "Enviando…",
+    "sent": "¡Mensaje Enviado!",
+    "success": "¡Gracias! Te responderé en menos de 24 horas."
+  },
+  "a11y": {
+    "backToTop": "Volver arriba"
+  },
+  "ai": {
+    "label": "Innovación Digital",
+    "title": "Inteligencia Artificial e <span class=\"gradient-text\">Innovación Digital</span>",
+    "subtitle": "Ingeniería más allá de la planta, donde la fabricación se une al software, los datos y la IA.",
+    "intro": "Aporto el rigor de un ingeniero a la resolución de problemas digitales. Junto a mi trabajo en fabricación, desarrollo software de forma activa, automatizo procesos y aplico inteligencia artificial para que la ingeniería sea más rápida, inteligente y basada en datos.",
+    "bridge": [
+      "Fabricación",
+      "Automatización",
+      "Software",
+      "Datos",
+      "Inteligencia Artificial"
+    ],
+    "caps": [
+      {
+        "title": "Herramientas de IA y LLM",
+        "text": "Uso diario de modelos de lenguaje e IA generativa para acelerar el análisis de ingeniería, la documentación y la toma de decisiones."
+      },
+      {
+        "title": "Desarrollo en Python",
+        "text": "Creación de scripts y herramientas a medida que automatizan tareas de ingeniería repetitivas, el procesamiento de datos y los informes."
+      },
+      {
+        "title": "Automatización de Procesos",
+        "text": "Automatización de flujos de documentación, gestión de datos y cálculos de ingeniería para ahorrar tiempo y reducir errores."
+      },
+      {
+        "title": "Análisis de Datos",
+        "text": "Convertir los datos de fabricación y proceso en información accionable que respalda mejores decisiones de ingeniería."
+      },
+      {
+        "title": "Flujos Asistidos por IA",
+        "text": "Integración de la IA en flujos de ingeniería reales: desde la redacción técnica hasta la resolución de incidencias y el prototipado rápido."
+      },
+      {
+        "title": "Sistemas Algorítmicos",
+        "text": "Diseño de soluciones lógicas y algorítmicas y de software ligero que conecta datos, automatización y producción."
+      }
+    ],
+    "projTitle": "Proyectos de IA y Software",
+    "projects": [
+      {
+        "tag": "IA Aplicada · Investigación",
+        "title": "Investigación en Trading con IA",
+        "description": "Investigación y desarrollo de sistemas cuantitativos que combinan análisis de datos, automatización y flujos asistidos por IA para explorar patrones de mercado y modelos de decisión.",
+        "highlights": [
+          "Pipelines de datos y backtesting automatizado",
+          "Investigación de estrategias asistida por IA",
+          "Herramientas cuantitativas en Python"
+        ]
+      },
+      {
+        "tag": "Herramientas de Ingeniería · En curso",
+        "title": "Herramientas de Automatización para Ingeniería Industrial",
+        "description": "Software a medida que automatiza tareas de ingeniería repetitivas: desde la extracción de datos y la generación de informes hasta los cálculos de proceso.",
+        "highlights": [
+          "Scripts de automatización en Python",
+          "Informes y documentación automatizados",
+          "Reducción del esfuerzo manual"
+        ]
+      },
+      {
+        "tag": "Analítica de Datos",
+        "title": "Análisis de Fabricación Basado en Datos",
+        "description": "Analítica y automatización que transforman los datos de producción y proceso en información para mejorar la toma de decisiones de ingeniería.",
+        "highlights": [
+          "Análisis de datos de proceso y calidad",
+          "Procesamiento de datos automatizado",
+          "Paneles de apoyo a la decisión"
+        ]
+      },
+      {
+        "tag": "IA Generativa",
+        "title": "Flujos de Ingeniería Mejorados con IA",
+        "description": "Aplicación de modelos de lenguaje a la documentación técnica, la ingeniería de procesos y la ejecución de proyectos para trabajar más rápido y con mayor calidad.",
+        "highlights": [
+          "LLMs para documentación técnica",
+          "Resolución de incidencias asistida por IA",
+          "Ejecución de proyectos más rápida"
+        ]
+      }
+    ],
+    "i40Title": "Industria 4.0 y Fabricación Inteligente",
+    "i40Intro": "Llevar datos, conectividad e inteligencia a la planta para convertir la producción tradicional en una fabricación inteligente y receptiva.",
+    "i40": [
+      "Fabricación Inteligente",
+      "Transformación Digital",
+      "Fabricación Basada en Datos",
+      "Ingeniería Asistida por IA",
+      "Digitalización Industrial",
+      "Analítica Predictiva",
+      "Sistemas Conectados",
+      "Inteligencia de Fabricación"
+    ],
+    "visionTitle": "El Futuro de la Ingeniería",
+    "visionText": "Creo que la próxima década de la ingeniería pertenece a quienes conectan lo físico y lo digital, combinando un profundo conocimiento de fabricación con software, datos e inteligencia artificial.",
+    "visionPoints": [
+      {
+        "title": "IA en la Fabricación",
+        "text": "Pasar de proyectos piloto a decisiones cotidianas de ingeniería y producción."
+      },
+      {
+        "title": "Automatización Inteligente",
+        "text": "Sistemas que se adaptan, aprenden y se optimizan en tiempo real."
+      },
+      {
+        "title": "Colaboración Persona–IA",
+        "text": "Ingenieros potenciados por la IA: análisis más rápido y resolución más creativa."
+      },
+      {
+        "title": "Industria 5.0",
+        "text": "La persona de nuevo en el centro, apoyada por sistemas inteligentes, sostenibles y conectados."
+      }
+    ]
+  }
+}

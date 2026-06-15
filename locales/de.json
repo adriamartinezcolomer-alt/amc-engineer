@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "title": "Adrià Martínez Colomer | Industrie- & Automatisierungsingenieur · Angewandte KI",
+    "description": "Industrie- und Automatisierungsingenieur an der Schnittstelle von Fertigung, Software und künstlicher Intelligenz. Über 9 Jahre im Karosserierohbau (BIW) der Automobilindustrie, dazu Python-Entwicklung, KI-/LLM-Workflows und datengetriebene Ingenieurarbeit. Barcelona, Spanien.",
+    "keywords": "Industrieingenieur, Automatisierungsingenieur, Industrielle KI, KI in der Fertigung, Künstliche Intelligenz für die Produktion, Industrie 4.0, Smart Manufacturing, Prozessingenieur, Python-Entwickler, LLM, Generative KI, Datengetriebene Technik, Digitale Transformation, Karosserierohbau, Barcelona",
+    "ogTitle": "Adrià Martínez Colomer | Industrie- & Automatisierungsingenieur · Angewandte KI",
+    "ogDescription": "Ingenieur an der Schnittstelle von Fertigung, Automatisierung, Software und KI. Über 9 Jahre im Karosserierohbau (BIW), dazu Python-Automatisierung, LLM-Workflows und datengetriebene Ingenieurarbeit.",
+    "twitterTitle": "Adrià Martínez Colomer | Technik · Automatisierung · Angewandte KI",
+    "twitterDescription": "Industrie- & Automatisierungsingenieur | Angewandte KI | Python | Industrie 4.0 | Barcelona"
+  },
+  "nav": {
+    "about": "Über mich",
+    "experience": "Berufserfahrung",
+    "projects": "Projekte",
+    "skills": "Kompetenzen",
+    "certifications": "Qualifikationen",
+    "contact": "Kontakt",
+    "themeToggle": "Hell-/Dunkelmodus wechseln",
+    "menuToggle": "Mobiles Menü öffnen",
+    "langLabel": "Sprache auswählen",
+    "ai": "KI & Innovation"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "banner": "Offen für Karrieremöglichkeiten in Deutschland und Europa.",
+    "rolePrefix": "Spezialisiert auf ",
+    "roles": [
+      "Karosserierohbau-Schweißtechnik",
+      "Automatisierungstechnik",
+      "Angewandte künstliche Intelligenz",
+      "Python-Automatisierung",
+      "KI-gestützte Technik",
+      "Prozessindustrialisierung",
+      "Datengetriebene Technik",
+      "Industrie-4.0-Systeme"
+    ],
+    "description": "Industrie- und Automatisierungsingenieur an der Schnittstelle von <strong>Fertigung</strong>, <strong>Software</strong> und <strong>künstlicher Intelligenz</strong>. Über 9 Jahre im Karosserierohbau (BIW) der Automobilindustrie – und heute Entwicklung von Python-Automatisierung und KI-gestützten Ingenieurlösungen.",
+    "ctaContact": "Kontakt aufnehmen",
+    "ctaExperience": "Berufserfahrung ansehen",
+    "ctaCV": "Lebenslauf herunterladen",
+    "cvHref": "../cvs/CV_EN_Adria_Martinez_Colomer.docx",
+    "statYears": "Jahre Erfahrung",
+    "statCompanies": "Unternehmen",
+    "statDegrees": "Ingenieurabschlüsse",
+    "statLanguages": "Sprachen",
+    "scroll": "Nach unten scrollen"
+  },
+  "about": {
+    "label": "Über mich",
+    "title": "Ingenieurskunst <span class=\"gradient-text\">aus Leidenschaft</span>",
+    "photo": "Profilfoto",
+    "badge1": "Mechatronikingenieur",
+    "badge2": "Automatisierungsspezialist",
+    "badge3": "Industrie 4.0",
+    "lead": "Ich bin Prozessingenieur aus Barcelona mit einem doppelten Ingenieurabschluss in <strong>Mechatronik</strong> und <strong>industrieller Elektronik &amp; Automatisierungstechnik</strong> und verbinde fundiertes Fachwissen mit praktischer Fertigungserfahrung.",
+    "text1": "Meine Laufbahn ist geprägt von einem Jahrzehnt in den anspruchsvollsten Automobilumgebungen Spaniens – vorwiegend für SEAT S.A. und den Volkswagen Konzern –, in denen ich den gesamten Lebenszyklus der Fertigung begleitet habe: von den Montageprozessen im Karosserierohbau und robotergestützten Schweißanlagen bis hin zur Konzeption und Inbetriebnahme automatisierter Produktionszellen.",
+    "text2": "Heute verantworte ich bei der Jordan Group die Industrialisierung geschweißter Baugruppen der nächsten Generation, die Widerstandspunktschweißen, Stanznieten und Strukturkleben kombinieren – Technologien, die moderne Leichtbaustrategien in der Automobilindustrie definieren.",
+    "v1t": "Ingenieurtechnische Präzision",
+    "v1p": "Jeder Prozess, den ich konzipiere, basiert auf messbaren Standards, validierten Daten und ingenieurtechnischer Sorgfalt.",
+    "v2t": "Kontinuierliche Verbesserung",
+    "v2p": "Ich bin überzeugt, dass jede Produktionslinie ungenutztes Effizienzpotenzial birgt, das sich durch systematische Analyse erschließen lässt.",
+    "v3t": "Bereichsübergreifende Zusammenarbeit",
+    "v3p": "Die besten Lösungen entstehen, wenn Entwicklung, Qualität, Instandhaltung und Produktion dieselbe Sprache sprechen.",
+    "location": "Barcelona, Katalonien, Spanien — Offen für Umzug und internationale Möglichkeiten",
+    "badge4": "KI-Entwickler",
+    "text3": "Über die Fertigung hinaus arbeite ich praktisch mit Software und künstlicher Intelligenz: Ich entwickle Python-Automatisierung, setze große Sprachmodelle (LLMs) und generative KI in Ingenieur-Workflows ein und nutze Datenanalyse für bessere technische Entscheidungen. Ich bewege mich an der Schnittstelle von Fertigung, Automatisierung, Software und KI."
+  },
+  "exp": {
+    "label": "Beruflicher Werdegang",
+    "title": "Berufliche <span class=\"gradient-text\">Erfahrung</span>",
+    "jobs": [
+      {
+        "role": "Prozessingenieur",
+        "company": "Jordan Group",
+        "client": "",
+        "dates": "2023 – heute",
+        "location": "Barcelona, Spanien",
+        "bullets": [
+          "Leitung der Industrialisierung geschweißter Baugruppen mit Integration von Widerstandspunktschweißen (RSW), Stanznieten (SPR) und Strukturkleben für Automobilprogramme",
+          "Durchgängige Konzeption und Umsetzung automatisierter Produktionszellen: von der technischen Spezifikation und Lieferantenqualifizierung bis zur Inbetriebnahme und Produktionsübergabe",
+          "Steuerung der Lieferantenauswahl und Durchführung technischer Reviews mit Automatisierungsintegratoren über mehrere parallele Industrialisierungsprogramme hinweg",
+          "Erstellung umfassender Prozessdokumentation: PFMEA, Control-Pläne, Taktzeitstudien und Arbeitsanweisungen"
+        ],
+        "tags": [
+          "RSW",
+          "SPR",
+          "Strukturkleben",
+          "Zellenkonzeption",
+          "Inbetriebnahme",
+          "PFMEA"
+        ]
+      },
+      {
+        "role": "Prozessingenieur",
+        "company": "Volkswagen Group Services",
+        "client": "@ SEAT, S.A.",
+        "dates": "2022 – 2023",
+        "location": "Martorell, Spanien",
+        "bullets": [
+          "Unterstützung der Prozessvalidierung für die Karosserierohbau-Montage (BIW) im Fertigungswerk von SEAT in Martorell",
+          "Diagnose und Behebung von Fehlern in der Produktionslinie zur Reduzierung ungeplanter Stillstände und zur Unterstützung der OEE-Verbesserungsziele",
+          "Mitarbeit an Projekten der kontinuierlichen Verbesserung mit Fokus auf Taktzeitreduzierung und Durchsatzsteigerung",
+          "Bereichsübergreifende Zusammenarbeit mit den Abteilungen Qualität, Instandhaltung und Produktionsplanung"
+        ],
+        "tags": [
+          "Prozessvalidierung",
+          "OEE",
+          "Störungsbehebung",
+          "Kont. Verbesserung",
+          "BIW"
+        ]
+      },
+      {
+        "role": "Prozessingenieur",
+        "company": "Quality Continent, SL",
+        "client": "@ SEAT, S.A.",
+        "dates": "2017 – 2022",
+        "location": "Martorell, Spanien",
+        "bullets": [
+          "Fünf Jahre spezialisierte prozesstechnische Unterstützung für die Karosserierohbau-Montage (BIW) von SEAT – einem der produktionsstärksten Karosseriewerke Europas",
+          "Optimierung der Schweißprozessparameter an mehreren Produktionsstationen zur Verbesserung der Schweißqualitäts-KPIs und Reduzierung des Ausschusses",
+          "Unterstützung bei FMEA-Reviews, Messsystemanalysen (MSA) und PPAP-Freigaben für neue Werkzeuge und Prozessänderungen",
+          "Schulung von Bedienern und Technikern zu aktualisierten Schweißstandards, Qualitätsprüfpunkten und Produktionsabläufen"
+        ],
+        "tags": [
+          "Schweißtechnik (BIW)",
+          "FMEA",
+          "PPAP",
+          "MSA",
+          "5 Jahre",
+          "SEAT"
+        ]
+      },
+      {
+        "role": "Praktikant Instandhaltungstechnik",
+        "company": "SEAT, S.A.",
+        "client": "",
+        "dates": "2015 – 2016",
+        "location": "Martorell, Spanien",
+        "bullets": [
+          "Unterstützung des technischen Büros der Instandhaltungsabteilung im Karosseriebau eines der größten Automobilwerke Europas",
+          "Mitwirkung bei Dokumentation, Planung und Durchführung von Programmen zur vorbeugenden Instandhaltung automatisierter Roboter-Schweißstationen",
+          "Erster Einblick in die großtechnische Karosserierohbau-Produktion (BIW), Robotersysteme und ingenieurtechnische Arbeitsabläufe"
+        ],
+        "tags": [
+          "Karosseriebau",
+          "Vorbeugende Instandhaltung",
+          "Roboterschweißen",
+          "SEAT S.A."
+        ]
+      }
+    ]
+  },
+  "proj": {
+    "label": "Portfolio",
+    "title": "Ingenieur<span class=\"gradient-text\">projekte</span>",
+    "cards": [
+      {
+        "tag": "Automatisierung · 2023–heute",
+        "title": "Konzeption und Inbetriebnahme automatisierter Montagezellen",
+        "description": "Durchgängige Industrialisierung automatisierter Produktionszellen mit Integration der Technologien RSW, SPR und Strukturkleben. Verantwortung für den gesamten Lebenszyklus von der Konzeptspezifikation bis zur Produktionsübergabe, in Abstimmung mit Automatisierungsintegratoren über mehrere parallele Programme hinweg.",
+        "highlights": [
+          "Integration von Fügeprozessen mit mehreren Technologien",
+          "Lieferantenqualifizierung und Steuerung technischer Reviews",
+          "PFMEA, Control-Pläne und Prozessdokumentation"
+        ]
+      },
+      {
+        "tag": "Prozesstechnik · 2017–2022",
+        "title": "Optimierung des BIW-Schweißprozesses — Karosseriebau SEAT",
+        "description": "Fünfjähriges Programm zur kontinuierlichen Verbesserung der Karosserierohbau-Montage von SEAT – einem der produktionsstärksten Karosseriewerke Europas. Systematische Optimierung der Schweißprozessparameter, Qualitäts-KPIs und Stationseffizienz über mehrere Fahrzeugplattformen hinweg.",
+        "highlights": [
+          "Optimierung und Standardisierung der Schweißqualitätsparameter",
+          "Initiativen zur Ausschussreduzierung und OEE-Steigerung",
+          "Bedienerschulung und Einführung von Standardarbeit"
+        ]
+      },
+      {
+        "tag": "Qualität & Validierung · 2022–2023",
+        "title": "Produktionsvalidierung in der Automobilfertigung — VW Konzern",
+        "description": "Prozessvalidierung für die Montageprozesse des Volkswagen Konzerns bei SEAT Martorell. Schwerpunkt auf Ursachenanalyse von Fehlern, Störungsbehebung in der Produktion und Umsetzung von Korrekturmaßnahmen zur Einhaltung der Qualitäts- und Durchsatzziele.",
+        "highlights": [
+          "Validierung und Freigabe der Prozessfähigkeit",
+          "Einsatz der 8D-Problemlösungsmethodik",
+          "Bereichsübergreifende Teams zur Problembehebung"
+        ]
+      },
+      {
+        "tag": "Industrie 4.0 · Zukunftsinitiative",
+        "title": "Smart Manufacturing und digitale Transformation",
+        "description": "Anwendung der Industrie-4.0-Prinzipien auf Fertigungsprozesse: vernetzte Produktionszellen, Prozessüberwachung in Echtzeit, prädiktive Qualitätsanalytik und Konzepte des digitalen Zwillings für automatisierte Montageumgebungen.",
+        "highlights": [
+          "Vernetzte Produktionsüberwachung (IoT)",
+          "Datenbasierte Prozessoptimierung",
+          "Digitaler Zwilling zur Validierung von Montagezellen"
+        ]
+      },
+      {
+        "tag": "Robotik · Laufend",
+        "title": "Integration robotergestützter Schweißsysteme",
+        "description": "Technische Spezifikation, Auswahl und Integration robotergestützter Schweißsysteme in Karosseriemontagelinien. Abstimmung mit Roboterherstellern (KUKA, FANUC, ABB) und SPS-Lieferanten für die vollständige Inbetriebnahme der Zellen und die Produktionsübergabe.",
+        "highlights": [
+          "Herstellerunabhängige technische Spezifikationen für Roboter",
+          "SPS-/SCADA-Integration",
+          "Validierung von Sicherheitssystemen und CE-Konformität"
+        ]
+      },
+      {
+        "tag": "Akademisch · 2016–2018",
+        "title": "Ingenieurforschung — Universität Vic",
+        "description": "Doppelte Ingenieurausbildung, die einen vierjährigen Studiengang in Mechatronik mit einer Spezialisierung in industrieller Elektronik und Automatisierungstechnik verbindet. Akademische Projekte an der Schnittstelle von Maschinenbau, Elektronik und Softwaretechnik.",
+        "highlights": [
+          "Konzeption und Prototyping mechatronischer Systeme",
+          "SPS-Programmierung und Steuerungstechnik",
+          "Sensorintegration und eingebettete Systeme"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "label": "Fachkompetenz",
+    "title": "Technische <span class=\"gradient-text\">Kompetenzen</span>",
+    "cat1": "Ingenieurwesen & Prozesse",
+    "cat2": "Software & Werkzeuge",
+    "cat3": "Sprachen",
+    "cat4": "Kernkompetenzen",
+    "bars1": [
+      "Schweißtechnik BIW (RSW, SPR, Kleben)",
+      "Prozessindustrialisierung",
+      "Automatisierungstechnik & Zellenkonzeption",
+      "Lean & Kontinuierliche Verbesserung",
+      "FMEA / Qualitätsmanagement (IATF 16949)",
+      "Lieferantenmanagement & Technische Reviews"
+    ],
+    "bars2": [
+      "CAD (AutoCAD / SolidWorks / CATIA)",
+      "Microsoft Office (Excel fortgeschritten)",
+      "SPS-Software (Siemens TIA / Allen-Bradley)",
+      "SAP / ERP-Systeme",
+      "Industrie 4.0 / IoT / MES"
+    ],
+    "langs": [
+      {
+        "name": "Katalanisch",
+        "level": "Muttersprache"
+      },
+      {
+        "name": "Spanisch",
+        "level": "Muttersprache"
+      },
+      {
+        "name": "Englisch",
+        "level": "B2 Gehobenes Mittelstufenniveau"
+      },
+      {
+        "name": "Deutsch",
+        "level": "A1 Grundkenntnisse"
+      }
+    ],
+    "cloud": [
+      "Karosserierohbau",
+      "Punktschweißen",
+      "Prozessindustrialisierung",
+      "Stanznieten",
+      "Strukturkleben",
+      "Automatisierungskonzeption",
+      "PFMEA",
+      "Control-Pläne",
+      "Taktzeitoptimierung",
+      "Lieferantenmanagement",
+      "IATF 16949",
+      "8D-Problemlösung",
+      "Kaizen",
+      "OEE",
+      "PPAP",
+      "CAD-Konstruktion",
+      "Industrie 4.0",
+      "Technisches Projektmanagement"
+    ],
+    "cat5": "Digital- & KI-Technologien",
+    "bars5": [
+      "Python-Entwicklung",
+      "Generative KI & LLMs",
+      "Prompt-Engineering",
+      "Datenanalyse & Automatisierung",
+      "KI-gestützte Workflows",
+      "API-Integration & Scripting",
+      "Machine-Learning-Grundlagen"
+    ]
+  },
+  "certs": {
+    "label": "Nachweise",
+    "title": "Ausbildung & <span class=\"gradient-text\">Qualifikationen</span>",
+    "cards": [
+      {
+        "type": "Bachelorabschluss",
+        "title": "Industrielle Elektronik & Automatisierungstechnik",
+        "issuer": "Universität Vic – Zentraluniversität von Katalonien",
+        "date": "2016 – 2018 · Barcelona, Spanien"
+      },
+      {
+        "type": "Bachelorabschluss",
+        "title": "Mechatronik",
+        "issuer": "Universität Vic – Zentraluniversität von Katalonien",
+        "date": "2012 – 2016 · Barcelona, Spanien"
+      },
+      {
+        "type": "Führerschein",
+        "title": "Führerschein – Klasse B",
+        "issuer": "Dirección General de Tráfico",
+        "date": "Spanien"
+      },
+      {
+        "type": "Befähigungsnachweis",
+        "title": "PER – Sportbootführerschein",
+        "issuer": "Ministerium für Verkehr und Mobilität",
+        "date": "Spanien"
+      },
+      {
+        "type": "Empfohlen",
+        "title": "Six Sigma Green Belt",
+        "issuer": "ASQ / IASSC",
+        "date": "Ziel: 2025"
+      },
+      {
+        "type": "Empfohlen",
+        "title": "Industrie-4.0-Spezialist",
+        "issuer": "SFIA / Digitale Fertigung",
+        "date": "Ziel: 2025"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Vernetzen wir uns",
+    "title": "Kontakt <span class=\"gradient-text\">aufnehmen</span>",
+    "subtitle": "Offen für neue Möglichkeiten, Kooperationen und ingenieurtechnische Herausforderungen.",
+    "emailH": "E-Mail",
+    "phoneH": "Telefon",
+    "locationH": "Standort",
+    "locationV": "Barcelona, Katalonien, Spanien",
+    "linkedin": "LinkedIn",
+    "emailMe": "E-Mail schreiben",
+    "fName": "Vollständiger Name",
+    "fEmail": "E-Mail-Adresse",
+    "fCompany": "Unternehmen / Organisation",
+    "fSubject": "Betreff",
+    "fMessage": "Nachricht",
+    "pName": "Ihr vollständiger Name",
+    "pEmail": "ihre@email.com",
+    "pCompany": "Name des Unternehmens (optional)",
+    "pMessage": "Erzählen Sie mir von der Möglichkeit oder wie ich helfen kann…",
+    "selDefault": "Betreff auswählen…",
+    "optJob": "Stellenangebot",
+    "optCollab": "Zusammenarbeit",
+    "optConsulting": "Beratungsanfrage",
+    "optOther": "Sonstiges",
+    "submit": "Nachricht senden",
+    "note": "Ich antworte in der Regel innerhalb von 24 Stunden."
+  },
+  "footer": {
+    "tagline": "Prozessingenieur · Spezialist für Automatisierungstechnik · Industrie 4.0 · Barcelona, Spanien",
+    "navH": "Navigation",
+    "contactH": "Kontakt",
+    "copyright": "© 2025 Adrià Martínez Colomer. Alle Rechte vorbehalten.",
+    "built": "Mit Präzision gebaut. Wie jede Produktionslinie."
+  },
+  "form": {
+    "errRequired": "Bitte füllen Sie alle Pflichtfelder aus.",
+    "errEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "sending": "Wird gesendet…",
+    "sent": "Nachricht gesendet!",
+    "success": "Vielen Dank! Ich melde mich innerhalb von 24 Stunden bei Ihnen."
+  },
+  "a11y": {
+    "backToTop": "Nach oben"
+  },
+  "ai": {
+    "label": "Digitale Innovation",
+    "title": "Künstliche Intelligenz & <span class=\"gradient-text\">Digitale Innovation</span>",
+    "subtitle": "Technik jenseits der Werkshalle – wo Fertigung auf Software, Daten und KI trifft.",
+    "intro": "Ich bringe die Sorgfalt eines Ingenieurs in die digitale Problemlösung ein. Neben meiner Arbeit in der Fertigung entwickle ich aktiv Software, automatisiere Prozesse und setze künstliche Intelligenz ein, um die Technik schneller, intelligenter und datengetriebener zu machen.",
+    "bridge": [
+      "Fertigung",
+      "Automatisierung",
+      "Software",
+      "Daten",
+      "Künstliche Intelligenz"
+    ],
+    "caps": [
+      {
+        "title": "KI- & LLM-Tools",
+        "text": "Täglicher Einsatz großer Sprachmodelle und generativer KI zur Beschleunigung von Analyse, Dokumentation und Entscheidungsfindung."
+      },
+      {
+        "title": "Python-Entwicklung",
+        "text": "Entwicklung von Skripten und individuellen Tools, die wiederkehrende Ingenieuraufgaben, Datenverarbeitung und Berichte automatisieren."
+      },
+      {
+        "title": "Prozessautomatisierung",
+        "text": "Automatisierung von Abläufen in Dokumentation, Datenhandling und Ingenieurberechnungen, um Zeit zu sparen und Fehler zu reduzieren."
+      },
+      {
+        "title": "Datenanalyse",
+        "text": "Umwandlung von Fertigungs- und Prozessdaten in verwertbare Erkenntnisse für bessere Ingenieurentscheidungen."
+      },
+      {
+        "title": "KI-gestützte Workflows",
+        "text": "Integration von KI in reale Ingenieur-Workflows – von technischer Dokumentation bis Störungsbehebung und Rapid Prototyping."
+      },
+      {
+        "title": "Algorithmische Systeme",
+        "text": "Konzeption logischer, algorithmischer Lösungen und schlanker Software, die Daten, Automatisierung und Produktion verbindet."
+      }
+    ],
+    "projTitle": "KI- & Software-Projekte",
+    "projects": [
+      {
+        "tag": "Angewandte KI · Forschung",
+        "title": "KI-gestützte Trading-Forschung",
+        "description": "Forschung und Entwicklung quantitativer Systeme, die Datenanalyse, Automatisierung und KI-gestützte Workflows kombinieren, um Marktmuster und Entscheidungsmodelle zu untersuchen.",
+        "highlights": [
+          "Datenpipelines & automatisiertes Backtesting",
+          "KI-gestützte Strategieforschung",
+          "Quantitative Tools in Python"
+        ]
+      },
+      {
+        "tag": "Engineering-Tools · Laufend",
+        "title": "Automatisierungstools für die Industrietechnik",
+        "description": "Individuelle Software, die wiederkehrende Ingenieuraufgaben automatisiert – von Datenextraktion und Berichterstellung bis zu Prozessberechnungen.",
+        "highlights": [
+          "Individuelle Python-Automatisierungsskripte",
+          "Automatisierte Berichte & Dokumentation",
+          "Reduzierung manueller Arbeit"
+        ]
+      },
+      {
+        "tag": "Datenanalytik",
+        "title": "Datengetriebene Fertigungsanalyse",
+        "description": "Analytik und Automatisierung, die Produktions- und Prozessdaten in Erkenntnisse für bessere Ingenieurentscheidungen verwandeln.",
+        "highlights": [
+          "Analyse von Prozess- & Qualitätsdaten",
+          "Automatisierte Datenverarbeitung",
+          "Dashboards zur Entscheidungsunterstützung"
+        ]
+      },
+      {
+        "tag": "Generative KI",
+        "title": "KI-gestützte Ingenieur-Workflows",
+        "description": "Einsatz großer Sprachmodelle in technischer Dokumentation, Prozesstechnik und Projektabwicklung, um schneller und in höherer Qualität zu arbeiten.",
+        "highlights": [
+          "LLMs für technische Dokumentation",
+          "KI-gestützte Störungsbehebung",
+          "Schnellere Projektabwicklung"
+        ]
+      }
+    ],
+    "i40Title": "Industrie 4.0 & Smart Manufacturing",
+    "i40Intro": "Daten, Vernetzung und Intelligenz in die Werkshalle bringen – und traditionelle Produktion in eine smarte, reaktionsfähige Fertigung verwandeln.",
+    "i40": [
+      "Smart Manufacturing",
+      "Digitale Transformation",
+      "Datengetriebene Fertigung",
+      "KI-gestützte Technik",
+      "Industrielle Digitalisierung",
+      "Vorausschauende Analytik",
+      "Vernetzte Systeme",
+      "Manufacturing Intelligence"
+    ],
+    "visionTitle": "Die Zukunft der Technik",
+    "visionText": "Ich bin überzeugt: Das nächste Jahrzehnt der Technik gehört denen, die das Physische und das Digitale verbinden – tiefes Fertigungs-Know-how mit Software, Daten und künstlicher Intelligenz.",
+    "visionPoints": [
+      {
+        "title": "KI in der Fertigung",
+        "text": "Vom Pilotprojekt zur alltäglichen Ingenieur- und Produktionsentscheidung."
+      },
+      {
+        "title": "Intelligente Automatisierung",
+        "text": "Systeme, die sich in Echtzeit anpassen, lernen und selbst optimieren."
+      },
+      {
+        "title": "Mensch-KI-Zusammenarbeit",
+        "text": "Ingenieure, gestärkt durch KI – schnellere Analyse und kreativere Lösungen."
+      },
+      {
+        "title": "Industrie 5.0",
+        "text": "Der Mensch wieder im Mittelpunkt, gestützt von intelligenten, nachhaltigen, vernetzten Systemen."
+      }
+    ]
+  }
+}

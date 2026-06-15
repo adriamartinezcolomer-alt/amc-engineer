@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "title": "Adrià Martínez Colomer | Industrial & Automation Engineer · Applied AI",
+    "description": "Industrial and automation engineer bridging manufacturing, software, and artificial intelligence. 9+ years in automotive BIW, plus Python development, AI/LLM workflows, and data-driven engineering. Barcelona, Spain.",
+    "keywords": "Industrial Engineer, Automation Engineer, Industrial AI, Manufacturing AI, Artificial Intelligence for Manufacturing, Industry 4.0, Smart Manufacturing, Process Engineering, Python Developer, LLM, Generative AI, Data-Driven Engineering, Digital Transformation, BIW Welding, Barcelona",
+    "ogTitle": "Adrià Martínez Colomer | Industrial & Automation Engineer · Applied AI",
+    "ogDescription": "Engineer at the intersection of manufacturing, automation, software, and AI. 9+ years in automotive BIW, plus Python automation, LLM workflows, and data-driven engineering.",
+    "twitterTitle": "Adrià Martínez Colomer | Engineering · Automation · Applied AI",
+    "twitterDescription": "Industrial & Automation Engineer | Applied AI | Python | Industry 4.0 | Barcelona"
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "themeToggle": "Toggle dark/light mode",
+    "menuToggle": "Toggle mobile menu",
+    "langLabel": "Select language",
+    "ai": "AI & Innovation"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "banner": "Open to opportunities across Spain and Europe.",
+    "rolePrefix": "I specialize in ",
+    "roles": [
+      "BIW Welding Processes",
+      "Industrial Automation",
+      "Applied Artificial Intelligence",
+      "Python Automation",
+      "AI-Assisted Engineering",
+      "Process Industrialization",
+      "Data-Driven Engineering",
+      "Industry 4.0 Systems"
+    ],
+    "description": "Industrial &amp; automation engineer bridging <strong>manufacturing</strong>, <strong>software</strong>, and <strong>artificial intelligence</strong>. 9+ years in automotive BIW — now building Python automation and AI-driven engineering solutions.",
+    "ctaContact": "Get In Touch",
+    "ctaExperience": "View Experience",
+    "ctaCV": "Download CV",
+    "cvHref": "../cvs/CV_EN_Adria_Martinez_Colomer.docx",
+    "statYears": "Years Experience",
+    "statCompanies": "Companies",
+    "statDegrees": "Engineering Degrees",
+    "statLanguages": "Languages",
+    "scroll": "Scroll Down"
+  },
+  "about": {
+    "label": "About Me",
+    "title": "Engineering Excellence <span class=\"gradient-text\">Driven by Passion</span>",
+    "photo": "Professional Photo",
+    "badge1": "Mechatronics Engineer",
+    "badge2": "Automation Specialist",
+    "badge3": "Industry 4.0",
+    "lead": "I'm a Process Engineer from Barcelona with dual engineering degrees in <strong>Mechatronics</strong> and <strong>Industrial Electronics &amp; Automation</strong>, combining theoretical depth with hands-on manufacturing expertise.",
+    "text1": "My career has been shaped by a decade in Spain's most demanding automotive environments — primarily supporting SEAT S.A. and the Volkswagen Group — where I've worked across the full lifecycle of manufacturing: from body-in-white assembly processes and robotic welding systems to automated production cell design and commissioning.",
+    "text2": "Today, at Jordan Group, I lead the industrialization of next-generation welded assemblies integrating resistance spot welding, self-piercing rivets, and structural adhesives — technologies that define modern automotive lightweighting strategies.",
+    "v1t": "Engineering Precision",
+    "v1p": "Every process I design is built on measurable standards, validated data, and engineering rigor.",
+    "v2t": "Continuous Improvement",
+    "v2p": "I believe every production line has untapped efficiency waiting to be unlocked through systematic analysis.",
+    "v3t": "Cross-functional Collaboration",
+    "v3p": "The best solutions emerge when engineering, quality, maintenance, and production teams speak the same language.",
+    "location": "Barcelona, Catalonia, Spain — Open to relocation & international opportunities",
+    "badge4": "AI Builder",
+    "text3": "Beyond the factory floor, I work hands-on with software and artificial intelligence — developing Python automation, applying large language models and generative AI to engineering workflows, and using data analysis to support better technical decisions. I operate at the intersection of manufacturing, automation, software, and AI."
+  },
+  "exp": {
+    "label": "Career Journey",
+    "title": "Professional <span class=\"gradient-text\">Experience</span>",
+    "jobs": [
+      {
+        "role": "Process Engineer",
+        "company": "Jordan Group",
+        "client": "",
+        "dates": "2023 – Present",
+        "location": "Barcelona, Spain",
+        "bullets": [
+          "Led industrialization of welded assemblies integrating Resistance Spot Welding (RSW), Self-Piercing Rivets (SPR), and structural adhesives for automotive programs",
+          "Designed and implemented automated production cells end-to-end: from technical specification and supplier qualification through to commissioning and production handover",
+          "Managed supplier selection processes and conducted technical reviews with automation integrators across concurrent industrialization programs",
+          "Developed comprehensive process documentation: PFMEAs, control plans, cycle time studies, and work instructions"
+        ],
+        "tags": [
+          "RSW",
+          "SPR",
+          "Structural Adhesives",
+          "Cell Design",
+          "Commissioning",
+          "PFMEA"
+        ]
+      },
+      {
+        "role": "Process Engineer",
+        "company": "Volkswagen Group Services",
+        "client": "@ SEAT, S.A.",
+        "dates": "2022 – 2023",
+        "location": "Martorell, Spain",
+        "bullets": [
+          "Supported process validation activities for automotive BIW assembly operations at SEAT's Martorell manufacturing complex",
+          "Diagnosed and resolved production-line defects, reducing unplanned downtime and supporting OEE improvement targets",
+          "Contributed to continuous improvement projects targeting cycle time reduction and throughput enhancement",
+          "Collaborated with cross-functional teams across quality, maintenance, and production planning"
+        ],
+        "tags": [
+          "Process Validation",
+          "OEE",
+          "Troubleshooting",
+          "Continuous Improvement",
+          "BIW"
+        ]
+      },
+      {
+        "role": "Process Engineer",
+        "company": "Quality Continent, SL",
+        "client": "@ SEAT, S.A.",
+        "dates": "2017 – 2022",
+        "location": "Martorell, Spain",
+        "bullets": [
+          "Delivered 5 years of specialized process engineering support for SEAT's Body-in-White assembly — Europe's highest-volume automotive body shop",
+          "Optimized welding process parameters across multiple production stations, improving weld quality KPIs and reducing scrap",
+          "Supported FMEA reviews, measurement system analysis (MSA), and PPAP submissions for new tooling and process changes",
+          "Trained operators and technicians on updated welding standards, quality checkpoints, and production procedures"
+        ],
+        "tags": [
+          "BIW Welding",
+          "FMEA",
+          "PPAP",
+          "MSA",
+          "5 Years",
+          "SEAT"
+        ]
+      },
+      {
+        "role": "Maintenance Engineering Intern",
+        "company": "SEAT, S.A.",
+        "client": "",
+        "dates": "2015 – 2016",
+        "location": "Martorell, Spain",
+        "bullets": [
+          "Supported the technical office of the Body Shop maintenance department at one of Europe's largest automotive manufacturing facilities",
+          "Assisted in documentation, scheduling, and execution of preventive maintenance programs for automated robotic welding stations",
+          "First exposure to large-scale automotive BIW production environments, robotic systems, and engineering workflows"
+        ],
+        "tags": [
+          "Body Shop",
+          "Preventive Maintenance",
+          "Robotic Welding",
+          "SEAT S.A."
+        ]
+      }
+    ]
+  },
+  "proj": {
+    "label": "Portfolio",
+    "title": "Engineering <span class=\"gradient-text\">Projects</span>",
+    "cards": [
+      {
+        "tag": "Automation · 2023–Present",
+        "title": "Automated Assembly Cell Design & Commissioning",
+        "description": "End-to-end industrialization of automated production cells integrating RSW, SPR, and structural adhesive technologies. Managed full lifecycle from concept specification to production handover, coordinating with automation integrators across multiple concurrent programs.",
+        "highlights": [
+          "Multi-technology joining process integration",
+          "Supplier qualification & technical review management",
+          "PFMEA, control plans, & process documentation"
+        ]
+      },
+      {
+        "tag": "Process Engineering · 2017–2022",
+        "title": "BIW Welding Process Optimization — SEAT Body Shop",
+        "description": "Five-year continuous improvement program for SEAT's Body-in-White assembly — one of Europe's highest-volume automotive body shops. Systematic optimization of welding process parameters, quality KPIs, and station efficiency across multiple vehicle platforms.",
+        "highlights": [
+          "Weld quality parameter optimization & standardization",
+          "Scrap reduction & OEE improvement initiatives",
+          "Operator training & standard work implementation"
+        ]
+      },
+      {
+        "tag": "Quality & Validation · 2022–2023",
+        "title": "Automotive Production Validation — VW Group",
+        "description": "Process validation engineering for Volkswagen Group automotive assembly operations at SEAT Martorell. Focused on defect root cause analysis, production troubleshooting, and implementing corrective actions to maintain quality and throughput targets.",
+        "highlights": [
+          "Process capability validation & sign-off",
+          "8D problem-solving methodology deployment",
+          "Cross-functional issue resolution teams"
+        ]
+      },
+      {
+        "tag": "Industry 4.0 · Future Initiative",
+        "title": "Smart Manufacturing & Digital Transformation",
+        "description": "Applying Industry 4.0 principles to manufacturing operations: connected production cells, real-time process monitoring, predictive quality analytics, and digital twin concepts for automated assembly environments.",
+        "highlights": [
+          "IoT-connected production monitoring",
+          "Data-driven process optimization",
+          "Digital twin for assembly cell validation"
+        ]
+      },
+      {
+        "tag": "Robotics · Ongoing",
+        "title": "Robotic Welding Systems Integration",
+        "description": "Technical specification, selection, and integration of robotic welding systems into automotive body assembly lines. Coordinating with robot manufacturers (KUKA, FANUC, ABB) and PLC vendors for complete cell commissioning and production handover.",
+        "highlights": [
+          "Robot brand-agnostic technical specifications",
+          "PLC/SCADA integration",
+          "Safety system validation & CE compliance"
+        ]
+      },
+      {
+        "tag": "Academic · 2016–2018",
+        "title": "Engineering Research — University of Vic",
+        "description": "Dual engineering education combining a 4-year Mechatronics Engineering degree with a specialization in Industrial Electronics and Automation. Academic projects bridging mechanical, electronic, and software engineering disciplines.",
+        "highlights": [
+          "Mechatronics system design & prototyping",
+          "PLC programming & control systems",
+          "Sensor integration & embedded systems"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "label": "Expertise",
+    "title": "Technical <span class=\"gradient-text\">Skills</span>",
+    "cat1": "Engineering & Process",
+    "cat2": "Software & Tools",
+    "cat3": "Languages",
+    "cat4": "Core Competencies",
+    "bars1": [
+      "BIW Welding (RSW, SPR, Adhesives)",
+      "Process Industrialization",
+      "Industrial Automation & Cell Design",
+      "Lean & Continuous Improvement",
+      "FMEA / Quality Systems (IATF 16949)",
+      "Supplier Management & Technical Reviews"
+    ],
+    "bars2": [
+      "CAD (AutoCAD / SolidWorks / CATIA)",
+      "Microsoft Office Suite (Advanced Excel)",
+      "PLC Software (Siemens TIA / Allen-Bradley)",
+      "SAP / ERP Systems",
+      "Industry 4.0 / IoT / MES"
+    ],
+    "langs": [
+      {
+        "name": "Catalan",
+        "level": "Native"
+      },
+      {
+        "name": "Spanish",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "B2 Upper-Intermediate"
+      },
+      {
+        "name": "German",
+        "level": "A1 Basic"
+      }
+    ],
+    "cloud": [
+      "BIW Manufacturing",
+      "Spot Welding",
+      "Process Industrialization",
+      "Self-Piercing Rivets",
+      "Structural Adhesives",
+      "Automation Design",
+      "PFMEA",
+      "Control Plans",
+      "Cycle Time Optimization",
+      "Supplier Management",
+      "IATF 16949",
+      "8D Problem Solving",
+      "Kaizen",
+      "OEE",
+      "PPAP",
+      "CAD Design",
+      "Industry 4.0",
+      "Technical Project Mgmt"
+    ],
+    "cat5": "Digital & AI Technologies",
+    "bars5": [
+      "Python Development",
+      "Generative AI & LLMs",
+      "Prompt Engineering",
+      "Data Analysis & Automation",
+      "AI-Assisted Workflows",
+      "API Integration & Scripting",
+      "Machine Learning Fundamentals"
+    ]
+  },
+  "certs": {
+    "label": "Credentials",
+    "title": "Education & <span class=\"gradient-text\">Certifications</span>",
+    "cards": [
+      {
+        "type": "Bachelor's Degree",
+        "title": "Industrial Electronics & Automation Engineering",
+        "issuer": "University of Vic – Central University of Catalonia",
+        "date": "2016 – 2018 · Barcelona, Spain"
+      },
+      {
+        "type": "Bachelor's Degree",
+        "title": "Mechatronics Engineering",
+        "issuer": "University of Vic – Central University of Catalonia",
+        "date": "2012 – 2016 · Barcelona, Spain"
+      },
+      {
+        "type": "License",
+        "title": "Driving License – Category B",
+        "issuer": "Dirección General de Tráfico",
+        "date": "Spain"
+      },
+      {
+        "type": "License",
+        "title": "PER – Recreational Boat Captain",
+        "issuer": "Ministerio de Transportes, Movilidad y Agenda Urbana",
+        "date": "Spain"
+      },
+      {
+        "type": "Recommended",
+        "title": "Six Sigma Green Belt",
+        "issuer": "ASQ / IASSC",
+        "date": "Target: 2025"
+      },
+      {
+        "type": "Recommended",
+        "title": "Industry 4.0 Practitioner",
+        "issuer": "SFIA / Digital Manufacturing",
+        "date": "Target: 2025"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Let's Connect",
+    "title": "Get In <span class=\"gradient-text\">Touch</span>",
+    "subtitle": "Open to new opportunities, collaborations, and engineering challenges.",
+    "emailH": "Email",
+    "phoneH": "Phone",
+    "locationH": "Location",
+    "locationV": "Barcelona, Catalonia, Spain",
+    "linkedin": "LinkedIn",
+    "emailMe": "Email Me",
+    "fName": "Full Name",
+    "fEmail": "Email Address",
+    "fCompany": "Company / Organization",
+    "fSubject": "Subject",
+    "fMessage": "Message",
+    "pName": "Your full name",
+    "pEmail": "your@email.com",
+    "pCompany": "Company name (optional)",
+    "pMessage": "Tell me about the opportunity or how I can help…",
+    "selDefault": "Select a subject…",
+    "optJob": "Job Opportunity",
+    "optCollab": "Collaboration",
+    "optConsulting": "Consulting Request",
+    "optOther": "Other",
+    "submit": "Send Message",
+    "note": "I typically respond within 24 hours."
+  },
+  "footer": {
+    "tagline": "Process Engineer · Industrial Automation Specialist · Industry 4.0 · Barcelona, Spain",
+    "navH": "Navigation",
+    "contactH": "Contact",
+    "copyright": "© 2025 Adrià Martínez Colomer. All rights reserved.",
+    "built": "Built with precision. Just like every production line."
+  },
+  "form": {
+    "errRequired": "Please fill in all required fields.",
+    "errEmail": "Please enter a valid email address.",
+    "sending": "Sending…",
+    "sent": "Message Sent!",
+    "success": "Thank you! I'll get back to you within 24 hours."
+  },
+  "a11y": {
+    "backToTop": "Back to top"
+  },
+  "ai": {
+    "label": "Digital Innovation",
+    "title": "Artificial Intelligence & <span class=\"gradient-text\">Digital Innovation</span>",
+    "subtitle": "Engineering beyond the factory floor — where manufacturing meets software, data, and AI.",
+    "intro": "I bring an engineer's rigor to digital problem-solving. Alongside my manufacturing work, I actively develop software, automate processes, and apply artificial intelligence to make engineering faster, smarter, and more data-driven.",
+    "bridge": [
+      "Manufacturing",
+      "Automation",
+      "Software",
+      "Data",
+      "Artificial Intelligence"
+    ],
+    "caps": [
+      {
+        "title": "AI & LLM Tools",
+        "text": "Daily use of large language models and generative AI to accelerate engineering analysis, documentation, and decision-making."
+      },
+      {
+        "title": "Python Development",
+        "text": "Building scripts and custom tools that automate repetitive engineering tasks, data processing, and reporting."
+      },
+      {
+        "title": "Process Automation",
+        "text": "Automating workflows across documentation, data handling, and engineering calculations to save time and reduce errors."
+      },
+      {
+        "title": "Data Analysis",
+        "text": "Turning manufacturing and process data into actionable insight that supports better engineering decisions."
+      },
+      {
+        "title": "AI-Assisted Workflows",
+        "text": "Integrating AI into real engineering workflows — from technical writing to troubleshooting and rapid prototyping."
+      },
+      {
+        "title": "Algorithmic Systems",
+        "text": "Designing logical, algorithmic solutions and lightweight software that connect data, automation, and production."
+      }
+    ],
+    "projTitle": "AI & Software Projects",
+    "projects": [
+      {
+        "tag": "Applied AI · Research",
+        "title": "AI-Powered Trading Research",
+        "description": "Research and development of quantitative systems combining data analysis, automation, and AI-assisted workflows to explore market patterns and decision models.",
+        "highlights": [
+          "Data pipelines & automated backtesting",
+          "AI-assisted strategy research",
+          "Python-based quantitative tooling"
+        ]
+      },
+      {
+        "tag": "Engineering Tools · Ongoing",
+        "title": "Industrial Engineering Automation Tools",
+        "description": "Custom software that automates repetitive engineering tasks — from data extraction and report generation to process calculations.",
+        "highlights": [
+          "Custom Python automation scripts",
+          "Automated reporting & documentation",
+          "Reduced manual engineering effort"
+        ]
+      },
+      {
+        "tag": "Data Analytics",
+        "title": "Data-Driven Manufacturing Analysis",
+        "description": "Analytics and automation that transform production and process data into insight to improve engineering decision-making.",
+        "highlights": [
+          "Process & quality data analysis",
+          "Automated data processing",
+          "Decision-support dashboards"
+        ]
+      },
+      {
+        "tag": "Generative AI",
+        "title": "AI-Enhanced Engineering Workflows",
+        "description": "Applying large language models to technical documentation, process engineering, and project execution to work faster and with higher quality.",
+        "highlights": [
+          "LLMs for technical documentation",
+          "AI-assisted troubleshooting",
+          "Faster project execution"
+        ]
+      }
+    ],
+    "i40Title": "Industry 4.0 & Smart Manufacturing",
+    "i40Intro": "Bringing data, connectivity, and intelligence to the factory floor — turning traditional production into smart, responsive manufacturing.",
+    "i40": [
+      "Smart Manufacturing",
+      "Digital Transformation",
+      "Data-Driven Manufacturing",
+      "AI-Assisted Engineering",
+      "Industrial Digitalization",
+      "Predictive Analytics",
+      "Connected Systems",
+      "Manufacturing Intelligence"
+    ],
+    "visionTitle": "The Future of Engineering",
+    "visionText": "I believe the next decade of engineering belongs to those who connect the physical and the digital — combining deep manufacturing know-how with software, data, and artificial intelligence.",
+    "visionPoints": [
+      {
+        "title": "AI in Manufacturing",
+        "text": "Moving from pilot projects to everyday engineering and production decisions."
+      },
+      {
+        "title": "Intelligent Automation",
+        "text": "Systems that adapt, learn, and optimize themselves in real time."
+      },
+      {
+        "title": "Human–AI Collaboration",
+        "text": "Engineers augmented by AI — faster analysis and more creative problem-solving."
+      },
+      {
+        "title": "Industry 5.0",
+        "text": "The human back at the center, supported by intelligent, sustainable, connected systems."
+      }
+    ]
+  }
+}

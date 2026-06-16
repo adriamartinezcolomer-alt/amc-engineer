@@ -20,22 +20,28 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" data-i18n-content="meta.ogTitle" content="Adrià Martínez Colomer | Industrial & Automation Engineer · Applied AI" />
-  <meta property="og:description" data-i18n-content="meta.ogDescription" content="Engineer at the intersection of automotive BIW manufacturing, industrial automation, and applied AI. 10+ years across SEAT, Volkswagen Group and Jordan Group." />
+  <!-- Open Graph (title/description are localised by i18n.js; image is static) -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://amc-engineer.com/" />
   <meta property="og:site_name" content="AMC Engineer" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://amc-engineer.com/assets/og-image.png" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="ca_ES" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:title" data-i18n-content="meta.ogTitle" content="Adrià Martínez Colomer | Process &amp; Automation Engineer" />
+  <meta property="og:description" data-i18n-content="meta.ogDescription" content="Process engineering, industrial automation, robotics, and AI applied to manufacturing. Personal engineering portfolio — Barcelona, Spain." />
+  <meta property="og:image" content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" />
+  <meta property="og:image:secure_url" content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Adrià Martínez Colomer — Industrial Automation, BIW Manufacturing and Applied AI engineer." />
-  <!-- Twitter Card -->
+  <meta property="og:image:alt" content="Adrià Martínez Colomer — Process &amp; Automation Engineer. Personal engineering portfolio." />
+  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" data-i18n-content="meta.twitterTitle" content="Adrià Martínez Colomer | Engineering · Automation · Applied AI" />
-  <meta name="twitter:description" data-i18n-content="meta.twitterDescription" content="Industrial & Automation Engineer | Applied AI | Industry 4.0 | Barcelona" />
-  <meta name="twitter:image" content="https://amc-engineer.com/assets/og-image.png" />
+  <meta name="twitter:title" data-i18n-content="meta.twitterTitle" content="Adrià Martínez Colomer | Process &amp; Automation Engineer" />
+  <meta name="twitter:description" data-i18n-content="meta.twitterDescription" content="Process engineering, industrial automation, robotics, and AI applied to manufacturing. Personal engineering portfolio — Barcelona, Spain." />
+  <meta name="twitter:image" content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" />
+  <meta name="twitter:image:alt" content="Adrià Martínez Colomer — Process &amp; Automation Engineer. Personal engineering portfolio." />
 
   <!-- hreflang (static, crawlable; kept in sync by i18n.js) -->
   <link rel="alternate" hreflang="en" href="https://amc-engineer.com/?lang=en" />
@@ -50,44 +56,77 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Structured Data: Person (Schema.org / JSON-LD) -->
+  <!-- Structured Data: Person + WebSite + ProfilePage (Schema.org / JSON-LD @graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Adrià Martínez Colomer",
-    "givenName": "Adrià",
-    "familyName": "Martínez Colomer",
-    "jobTitle": "Industrial & Automation Engineer",
-    "description": "Industrial and automation engineer specialized in automotive body-in-white (BIW) manufacturing, process industrialization, and applied AI.",
-    "url": "https://amc-engineer.com/",
-    "image": "https://amc-engineer.com/assets/og-image.png",
-    "email": "mailto:adria@martinez.colomer.cat",
-    "telephone": "+34686584989",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Barcelona",
-      "addressRegion": "Catalonia",
-      "addressCountry": "ES"
-    },
-    "nationality": "Spanish",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Vic – Central University of Catalonia"
-    },
-    "knowsLanguage": ["ca", "es", "en", "de"],
-    "knowsAbout": [
-      "BIW Manufacturing", "Resistance Spot Welding", "Self-Piercing Rivets",
-      "Structural Adhesives", "Process Industrialization", "Industrial Automation",
-      "Production Cell Design & Commissioning", "PFMEA", "IATF 16949", "Lean Manufacturing",
-      "Industry 4.0", "Python", "Generative AI", "Large Language Models", "Data Analysis"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Jordan Group"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://amc-engineer.com/#person",
+        "name": "Adrià Martínez Colomer",
+        "givenName": "Adrià",
+        "familyName": "Martínez Colomer",
+        "jobTitle": "Process & Automation Engineer",
+        "description": "Process and automation engineer focused on manufacturing engineering, industrial automation, robotics, and AI applied to manufacturing.",
+        "url": "https://amc-engineer.com/",
+        "image": "https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png",
+        "email": "mailto:adria@martinez.colomer.cat",
+        "telephone": "+34686584989",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressRegion": "Catalonia",
+          "addressCountry": "ES"
+        },
+        "nationality": "Spanish",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Vic – Central University of Catalonia"
+        },
+        "knowsLanguage": ["ca", "es", "en", "de"],
+        "knowsAbout": [
+          "Process Engineering",
+          "Industrial Automation",
+          "Manufacturing Engineering",
+          "Robotics",
+          "BIW Manufacturing",
+          "Resistance Spot Welding",
+          "PLC Systems",
+          "PFMEA",
+          "Lean Manufacturing",
+          "Industry 4.0",
+          "Applied Artificial Intelligence",
+          "Python"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Jordan Group"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://amc-engineer.com/#website",
+        "url": "https://amc-engineer.com/",
+        "name": "AMC Engineer",
+        "description": "Personal engineering portfolio of Adrià Martínez Colomer — process engineering, industrial automation, robotics, and AI applied to manufacturing.",
+        "inLanguage": ["en", "es", "ca", "de"],
+        "author": { "@id": "https://amc-engineer.com/#person" },
+        "publisher": { "@id": "https://amc-engineer.com/#person" },
+        "about": { "@id": "https://amc-engineer.com/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://amc-engineer.com/#profilepage",
+        "url": "https://amc-engineer.com/",
+        "name": "Adrià Martínez Colomer | Process & Automation Engineer",
+        "isPartOf": { "@id": "https://amc-engineer.com/#website" },
+        "mainEntity": { "@id": "https://amc-engineer.com/#person" },
+        "inLanguage": "en"
+      }
     ]
   }
   </script>

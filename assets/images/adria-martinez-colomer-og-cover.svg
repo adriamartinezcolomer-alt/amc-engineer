@@ -1,0 +1,203 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- base background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0C1626"/>
+      <stop offset="0.55" stop-color="#0A1220"/>
+      <stop offset="1" stop-color="#070D17"/>
+    </linearGradient>
+
+    <!-- soft focal glow near the robot -->
+    <radialGradient id="glow" cx="0.78" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#1C5FB0" stop-opacity="0.40"/>
+      <stop offset="0.45" stop-color="#143E78" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#0A1220" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- corner vignette to frame the composition -->
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#04080F" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- accent + robot stroke gradients -->
+    <linearGradient id="accent" x1="0" y1="0" x2="60" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5AA6FF"/>
+      <stop offset="1" stop-color="#1E6FE6"/>
+    </linearGradient>
+    <linearGradient id="arm" x1="0" y1="200" x2="0" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FB6FF"/>
+      <stop offset="1" stop-color="#2E72D6"/>
+    </linearGradient>
+
+    <!-- fine blueprint grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#9FC6FF" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <pattern id="gridMajor" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M200 0 H0 V200" fill="none" stroke="#9FC6FF" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- ===== background layers ===== -->
+  <rect width="1200" height="630" fill="#0A1220"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#gridMajor)"/>
+
+  <!-- faint concentric rings behind robot (depth) -->
+  <g fill="none" stroke="#6FA8F0" stroke-opacity="0.045" stroke-width="1">
+    <circle cx="945" cy="335" r="130"/>
+    <circle cx="945" cy="335" r="196"/>
+    <circle cx="945" cy="335" r="262"/>
+  </g>
+
+  <!-- faint circuit traces -->
+  <g stroke="#6FA8F0" stroke-opacity="0.07" stroke-width="1.4" fill="#6FA8F0" fill-opacity="0.18">
+    <path d="M36 96 H176 V150" fill="none"/>
+    <circle cx="36" cy="96" r="2.6"/><circle cx="176" cy="150" r="2.6"/>
+    <path d="M1052 64 V118 H1138" fill="none"/>
+    <circle cx="1052" cy="64" r="2.6"/><circle cx="1138" cy="118" r="2.6"/>
+    <path d="M540 566 H636 V524" fill="none"/>
+    <circle cx="540" cy="566" r="2.6"/><circle cx="636" cy="524" r="2.6"/>
+  </g>
+
+  <!-- ===== faint PLC / control architecture motif (lower-left) ===== -->
+  <g opacity="0.13" stroke="#7FB6FF" stroke-width="1.4" fill="none" font-family="JetBrains Mono, monospace">
+    <rect x="86" y="442" width="78" height="36" rx="3"/>
+    <rect x="200" y="442" width="62" height="36" rx="3"/>
+    <rect x="298" y="442" width="70" height="36" rx="3"/>
+    <rect x="404" y="450" width="44" height="20" rx="3"/>
+    <!-- connectors -->
+    <path d="M164 460 H200 M262 460 H298 M368 460 H404"/>
+    <path d="M196 460 l-7 -4 v8 z" fill="#7FB6FF" stroke="none"/>
+    <path d="M294 460 l-7 -4 v8 z" fill="#7FB6FF" stroke="none"/>
+    <path d="M400 460 l-7 -4 v8 z" fill="#7FB6FF" stroke="none"/>
+    <g fill="#9FC6FF" stroke="none" font-size="10" letter-spacing="0.5" text-anchor="middle">
+      <text x="125" y="464">PLC</text>
+      <text x="231" y="464">I/O</text>
+      <text x="333" y="464">DRIVE</text>
+      <text x="426" y="464">M</text>
+    </g>
+  </g>
+
+  <!-- robot reach/work envelope (dashed engineering annotation) -->
+  <path d="M678.1 305.5 A389 389 0 0 1 1367.6 335.6" fill="none" stroke="#6FA8F0"
+        stroke-opacity="0.13" stroke-width="1.3" stroke-dasharray="6 7"/>
+  <text x="762" y="196" text-anchor="end" font-family="JetBrains Mono, monospace" font-size="10"
+        letter-spacing="1.5" fill="#6F8FB8" fill-opacity="0.34">REACH ENVELOPE</text>
+
+  <!-- ===== signature: line-art 6-axis articulated robot ===== -->
+  <g>
+    <!-- engineering centerline through base axis (dash-dot) -->
+    <line x1="1015" y1="300" x2="1015" y2="478" stroke="#6FA8F0" stroke-opacity="0.30"
+          stroke-width="1.2" stroke-dasharray="10 4 2 4"/>
+    <!-- base joint angle arc -->
+    <path d="M1015 460 A40 40 0 0 0 992.9 466.7" fill="none" stroke="#6FA8F0"
+          stroke-opacity="0.45" stroke-width="1.4"/>
+
+    <!-- base plinth -->
+    <path d="M988 520 H1042 L1062 566 H968 Z" fill="#0E2138" fill-opacity="0.6"
+          stroke="url(#arm)" stroke-width="3"/>
+    <line x1="946" y1="566" x2="1084" y2="566" stroke="url(#arm)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="984" cy="558" r="2.6" fill="#7FB6FF"/>
+    <circle cx="1046" cy="558" r="2.6" fill="#7FB6FF"/>
+
+    <!-- link 1: shoulder -> elbow -->
+    <g transform="translate(1015,500) rotate(-123.57)">
+      <rect x="0" y="-23" width="154" height="46" rx="23" fill="#0E2138" fill-opacity="0.6"
+            stroke="url(#arm)" stroke-width="3"/>
+      <line x1="18" y1="0" x2="136" y2="0" stroke="#7FB6FF" stroke-opacity="0.25" stroke-width="2"/>
+    </g>
+    <!-- link 2: elbow -> wrist -->
+    <g transform="translate(930,372) rotate(-115.43)">
+      <rect x="0" y="-20" width="135" height="40" rx="20" fill="#0E2138" fill-opacity="0.6"
+            stroke="url(#arm)" stroke-width="3"/>
+      <line x1="16" y1="0" x2="119" y2="0" stroke="#7FB6FF" stroke-opacity="0.25" stroke-width="2"/>
+    </g>
+    <!-- link 3: wrist -> flange -->
+    <g transform="translate(872,250) rotate(-124.6)">
+      <rect x="0" y="-15" width="51" height="30" rx="15" fill="#0E2138" fill-opacity="0.6"
+            stroke="url(#arm)" stroke-width="2.8"/>
+    </g>
+
+    <!-- gripper tool body -->
+    <g transform="translate(843,208) rotate(-124.6)">
+      <rect x="-4" y="-13" width="22" height="26" rx="7" fill="#0E2138" fill-opacity="0.6"
+            stroke="url(#arm)" stroke-width="2.6"/>
+    </g>
+    <!-- gripper fingers -->
+    <path d="M834 197 L818 186 M839 201 L822 168" fill="none" stroke="url(#arm)"
+          stroke-width="2.6" stroke-linecap="round"/>
+
+    <!-- workpiece (manufactured part being handled) -->
+    <g transform="translate(806,172) rotate(-12)">
+      <rect x="-17" y="-17" width="34" height="34" rx="4" fill="#0E2138" fill-opacity="0.7"
+            stroke="url(#arm)" stroke-width="2.6"/>
+      <path d="M-17 -8 H17 M-8 -17 V17" stroke="#7FB6FF" stroke-opacity="0.30" stroke-width="1.2"/>
+    </g>
+
+    <!-- joints (housings) drawn on top of links -->
+    <g fill="#0A1220" stroke="url(#arm)">
+      <circle cx="1015" cy="500" r="22" stroke-width="3"/>
+      <circle cx="1015" cy="500" r="10" stroke-width="2"/>
+      <circle cx="930" cy="372" r="18" stroke-width="3"/>
+      <circle cx="930" cy="372" r="8" stroke-width="2"/>
+      <circle cx="872" cy="250" r="14" stroke-width="2.6"/>
+      <circle cx="872" cy="250" r="6" stroke-width="2"/>
+    </g>
+    <g fill="#7FB6FF">
+      <circle cx="1015" cy="500" r="3"/>
+      <circle cx="930" cy="372" r="2.6"/>
+      <circle cx="872" cy="250" r="2.2"/>
+    </g>
+
+    <!-- joint labels + diagram caption -->
+    <g font-family="JetBrains Mono, monospace" font-size="11" fill="#7FA6D6" fill-opacity="0.7"
+       letter-spacing="0.5">
+      <text x="1040" y="504">J1</text>
+      <text x="956" y="366">J2</text>
+      <text x="890" y="246">J3</text>
+    </g>
+    <text x="1015" y="586" text-anchor="middle" font-family="JetBrains Mono, monospace"
+          font-size="10.5" letter-spacing="2" fill="#6F8FB8" fill-opacity="0.55">6-AXIS ARTICULATED ROBOT</text>
+  </g>
+
+  <!-- ===== vignette over background, under text ===== -->
+  <rect width="1200" height="630" fill="url(#vig)"/>
+
+  <!-- ===== text block (left) ===== -->
+  <!-- eyebrow -->
+  <rect x="86" y="176" width="9" height="9" rx="1.5" fill="url(#accent)"/>
+  <text x="106" y="185" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600"
+        letter-spacing="3" fill="#6CA0DA">ENGINEERING PORTFOLIO</text>
+
+  <!-- name -->
+  <text x="84" y="262" font-family="Inter Display, Inter, sans-serif" font-weight="800"
+        font-size="60" letter-spacing="-0.8" fill="#EAF1FB">Adri&#224; Mart&#237;nez Colomer</text>
+
+  <!-- title -->
+  <text x="86" y="308" font-family="Inter, sans-serif" font-weight="500" font-size="30"
+        letter-spacing="0.2" fill="#6FA8F0">Process &amp; Automation Engineer</text>
+
+  <!-- divider -->
+  <line x1="86" y1="342" x2="110" y2="342" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="342" x2="520" y2="342" stroke="#3A567A" stroke-opacity="0.55" stroke-width="1.2"/>
+
+  <!-- keywords -->
+  <text x="86" y="378" font-family="Inter, sans-serif" font-weight="600" font-size="16.5"
+        letter-spacing="2.2" fill="#93A6C0">ROBOTICS &#8226; MANUFACTURING &#8226; AI &#8226; INDUSTRIAL AUTOMATION</text>
+
+  <!-- ===== corner registration marks (technical-drawing detail) ===== -->
+  <g stroke="#5A82B0" stroke-opacity="0.45" stroke-width="1.4">
+    <path d="M24 32 H40 M32 24 V40"/>
+    <path d="M1160 32 H1176 M1168 24 V40"/>
+    <path d="M24 598 H40 M32 590 V606"/>
+    <path d="M1160 598 H1176 M1168 590 V606"/>
+  </g>
+
+  <!-- subtle containing frame (helps on light preview backgrounds) -->
+  <rect x="16.5" y="16.5" width="1167" height="597" rx="2" fill="none"
+        stroke="#2B3E58" stroke-opacity="0.5" stroke-width="1"/>
+</svg>

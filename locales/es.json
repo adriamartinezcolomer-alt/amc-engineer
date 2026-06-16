@@ -367,21 +367,28 @@
     "optConsulting": "Solicitud de Consultoría",
     "optOther": "Otro",
     "submit": "Enviar Mensaje",
-    "note": "Normalmente respondo en menos de 24 horas."
+    "note": "Normalmente respondo en menos de 24 horas.",
+    "consent": "Consiento el tratamiento de mis datos para responder a mi consulta, de acuerdo con la <a href=\"/privacy-policy/\" target=\"_blank\" rel=\"noopener\">Política de Privacidad</a>."
   },
   "footer": {
     "tagline": "Ingeniero de Procesos · Especialista en Automatización Industrial · Industria 4.0 · Barcelona, España",
     "navH": "Navegación",
     "contactH": "Contacto",
     "copyright": "© {year} Adrià Martínez Colomer. Todos los derechos reservados.",
-    "built": "Construido con precisión. Como cada línea de producción."
+    "built": "Construido con precisión. Como cada línea de producción.",
+    "privacy": "Política de Privacidad",
+    "cookies": "Política de Cookies",
+    "legalNotice": "Aviso Legal",
+    "cookieSettings": "Configurar cookies"
   },
   "form": {
     "errRequired": "Por favor, completa todos los campos obligatorios.",
     "errEmail": "Por favor, introduce un correo electrónico válido.",
     "sending": "Enviando…",
     "sent": "¡Mensaje Enviado!",
-    "success": "¡Gracias! Te responderé en menos de 24 horas."
+    "success": "¡Gracias! Te responderé en menos de 24 horas.",
+    "errConsent": "Acepta la Política de Privacidad para enviar tu mensaje.",
+    "errCaptcha": "Completa la verificación para enviar."
   },
   "a11y": {
     "backToTop": "Volver arriba",

@@ -24,7 +24,11 @@
     "greeting": "Hello, I'm",
     "banner": "Open to opportunities across Spain and Europe.",
     "headline": "I turn automotive <strong>body-in-white</strong> concepts into running, automated production lines — and bring <strong>software &amp; AI</strong> to the factory floor.",
-    "pillars": ["Industrial Automation Engineer", "BIW Manufacturing Specialist", "Applied AI Practitioner"],
+    "pillars": [
+      "Industrial Automation Engineer",
+      "BIW Manufacturing Specialist",
+      "Applied AI Practitioner"
+    ],
     "rolePrefix": "I specialize in ",
     "roles": [
       "BIW Welding Processes",
@@ -363,21 +367,28 @@
     "optConsulting": "Consulting Request",
     "optOther": "Other",
     "submit": "Send Message",
-    "note": "I typically respond within 24 hours."
+    "note": "I typically respond within 24 hours.",
+    "consent": "I consent to my data being processed to respond to my enquiry, in accordance with the <a href=\"/privacy-policy/\" target=\"_blank\" rel=\"noopener\">Privacy Policy</a>."
   },
   "footer": {
     "tagline": "Process Engineer · Industrial Automation Specialist · Industry 4.0 · Barcelona, Spain",
     "navH": "Navigation",
     "contactH": "Contact",
     "copyright": "© {year} Adrià Martínez Colomer. All rights reserved.",
-    "built": "Built with precision. Just like every production line."
+    "built": "Built with precision. Just like every production line.",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Policy",
+    "legalNotice": "Legal Notice",
+    "cookieSettings": "Cookie settings"
   },
   "form": {
     "errRequired": "Please fill in all required fields.",
     "errEmail": "Please enter a valid email address.",
     "sending": "Sending…",
     "sent": "Message Sent!",
-    "success": "Thank you! I'll get back to you within 24 hours."
+    "success": "Thank you! I'll get back to you within 24 hours.",
+    "errConsent": "Please accept the Privacy Policy to send your message.",
+    "errCaptcha": "Please complete the verification challenge."
   },
   "a11y": {
     "backToTop": "Back to top",

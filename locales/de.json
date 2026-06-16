@@ -367,21 +367,28 @@
     "optConsulting": "Beratungsanfrage",
     "optOther": "Sonstiges",
     "submit": "Nachricht senden",
-    "note": "Ich antworte in der Regel innerhalb von 24 Stunden."
+    "note": "Ich antworte in der Regel innerhalb von 24 Stunden.",
+    "consent": "Ich willige in die Verarbeitung meiner Daten zur Beantwortung meiner Anfrage gemäß der <a href=\"/privacy-policy/\" target=\"_blank\" rel=\"noopener\">Datenschutzerklärung</a> ein."
   },
   "footer": {
     "tagline": "Prozessingenieur · Spezialist für Automatisierungstechnik · Industrie 4.0 · Barcelona, Spanien",
     "navH": "Navigation",
     "contactH": "Kontakt",
     "copyright": "© {year} Adrià Martínez Colomer. Alle Rechte vorbehalten.",
-    "built": "Mit Präzision gebaut. Wie jede Produktionslinie."
+    "built": "Mit Präzision gebaut. Wie jede Produktionslinie.",
+    "privacy": "Datenschutzerklärung",
+    "cookies": "Cookie-Richtlinie",
+    "legalNotice": "Impressum",
+    "cookieSettings": "Cookie-Einstellungen"
   },
   "form": {
     "errRequired": "Bitte füllen Sie alle Pflichtfelder aus.",
     "errEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "sending": "Wird gesendet…",
     "sent": "Nachricht gesendet!",
-    "success": "Vielen Dank! Ich melde mich innerhalb von 24 Stunden bei Ihnen."
+    "success": "Vielen Dank! Ich melde mich innerhalb von 24 Stunden bei Ihnen.",
+    "errConsent": "Bitte akzeptieren Sie die Datenschutzerklärung, um Ihre Nachricht zu senden.",
+    "errCaptcha": "Bitte schließen Sie die Verifizierung ab."
   },
   "a11y": {
     "backToTop": "Nach oben",

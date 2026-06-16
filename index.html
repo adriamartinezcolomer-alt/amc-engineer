@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark" class="i18n-pending">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKE2JLHF12"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YKE2JLHF12');
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Content Security Policy (enforced on GitHub Pages via meta; mirror as a real
+       header at Cloudflare — see docs/SECURITY.md — to also send frame-ancestors). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://formspree.io https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; form-action 'self' https://formspree.io; manifest-src 'self'; upgrade-insecure-requests" />
   <title data-i18n="meta.title">Adrià Martínez Colomer | Process & Automation Engineer</title>
   <meta name="description" data-i18n-content="meta.description" content="Industrial & automation engineer specialized in automotive BIW manufacturing, process industrialization, and applied AI. 10+ years across SEAT, Volkswagen Group and Jordan Group. Based in Barcelona, Spain." />
   <meta name="author" content="Adrià Martínez Colomer" />
@@ -49,19 +43,10 @@
   <link rel="alternate" hreflang="ca" href="https://amc-engineer.com/?lang=ca" />
   <link rel="alternate" hreflang="de" href="https://amc-engineer.com/?lang=de" />
   <link rel="alternate" hreflang="x-default" href="https://amc-engineer.com/" />
-  <!-- Anti-flicker: apply saved theme + language guard before first paint -->
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('theme');
-        if (t) document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
-    })();
-  </script>
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <!-- Anti-flicker: apply saved theme before first paint (external for CSP) -->
+  <script src="js/theme-init.js"></script>
+  <!-- Self-hosted fonts (no external Google Fonts requests) -->
+  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 
@@ -746,7 +731,7 @@
           </h3>
           <div class="language-grid">
             <div class="language-item">
-              <div class="language-flag"><img src="assets/flags/ca.svg" alt="Català"></div>
+              <div class="language-flag">🏴󠁥󠁳󠁣󠁴󠁿</div>
               <div class="language-info">
                 <span class="language-name" data-i18n="skills.langs.0.name">Catalan</span>
                 <span class="language-level native" data-i18n="skills.langs.0.level">Native</span>
@@ -963,17 +948,22 @@
       method="POST"
       aria-label="Contact form"
       novalidate>
+          <!-- Honeypot: hidden from real users; Formspree's _gotcha auto-discards spam -->
+          <div class="form__hp" aria-hidden="true">
+            <label for="company_url">Leave this field empty</label>
+            <input type="text" id="company_url" name="_gotcha" tabindex="-1" autocomplete="off" />
+          </div>
           <div class="form__group">
             <label for="name" class="form__label" data-i18n="contact.fName">Full Name</label>
-            <input type="text" id="name" name="name" class="form__input" data-i18n-placeholder="contact.pName" placeholder="Your full name" required aria-required="true" />
+            <input type="text" id="name" name="name" class="form__input" data-i18n-placeholder="contact.pName" placeholder="Your full name" required aria-required="true" maxlength="100" autocomplete="name" />
           </div>
           <div class="form__group">
             <label for="email" class="form__label" data-i18n="contact.fEmail">Email Address</label>
-            <input type="email" id="email" name="email" class="form__input" data-i18n-placeholder="contact.pEmail" placeholder="your@email.com" required aria-required="true" />
+            <input type="email" id="email" name="email" class="form__input" data-i18n-placeholder="contact.pEmail" placeholder="your@email.com" required aria-required="true" maxlength="150" autocomplete="email" inputmode="email" />
           </div>
           <div class="form__group">
             <label for="company" class="form__label" data-i18n="contact.fCompany">Company / Organization</label>
-            <input type="text" id="company" name="company" class="form__input" data-i18n-placeholder="contact.pCompany" placeholder="Company name (optional)" />
+            <input type="text" id="company" name="company" class="form__input" data-i18n-placeholder="contact.pCompany" placeholder="Company name (optional)" maxlength="120" autocomplete="organization" />
           </div>
           <div class="form__group">
             <label for="subject" class="form__label" data-i18n="contact.fSubject">Subject</label>
@@ -987,10 +977,17 @@
           </div>
           <div class="form__group">
             <label for="message" class="form__label" data-i18n="contact.fMessage">Message</label>
-            <textarea id="message" name="message" class="form__input form__textarea" data-i18n-placeholder="contact.pMessage" placeholder="Tell me about the opportunity or how I can help…" rows="5" required aria-required="true"></textarea>
+            <textarea id="message" name="message" class="form__input form__textarea" data-i18n-placeholder="contact.pMessage" placeholder="Tell me about the opportunity or how I can help…" rows="5" required aria-required="true" maxlength="2000"></textarea>
           </div>
+          <div class="form__consent">
+            <input type="checkbox" id="consent" name="consent" class="form__check" required aria-required="true" />
+            <label for="consent" class="form__consent-label" data-i18n="contact.consent" data-i18n-html>I consent to my data being processed to respond to my enquiry, in accordance with the <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>.</label>
+          </div>
+          <!-- Cloudflare Turnstile (privacy-friendly CAPTCHA). Inactive until a site key
+               is set in js/main.js (TURNSTILE_SITEKEY) — see docs/SECURITY.md. -->
+          <div class="cf-turnstile form__turnstile" data-sitekey="" data-theme="auto" data-size="flexible"></div>
           <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             <span data-i18n="contact.submit">Send Message</span>
           </button>
           <p class="form__note" data-i18n="contact.note">I typically respond within 24 hours.</p>
@@ -1027,6 +1024,12 @@
       </div>
       <div class="footer__bottom">
         <p data-i18n="footer.copyright" data-year>&copy; <span class="js-year">2026</span> Adrià Martínez Colomer. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="/privacy-policy/" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="/cookie-policy/" data-i18n="footer.cookies">Cookie Policy</a>
+          <a href="/legal-notice/" data-i18n="footer.legalNotice">Legal Notice</a>
+          <button type="button" data-cookie-settings data-i18n="footer.cookieSettings">Cookie settings</button>
+        </nav>
         <p data-i18n="footer.built">Built with precision. Just like every production line.</p>
       </div>
     </div>
@@ -1040,5 +1043,6 @@
 
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/consent.js" defer></script>
 </body>
 </html>

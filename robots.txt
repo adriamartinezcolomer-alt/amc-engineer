@@ -1,8 +1,6 @@
 # robots.txt — amc-engineer.com
 User-agent: *
 Allow: /
-
-# Block nothing critical; allow full crawl of the single-page portfolio.
-Disallow:
+Disallow: /docs/
 
 Sitemap: https://amc-engineer.com/sitemap.xml

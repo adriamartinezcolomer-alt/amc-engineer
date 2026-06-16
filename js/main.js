@@ -176,6 +176,22 @@ function tf(key, fallback) {
   return v != null ? v : fallback;
 }
 
+/* Cloudflare Turnstile — privacy-friendly bot protection.
+   Leave empty to keep it disabled (form still works). To enable: create a
+   Turnstile widget in the Cloudflare dashboard and paste the SITE key below. */
+const TURNSTILE_SITEKEY = '';
+
+if (TURNSTILE_SITEKEY) {
+  const widget = document.querySelector('.cf-turnstile');
+  if (widget) {
+    widget.setAttribute('data-sitekey', TURNSTILE_SITEKEY);
+    const s = document.createElement('script');
+    s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+    s.async = true; s.defer = true;
+    document.head.appendChild(s);
+  }
+}
+
 contactForm?.addEventListener('submit', async e => {
   e.preventDefault();
 
@@ -191,6 +207,21 @@ contactForm?.addEventListener('submit', async e => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(data.email)) {
     showFormFeedback(tf('form.errEmail', 'Please enter a valid email address.'), 'error');
+    return;
+  }
+
+  // GDPR: explicit consent required before processing the enquiry
+  if (!contactForm.querySelector('#consent')?.checked) {
+    showFormFeedback(tf('form.errConsent', 'Please accept the Privacy Policy to send your message.'), 'error');
+    return;
+  }
+
+  // Honeypot: real users never fill this field. If present, it's a bot — abort silently.
+  if (data._gotcha) { return; }
+
+  // Cloudflare Turnstile (only enforced when a site key is configured)
+  if (TURNSTILE_SITEKEY && !data['cf-turnstile-response']) {
+    showFormFeedback(tf('form.errCaptcha', 'Please complete the verification challenge.'), 'error');
     return;
   }
 
@@ -236,31 +267,18 @@ function showFormFeedback(message, type) {
   const existing = document.querySelector('.form__feedback');
   if (existing) existing.remove();
 
+  // Styling lives in style.css (.form__feedback) — no inline styles, CSP-friendly.
   const div = document.createElement('div');
   div.className = `form__feedback form__feedback--${type}`;
+  div.setAttribute('role', type === 'error' ? 'alert' : 'status');
+  div.setAttribute('aria-live', type === 'error' ? 'assertive' : 'polite');
   div.textContent = message;
-  div.style.cssText = `
-    padding:.75em 1em;
-    border-radius:.5rem;
-    font-size:.85rem;
-    font-weight:500;
-    margin-top:.5rem;
-    background:${type === 'success' ? 'rgba(46,204,113,.12)' : 'rgba(231,76,60,.12)'};
-    border:1px solid ${type === 'success' ? 'rgba(46,204,113,.3)' : 'rgba(231,76,60,.3)'};
-    color:${type === 'success' ? '#2ECC71' : '#E74C3C'};
-  `;
 
   contactForm.appendChild(div);
   setTimeout(() => div.remove(), 5000);
 }
 
-/* ── 12. SPIN ANIMATION FOR BUTTON ─────────────────────────── */
-const style = document.createElement('style');
-style.textContent = `
-  .spin { animation: spin .8s linear infinite; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-`;
-document.head.appendChild(style);
+/* ── 12. (spin animation moved to style.css) ───────────────── */
 
 /* ── 13. SMOOTH SCROLL FOR ALL ANCHOR LINKS ─────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

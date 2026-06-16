@@ -77,67 +77,22 @@ const sectionObserver = new IntersectionObserver(entries => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-/* ── 5. TYPEWRITER EFFECT (i18n-aware) ──────────────────────── */
-const typewriterEl = document.getElementById('typewriter');
-
-// Default roles; replaced live by the active language (window.I18n).
-let roles = [
-  'BIW Welding Processes',
-  'Industrial Automation',
-  'Process Industrialization',
-  'Industry 4.0 Systems',
-  'Manufacturing Engineering',
-  'Production Cell Design',
-];
-
-let roleIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-let typeTimeout;
-let typeGeneration = 0; // invalidates pending timeouts on language change
-
-function getRoles() {
-  const fromI18n = window.I18n && window.I18n.t('hero.roles');
-  return Array.isArray(fromI18n) && fromI18n.length ? fromI18n : roles;
+/* ── 5. DYNAMIC COPYRIGHT YEAR (i18n-aware) ─────────────────── */
+// Keeps the footer year current forever. Works in three paths:
+//  • no-JS / pre-i18n: the inline <span class="js-year"> shows a fallback year
+//  • after i18n applies a locale string containing the {year} token
+function stampYear() {
+  const year = String(new Date().getFullYear());
+  document.querySelectorAll('[data-year]').forEach(el => {
+    if (el.textContent.includes('{year}')) {
+      el.textContent = el.textContent.replace('{year}', year);
+    }
+    const span = el.querySelector('.js-year');
+    if (span) span.textContent = year;
+  });
 }
-
-function typeWriter(generation) {
-  if (generation !== typeGeneration) return; // a newer language took over
-  const current = roles[roleIndex] || '';
-
-  if (isDeleting) charIndex--; else charIndex++;
-
-  if (typewriterEl) typewriterEl.textContent = current.slice(0, charIndex);
-
-  let speed = isDeleting ? 40 : 80;
-
-  if (!isDeleting && charIndex === current.length) {
-    speed = 2200;
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    roleIndex = (roleIndex + 1) % roles.length;
-    speed = 400;
-  }
-
-  typeTimeout = setTimeout(() => typeWriter(generation), speed);
-}
-
-function startTypewriter() {
-  clearTimeout(typeTimeout);
-  roles = getRoles();
-  roleIndex = 0;
-  charIndex = 0;
-  isDeleting = false;
-  typeGeneration++;
-  typeWriter(typeGeneration);
-}
-
-// Restart with translated roles whenever the language changes.
-document.addEventListener('i18n:changed', startTypewriter);
-
-// Kick off immediately (in case i18n is delayed or unavailable).
-startTypewriter();
+document.addEventListener('i18n:changed', stampYear);
+stampYear();
 
 /* ── 6. SCROLL REVEAL (INTERSECTION OBSERVER) ──────────────── */
 const revealObserver = new IntersectionObserver(entries => {
@@ -164,22 +119,9 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-/* ── 8. SKILL BAR ANIMATIONS ────────────────────────────────── */
-const skillObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.querySelectorAll('.skill-bar__fill').forEach(bar => {
-        const target = bar.dataset.target || '0';
-        setTimeout(() => {
-          bar.style.width = `${target}%`;
-        }, 200);
-      });
-      skillObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
-
-document.querySelectorAll('.skills__category').forEach(cat => skillObserver.observe(cat));
+/* ── 8. (removed) SKILL BAR ANIMATIONS ──────────────────────── */
+// Percentage skill bars were replaced by a proficiency-level system
+// (Expert / Advanced / Proficient / Working Knowledge) — no JS needed.
 
 /* ── 9. COUNTER ANIMATION ───────────────────────────────────── */
 function animateCounter(el, target, duration = 1500) {
@@ -252,8 +194,8 @@ contactForm?.addEventListener('submit', async e => {
     return;
   }
 
-  // Simulate submission (replace with actual endpoint)
-   submitBtn.disabled = true;
+  // Submit to Formspree
+  submitBtn.disabled = true;
 submitBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> ${tf('form.sending', 'Sending…')}`;
 
 try {
@@ -331,17 +273,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ── 14. BACKGROUND CANVAS GRADIENT ANIMATION ───────────────── */
-const canvas = document.getElementById('heroCanvas');
-if (canvas) {
-  let mouseX = 0.5, mouseY = 0.5;
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX / window.innerWidth;
-    mouseY = e.clientY / window.innerHeight;
-  }, { passive: true });
-}
-
-/* ── 15. KEYBOARD NAVIGATION ────────────────────────────────── */
+/* ── 14. KEYBOARD NAVIGATION ────────────────────────────────── */
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     navLinks.classList.remove('open');

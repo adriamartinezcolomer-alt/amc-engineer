@@ -4,21 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="meta.title">Adrià Martínez Colomer | Process & Automation Engineer</title>
-  <meta name="description" data-i18n-content="meta.description" content="Process Engineer specializing in industrial automation, BIW welding, and Industry 4.0. 10+ years in automotive manufacturing. Based in Barcelona, Spain." />
-  <meta name="keywords" data-i18n-content="meta.keywords" content="Process Engineer, Automation Engineer, Industry 4.0, BIW Welding, Mechatronics, Industrial Automation, SEAT, Volkswagen, Barcelona, Smart Manufacturing" />
+  <meta name="description" data-i18n-content="meta.description" content="Industrial & automation engineer specialized in automotive BIW manufacturing, process industrialization, and applied AI. 10+ years across SEAT, Volkswagen Group and Jordan Group. Based in Barcelona, Spain." />
   <meta name="author" content="Adrià Martínez Colomer" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://martinez.colomer.cat/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0D1117" />
+  <link rel="canonical" href="https://amc-engineer.com/" />
+
+  <!-- Favicons & PWA -->
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/assets/favicon-16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
   <!-- Open Graph -->
-  <meta property="og:title" data-i18n-content="meta.ogTitle" content="Adrià Martínez Colomer | Process & Automation Engineer" />
-  <meta property="og:description" data-i18n-content="meta.ogDescription" content="10+ years in automotive manufacturing, BIW assembly, and industrial automation. Expert in process industrialization and smart manufacturing." />
+  <meta property="og:title" data-i18n-content="meta.ogTitle" content="Adrià Martínez Colomer | Industrial & Automation Engineer · Applied AI" />
+  <meta property="og:description" data-i18n-content="meta.ogDescription" content="Engineer at the intersection of automotive BIW manufacturing, industrial automation, and applied AI. 10+ years across SEAT, Volkswagen Group and Jordan Group." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://martinez.colomer.cat" />
+  <meta property="og:url" content="https://amc-engineer.com/" />
+  <meta property="og:site_name" content="AMC Engineer" />
   <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://amc-engineer.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Adrià Martínez Colomer — Industrial Automation, BIW Manufacturing and Applied AI engineer." />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" data-i18n-content="meta.twitterTitle" content="Adrià Martínez Colomer | Process Engineer" />
-  <meta name="twitter:description" data-i18n-content="meta.twitterDescription" content="Process Engineer | Industrial Automation | Industry 4.0 | Barcelona" />
+  <meta name="twitter:title" data-i18n-content="meta.twitterTitle" content="Adrià Martínez Colomer | Engineering · Automation · Applied AI" />
+  <meta name="twitter:description" data-i18n-content="meta.twitterDescription" content="Industrial & Automation Engineer | Applied AI | Industry 4.0 | Barcelona" />
+  <meta name="twitter:image" content="https://amc-engineer.com/assets/og-image.png" />
+
+  <!-- hreflang (static, crawlable; kept in sync by i18n.js) -->
+  <link rel="alternate" hreflang="en" href="https://amc-engineer.com/?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://amc-engineer.com/?lang=es" />
+  <link rel="alternate" hreflang="ca" href="https://amc-engineer.com/?lang=ca" />
+  <link rel="alternate" hreflang="de" href="https://amc-engineer.com/?lang=de" />
+  <link rel="alternate" hreflang="x-default" href="https://amc-engineer.com/" />
   <!-- Anti-flicker: apply saved theme + language guard before first paint -->
   <script>
     (function () {
@@ -31,11 +52,55 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data: Person (Schema.org / JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adrià Martínez Colomer",
+    "givenName": "Adrià",
+    "familyName": "Martínez Colomer",
+    "jobTitle": "Industrial & Automation Engineer",
+    "description": "Industrial and automation engineer specialized in automotive body-in-white (BIW) manufacturing, process industrialization, and applied AI.",
+    "url": "https://amc-engineer.com/",
+    "image": "https://amc-engineer.com/assets/og-image.png",
+    "email": "mailto:adria@martinez.colomer.cat",
+    "telephone": "+34686584989",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Barcelona",
+      "addressRegion": "Catalonia",
+      "addressCountry": "ES"
+    },
+    "nationality": "Spanish",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Vic – Central University of Catalonia"
+    },
+    "knowsLanguage": ["ca", "es", "en", "de"],
+    "knowsAbout": [
+      "BIW Manufacturing", "Resistance Spot Welding", "Self-Piercing Rivets",
+      "Structural Adhesives", "Process Industrialization", "Industrial Automation",
+      "Production Cell Design & Commissioning", "PFMEA", "IATF 16949", "Lean Manufacturing",
+      "Industry 4.0", "Python", "Generative AI", "Large Language Models", "Data Analysis"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Jordan Group"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a href="#home" class="skip-link" data-i18n="a11y.skip">Skip to main content</a>
 
   <!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
   <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
@@ -74,6 +139,8 @@
     </div>
   </nav>
 
+  <main id="main">
+
   <!-- ═══════════════════════ HERO ═══════════════════════ -->
   <section id="home" class="hero" aria-label="Introduction">
     <div class="hero__bg-canvas" id="heroCanvas"></div>
@@ -82,32 +149,36 @@
         <span class="hero__banner-dot"></span>
         <span data-i18n="hero.banner">Open to opportunities across Spain and Europe.</span>
       </div>
-      <p class="hero__greeting animate-fade-up" data-delay="50" data-i18n="hero.greeting">Hello, I'm</p>
-      <h1 class="hero__name animate-fade-up" data-delay="150">Adrià Martínez<br /><span class="gradient-text">Colomer</span></h1>
-      <div class="hero__roles animate-fade-up" data-delay="250">
-        <span class="hero__role-prefix" data-i18n="hero.rolePrefix">I specialize in </span>
-        <span class="hero__typewriter" id="typewriter" aria-label="Specializations"></span>
-      </div>
-      <p class="hero__description animate-fade-up" data-delay="350" data-i18n="hero.description" data-i18n-html>
-        Process Engineer with 10+ years in <strong>automotive BIW manufacturing</strong>,
-        industrial automation, and <strong>Industry 4.0</strong> transformation.
-        Driving measurable impact at SEAT · Volkswagen Group · Jordan Group.
+      <h1 class="hero__name animate-fade-up" data-delay="100">Adrià Martínez<br /><span class="gradient-text">Colomer</span></h1>
+      <p class="hero__headline animate-fade-up" data-delay="200" data-i18n="hero.headline" data-i18n-html>
+        I turn automotive <strong>body-in-white</strong> concepts into running, automated production lines —
+        and bring <strong>software &amp; AI</strong> to the factory floor.
       </p>
-      <div class="hero__cta animate-fade-up" data-delay="450">
+      <div class="hero__pillars animate-fade-up" data-delay="300" role="list" aria-label="Core specializations">
+        <span class="hero__pillar" role="listitem" data-i18n="hero.pillars.0">Industrial Automation Engineer</span>
+        <span class="hero__pillar" role="listitem" data-i18n="hero.pillars.1">BIW Manufacturing Specialist</span>
+        <span class="hero__pillar hero__pillar--accent" role="listitem" data-i18n="hero.pillars.2">Applied AI Practitioner</span>
+      </div>
+      <p class="hero__description animate-fade-up" data-delay="380" data-i18n="hero.description" data-i18n-html>
+        A decade industrializing welded assemblies across <strong>SEAT</strong>, the <strong>Volkswagen Group</strong>
+        and <strong>Jordan Group</strong> — from robotic welding cells (RSW, SPR, structural adhesives) to
+        PFMEA, commissioning, and data-driven process engineering.
+      </p>
+      <div class="hero__cta animate-fade-up" data-delay="460">
         <a href="#contact" class="btn btn--primary">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <span data-i18n="hero.ctaContact">Get In Touch</span>
         </a>
         <a href="#experience" class="btn btn--secondary">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
           <span data-i18n="hero.ctaExperience">View Experience</span>
         </a>
-        <a href="../cvs/CV_EN_Adria_Martinez_Colomer.docx" class="btn btn--outline" data-i18n-href="hero.cvHref" download>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <a href="cv/CV_EN_Adria_Martinez_Colomer.docx" class="btn btn--outline" data-i18n-href="hero.cvHref" download>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           <span data-i18n="hero.ctaCV">Download CV</span>
         </a>
       </div>
-      <div class="hero__stats animate-fade-up" data-delay="550">
+      <div class="hero__stats animate-fade-up" data-delay="560">
         <div class="stat">
           <span class="stat__number" data-target="10">0</span><span class="stat__plus">+</span>
           <span class="stat__label" data-i18n="hero.statYears">Years Experience</span>
@@ -142,13 +213,14 @@
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label" data-i18n="about.label">About Me</span>
-        <h2 class="section__title" id="about-title" data-i18n="about.title" data-i18n-html>Engineering Excellence <span class="gradient-text">Driven by Passion</span></h2>
+        <h2 class="section__title" id="about-title" data-i18n="about.title" data-i18n-html>Where the Factory Floor Meets <span class="gradient-text">Code &amp; Data</span></h2>
       </div>
       <div class="about__grid">
         <div class="about__image-wrapper reveal">
-          <div class="about__image-placeholder">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <span data-i18n="about.photo">Professional Photo</span>
+          <div class="about__image">
+            <!-- Drop-in: replace the line below with a real headshot, e.g.
+                 <img src="assets/adria.jpg" alt="Adrià Martínez Colomer" class="about__photo" width="600" height="800" /> -->
+            <img src="assets/avatar.svg" alt="Adrià Martínez Colomer — Industrial, Automation & AI engineer" class="about__photo" width="600" height="800" loading="lazy" />
           </div>
           <div class="about__badges">
             <div class="badge badge--accent" data-i18n="about.badge1">Mechatronics Engineer</div>
@@ -476,18 +548,18 @@
       <!-- AI & Software Projects -->
       <h3 class="ai__subhead reveal" data-i18n="ai.projTitle">AI & Software Projects</h3>
       <div class="projects__grid">
-        <article class="project-card reveal" aria-label="AI-Powered Trading Research project">
-          <div class="project-card__icon">📈</div>
-          <div class="project-card__tag" data-i18n="ai.projects.0.tag">Applied AI · Research</div>
-          <h3 class="project-card__title" data-i18n="ai.projects.0.title">AI-Powered Trading Research</h3>
-          <p class="project-card__description" data-i18n="ai.projects.0.description">Research and development of quantitative systems combining data analysis, automation, and AI-assisted workflows to explore market patterns and decision models.</p>
+        <article class="project-card reveal" aria-label="AI-Assisted Engineering Documentation project">
+          <div class="project-card__icon">📝</div>
+          <div class="project-card__tag" data-i18n="ai.projects.0.tag">Applied AI · Engineering</div>
+          <h3 class="project-card__title" data-i18n="ai.projects.0.title">AI-Assisted PFMEA &amp; Technical Documentation</h3>
+          <p class="project-card__description" data-i18n="ai.projects.0.description">Using large language models to accelerate the drafting and review of engineering documentation — PFMEAs, control plans, 8D reports, and work instructions — always with an engineer in the loop for validation.</p>
           <ul class="project-card__highlights">
-            <li data-i18n="ai.projects.0.highlights.0">Data pipelines &amp; automated backtesting</li>
-            <li data-i18n="ai.projects.0.highlights.1">AI-assisted strategy research</li>
-            <li data-i18n="ai.projects.0.highlights.2">Python-based quantitative tooling</li>
+            <li data-i18n="ai.projects.0.highlights.0">LLM-assisted PFMEA &amp; control-plan drafting</li>
+            <li data-i18n="ai.projects.0.highlights.1">8D &amp; root-cause analysis support</li>
+            <li data-i18n="ai.projects.0.highlights.2">Faster, more consistent technical writing</li>
           </ul>
           <div class="project-card__tech">
-            <span>Python</span><span>Pandas</span><span>LLMs</span><span>Data Analysis</span>
+            <span>Python</span><span>LLMs</span><span>Prompt Eng.</span><span>PFMEA</span>
           </div>
         </article>
 
@@ -588,6 +660,12 @@
         <span class="section__label" data-i18n="skills.label">Expertise</span>
         <h2 class="section__title" id="skills-title" data-i18n="skills.title" data-i18n-html>Technical <span class="gradient-text">Skills</span></h2>
       </div>
+      <div class="skills__legend reveal" aria-hidden="true">
+        <span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Expert</span>
+        <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+        <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+        <span class="skill-level skill-level--working" data-i18n="skills.levels.working">Working Knowledge</span>
+      </div>
       <div class="skills__grid">
 
         <div class="skills__category reveal">
@@ -595,32 +673,32 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
             <span data-i18n="skills.cat1">Engineering & Process</span>
           </h3>
-          <div class="skill-bars">
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars1.0">BIW Welding (RSW, SPR, Adhesives)</span><span class="skill-bar__pct">95%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="95"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars1.1">Process Industrialization</span><span class="skill-bar__pct">92%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="92"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars1.2">Industrial Automation & Cell Design</span><span class="skill-bar__pct">82%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="82"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars1.3">Lean &amp; Continuous Improvement</span><span class="skill-bar__pct">78%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="78"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars1.4">FMEA / Quality Systems (IATF 16949)</span><span class="skill-bar__pct">80%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="80"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars1.5">Supplier Management &amp; Technical Reviews</span><span class="skill-bar__pct">75%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="75"></div></div>
-            </div>
-          </div>
+          <ul class="skill-list">
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars1.0">BIW Welding (RSW, SPR, Adhesives)</span>
+              <span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Expert</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars1.1">Process Industrialization</span>
+              <span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Expert</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars1.2">Industrial Automation &amp; Cell Design</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars1.3">Lean &amp; Continuous Improvement</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars1.4">FMEA / Quality Systems (IATF 16949)</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars1.5">Supplier Management &amp; Technical Reviews</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+          </ul>
         </div>
 
         <div class="skills__category reveal">
@@ -628,28 +706,28 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             <span data-i18n="skills.cat2">Software & Tools</span>
           </h3>
-          <div class="skill-bars">
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars2.0">CAD (AutoCAD / SolidWorks / CATIA)</span><span class="skill-bar__pct">75%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="75"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars2.1">Microsoft Office Suite (Advanced Excel)</span><span class="skill-bar__pct">88%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="88"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars2.2">PLC Software (Siemens TIA / Allen-Bradley)</span><span class="skill-bar__pct">62%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="62"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars2.3">SAP / ERP Systems</span><span class="skill-bar__pct">65%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="65"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars2.4">Industry 4.0 / IoT / MES</span><span class="skill-bar__pct">60%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="60"></div></div>
-            </div>
-          </div>
+          <ul class="skill-list">
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars2.0">CAD (AutoCAD / SolidWorks / CATIA)</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars2.1">Microsoft Office Suite (Advanced Excel)</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars2.2">PLC Software (Siemens TIA / Allen-Bradley)</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars2.3">SAP / ERP Systems</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars2.4">Industry 4.0 / IoT / MES</span>
+              <span class="skill-level skill-level--working" data-i18n="skills.levels.working">Working Knowledge</span>
+            </li>
+          </ul>
         </div>
 
         <div class="skills__category reveal">
@@ -733,36 +811,36 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
             <span data-i18n="skills.cat5">Digital & AI Technologies</span>
           </h3>
-          <div class="skill-bars">
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.0">Python Development</span><span class="skill-bar__pct">75%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="75"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.1">Generative AI & LLMs</span><span class="skill-bar__pct">82%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="82"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.2">Prompt Engineering</span><span class="skill-bar__pct">85%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="85"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.3">Data Analysis & Automation</span><span class="skill-bar__pct">72%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="72"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.4">AI-Assisted Workflows</span><span class="skill-bar__pct">85%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="85"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.5">API Integration & Scripting</span><span class="skill-bar__pct">68%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="68"></div></div>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar__header"><span class="skill-bar__name" data-i18n="skills.bars5.6">Machine Learning Fundamentals</span><span class="skill-bar__pct">58%</span></div>
-              <div class="skill-bar__track"><div class="skill-bar__fill" data-target="58"></div></div>
-            </div>
-          </div>
+          <ul class="skill-list">
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.0">Python Development</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.1">Generative AI &amp; LLMs</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.2">Prompt Engineering</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.3">Data Analysis &amp; Automation</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.4">AI-Assisted Workflows</span>
+              <span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Advanced</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.5">API Integration &amp; Scripting</span>
+              <span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Proficient</span>
+            </li>
+            <li class="skill-row">
+              <span class="skill-row__name" data-i18n="skills.bars5.6">Machine Learning Fundamentals</span>
+              <span class="skill-level skill-level--working" data-i18n="skills.levels.working">Working Knowledge</span>
+            </li>
+          </ul>
         </div>
 
       </div>
@@ -818,26 +896,6 @@
           </div>
         </div>
 
-        <div class="cert-card cert-card--placeholder reveal">
-          <div class="cert-card__icon">📋</div>
-          <div class="cert-card__body">
-            <span class="cert-card__type" data-i18n="certs.cards.4.type">Recommended</span>
-            <h3 class="cert-card__title" data-i18n="certs.cards.4.title">Six Sigma Green Belt</h3>
-            <p class="cert-card__issuer" data-i18n="certs.cards.4.issuer">ASQ / IASSC</p>
-            <p class="cert-card__date" data-i18n="certs.cards.4.date">Target: 2025</p>
-          </div>
-        </div>
-
-        <div class="cert-card cert-card--placeholder reveal">
-          <div class="cert-card__icon">🏭</div>
-          <div class="cert-card__body">
-            <span class="cert-card__type" data-i18n="certs.cards.5.type">Recommended</span>
-            <h3 class="cert-card__title" data-i18n="certs.cards.5.title">Industry 4.0 Practitioner</h3>
-            <p class="cert-card__issuer" data-i18n="certs.cards.5.issuer">SFIA / Digital Manufacturing</p>
-            <p class="cert-card__date" data-i18n="certs.cards.5.date">Target: 2025</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -880,7 +938,7 @@
             </div>
           </div>
           <div class="contact__social">
-            <a href="https://linkedin.com/in/[your-username]" class="social-btn" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/" class="social-btn" aria-label="LinkedIn profile (opens in a new tab)" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
               <span data-i18n="contact.linkedin">LinkedIn</span>
             </a>
@@ -959,11 +1017,13 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <p data-i18n="footer.copyright">&copy; 2025 Adrià Martínez Colomer. All rights reserved.</p>
+        <p data-i18n="footer.copyright" data-year>&copy; <span class="js-year">2026</span> Adrià Martínez Colomer. All rights reserved.</p>
         <p data-i18n="footer.built">Built with precision. Just like every production line.</p>
       </div>
     </div>
   </footer>
+
+  </main>
 
   <a href="#home" class="back-to-top" id="backToTop" data-i18n-aria-label="a11y.backToTop" aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>

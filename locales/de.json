@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Adrià Martínez Colomer | Industrie- & Automatisierungsingenieur · Angewandte KI",
-    "description": "Industrie- und Automatisierungsingenieur an der Schnittstelle von Fertigung, Software und künstlicher Intelligenz. Über 10 Jahre im Karosserierohbau (BIW) der Automobilindustrie, dazu Python-Entwicklung, KI-/LLM-Workflows und datengetriebene Ingenieurarbeit. Barcelona, Spanien.",
+    "description": "Industrie- und Automatisierungsingenieur an der Schnittstelle von Fertigung, Software und künstlicher Intelligenz. Über 9 Jahre im Karosserierohbau (BIW) der Automobilindustrie, dazu Python-Entwicklung, KI-/LLM-Workflows und datengetriebene Ingenieurarbeit. Barcelona, Spanien.",
     "keywords": "Industrieingenieur, Automatisierungsingenieur, Industrielle KI, KI in der Fertigung, Künstliche Intelligenz für die Produktion, Industrie 4.0, Smart Manufacturing, Prozessingenieur, Python-Entwickler, LLM, Generative KI, Datengetriebene Technik, Digitale Transformation, Karosserierohbau, Barcelona",
     "ogTitle": "Adrià Martínez Colomer | Industrie- & Automatisierungsingenieur · Angewandte KI",
-    "ogDescription": "Ingenieur an der Schnittstelle von Fertigung, Automatisierung, Software und KI. Über 10 Jahre im Karosserierohbau (BIW), dazu Python-Automatisierung, LLM-Workflows und datengetriebene Ingenieurarbeit.",
+    "ogDescription": "Ingenieur an der Schnittstelle von Fertigung, Automatisierung, Software und KI. Über 9 Jahre im Karosserierohbau (BIW), dazu Python-Automatisierung, LLM-Workflows und datengetriebene Ingenieurarbeit.",
     "twitterTitle": "Adrià Martínez Colomer | Technik · Automatisierung · Angewandte KI",
     "twitterDescription": "Industrie- & Automatisierungsingenieur | Angewandte KI | Python | Industrie 4.0 | Barcelona"
   },
@@ -34,20 +34,26 @@
       "Datengetriebene Technik",
       "Industrie-4.0-Systeme"
     ],
-    "description": "Industrie- und Automatisierungsingenieur an der Schnittstelle von <strong>Fertigung</strong>, <strong>Software</strong> und <strong>künstlicher Intelligenz</strong>. Über 10 Jahre im Karosserierohbau (BIW) der Automobilindustrie – und heute Entwicklung von Python-Automatisierung und KI-gestützten Ingenieurlösungen.",
+    "description": "Ein Jahrzehnt Industrialisierung geschweißter Baugruppen bei <strong>SEAT</strong>, dem <strong>Volkswagen-Konzern</strong> und der <strong>Jordan Group</strong> — von robotergestützten Schweißzellen (RSW, SPR, Strukturklebstoffe) bis zu PFMEA, Inbetriebnahme und datengetriebener Prozesstechnik.",
     "ctaContact": "Kontakt aufnehmen",
     "ctaExperience": "Berufserfahrung ansehen",
     "ctaCV": "Lebenslauf herunterladen",
-    "cvHref": "../cvs/CV_EN_Adria_Martinez_Colomer.docx",
+    "cvHref": "cv/CV_EN_Adria_Martinez_Colomer.docx",
     "statYears": "Jahre Erfahrung",
     "statCompanies": "Unternehmen",
     "statDegrees": "Ingenieurabschlüsse",
     "statLanguages": "Sprachen",
-    "scroll": "Nach unten scrollen"
+    "scroll": "Nach unten scrollen",
+    "headline": "Ich verwandle <strong>Rohbau-Konzepte (BIW)</strong> in laufende, automatisierte Produktionslinien — und bringe <strong>Software &amp; KI</strong> in die Fertigung.",
+    "pillars": [
+      "Ingenieur für industrielle Automatisierung",
+      "Spezialist für BIW-Fertigung",
+      "Praktiker für angewandte KI"
+    ]
   },
   "about": {
     "label": "Über mich",
-    "title": "Ingenieurskunst <span class=\"gradient-text\">aus Leidenschaft</span>",
+    "title": "Wo die Fertigung auf <span class=\"gradient-text\">Code &amp; Daten</span> trifft",
     "photo": "Profilfoto",
     "badge1": "Mechatronikingenieur",
     "badge2": "Automatisierungsspezialist",
@@ -286,7 +292,13 @@
       "KI-gestützte Workflows",
       "API-Integration & Scripting",
       "Machine-Learning-Grundlagen"
-    ]
+    ],
+    "levels": {
+      "expert": "Experte",
+      "advanced": "Fortgeschritten",
+      "proficient": "Kompetent",
+      "working": "Grundkenntnisse"
+    }
   },
   "certs": {
     "label": "Nachweise",
@@ -361,7 +373,7 @@
     "tagline": "Prozessingenieur · Spezialist für Automatisierungstechnik · Industrie 4.0 · Barcelona, Spanien",
     "navH": "Navigation",
     "contactH": "Kontakt",
-    "copyright": "© 2025 Adrià Martínez Colomer. Alle Rechte vorbehalten.",
+    "copyright": "© {year} Adrià Martínez Colomer. Alle Rechte vorbehalten.",
     "built": "Mit Präzision gebaut. Wie jede Produktionslinie."
   },
   "form": {
@@ -372,7 +384,8 @@
     "success": "Vielen Dank! Ich melde mich innerhalb von 24 Stunden bei Ihnen."
   },
   "a11y": {
-    "backToTop": "Nach oben"
+    "backToTop": "Nach oben",
+    "skip": "Zum Hauptinhalt springen"
   },
   "ai": {
     "label": "Digitale Innovation",
@@ -415,13 +428,13 @@
     "projTitle": "KI- & Software-Projekte",
     "projects": [
       {
-        "tag": "Angewandte KI · Forschung",
-        "title": "KI-gestützte Trading-Forschung",
-        "description": "Forschung und Entwicklung quantitativer Systeme, die Datenanalyse, Automatisierung und KI-gestützte Workflows kombinieren, um Marktmuster und Entscheidungsmodelle zu untersuchen.",
+        "tag": "Angewandte KI · Engineering",
+        "title": "KI-gestützte PFMEA & technische Dokumentation",
+        "description": "Einsatz großer Sprachmodelle zur schnelleren Erstellung und Prüfung technischer Dokumentation — PFMEA, Control-Pläne, 8D-Berichte und Arbeitsanweisungen — stets mit einem Ingenieur zur Validierung.",
         "highlights": [
-          "Datenpipelines & automatisiertes Backtesting",
-          "KI-gestützte Strategieforschung",
-          "Quantitative Tools in Python"
+          "LLM-gestützte PFMEA- & Control-Plan-Erstellung",
+          "Unterstützung bei 8D- & Ursachenanalyse",
+          "Schnellere, konsistentere technische Dokumentation"
         ]
       },
       {

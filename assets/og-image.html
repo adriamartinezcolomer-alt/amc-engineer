@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  body {
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#0D1117;
+    color:#E6EDF3;
+    position:relative;
+  }
+  .bg {
+    position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse 70% 60% at 12% 22%, rgba(0,201,255,.18) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 60% at 92% 85%, rgba(124,58,237,.18) 0%, transparent 60%);
+  }
+  .grid {
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(#30363D 1px, transparent 1px),
+      linear-gradient(90deg, #30363D 1px, transparent 1px);
+    background-size:48px 48px;
+    opacity:.18;
+  }
+  .frame { position:absolute; inset:24px; border:1px solid #30363D; border-radius:20px; }
+  .wrap { position:relative; padding:90px 80px; height:100%; display:flex; flex-direction:column; justify-content:center; }
+  .eyebrow {
+    font-family:Consolas, monospace; font-size:22px; letter-spacing:6px;
+    text-transform:uppercase; color:#00C9FF; margin-bottom:26px;
+  }
+  .name { font-size:78px; font-weight:800; letter-spacing:-2px; line-height:1.02; }
+  .sub {
+    margin-top:26px; font-size:38px; font-weight:700; letter-spacing:-.5px;
+    background:linear-gradient(135deg,#00C9FF,#7C3AED);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  .chips { margin-top:46px; display:flex; gap:16px; }
+  .chip {
+    font-size:24px; font-weight:600; color:#E6EDF3;
+    border:1px solid rgba(0,201,255,.35); background:rgba(0,201,255,.08);
+    padding:12px 24px; border-radius:999px;
+  }
+  .foot {
+    position:absolute; left:80px; bottom:70px;
+    font-family:Consolas, monospace; font-size:24px; color:#8B949E; letter-spacing:1px;
+  }
+  .foot b { color:#E6EDF3; font-weight:700; }
+  .dot { display:inline-block; width:14px; height:14px; border-radius:50%; background:#00C9FF; margin-left:8px; vertical-align:middle; }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="grid"></div>
+  <div class="frame"></div>
+  <div class="wrap">
+    <div class="eyebrow">amc-engineer.com<span class="dot"></span></div>
+    <div class="name">Adrià Martínez<br>Colomer</div>
+    <div class="sub">Industrial Automation · BIW Manufacturing · Applied AI</div>
+    <div class="chips">
+      <span class="chip">10+ yrs Automotive</span>
+      <span class="chip">SEAT · Volkswagen Group</span>
+      <span class="chip">Industry 4.0</span>
+    </div>
+  </div>
+  <div class="foot"><b>Process &amp; Industrialization Engineer</b> — Barcelona, Spain</div>
+</body>
+</html>

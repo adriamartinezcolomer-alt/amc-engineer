@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Adrià Martínez Colomer | Industrial & Automation Engineer · Applied AI",
-    "description": "Industrial and automation engineer bridging manufacturing, software, and artificial intelligence. 10+ years in automotive BIW, plus Python development, AI/LLM workflows, and data-driven engineering. Barcelona, Spain.",
+    "description": "Industrial and automation engineer bridging manufacturing, software, and artificial intelligence. 9+ years in automotive BIW, plus Python development, AI/LLM workflows, and data-driven engineering. Barcelona, Spain.",
     "keywords": "Industrial Engineer, Automation Engineer, Industrial AI, Manufacturing AI, Artificial Intelligence for Manufacturing, Industry 4.0, Smart Manufacturing, Process Engineering, Python Developer, LLM, Generative AI, Data-Driven Engineering, Digital Transformation, BIW Welding, Barcelona",
     "ogTitle": "Adrià Martínez Colomer | Industrial & Automation Engineer · Applied AI",
-    "ogDescription": "Engineer at the intersection of manufacturing, automation, software, and AI. 10+ years in automotive BIW, plus Python automation, LLM workflows, and data-driven engineering.",
+    "ogDescription": "Engineer at the intersection of manufacturing, automation, software, and AI. 9+ years in automotive BIW, plus Python automation, LLM workflows, and data-driven engineering.",
     "twitterTitle": "Adrià Martínez Colomer | Engineering · Automation · Applied AI",
     "twitterDescription": "Industrial & Automation Engineer | Applied AI | Python | Industry 4.0 | Barcelona"
   },
@@ -23,6 +23,8 @@
   "hero": {
     "greeting": "Hello, I'm",
     "banner": "Open to opportunities across Spain and Europe.",
+    "headline": "I turn automotive <strong>body-in-white</strong> concepts into running, automated production lines — and bring <strong>software &amp; AI</strong> to the factory floor.",
+    "pillars": ["Industrial Automation Engineer", "BIW Manufacturing Specialist", "Applied AI Practitioner"],
     "rolePrefix": "I specialize in ",
     "roles": [
       "BIW Welding Processes",
@@ -34,11 +36,11 @@
       "Data-Driven Engineering",
       "Industry 4.0 Systems"
     ],
-    "description": "Industrial &amp; automation engineer bridging <strong>manufacturing</strong>, <strong>software</strong>, and <strong>artificial intelligence</strong>. 10+ years in automotive BIW — now building Python automation and AI-driven engineering solutions.",
+    "description": "A decade industrializing welded assemblies across <strong>SEAT</strong>, the <strong>Volkswagen Group</strong> and <strong>Jordan Group</strong> — from robotic welding cells (RSW, SPR, structural adhesives) to PFMEA, commissioning, and data-driven process engineering.",
     "ctaContact": "Get In Touch",
     "ctaExperience": "View Experience",
     "ctaCV": "Download CV",
-    "cvHref": "../cvs/CV_EN_Adria_Martinez_Colomer.docx",
+    "cvHref": "cv/CV_EN_Adria_Martinez_Colomer.docx",
     "statYears": "Years Experience",
     "statCompanies": "Companies",
     "statDegrees": "Engineering Degrees",
@@ -47,7 +49,7 @@
   },
   "about": {
     "label": "About Me",
-    "title": "Engineering Excellence <span class=\"gradient-text\">Driven by Passion</span>",
+    "title": "Where the Factory Floor Meets <span class=\"gradient-text\">Code &amp; Data</span>",
     "photo": "Professional Photo",
     "badge1": "Mechatronics Engineer",
     "badge2": "Automation Specialist",
@@ -220,6 +222,12 @@
   "skills": {
     "label": "Expertise",
     "title": "Technical <span class=\"gradient-text\">Skills</span>",
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "proficient": "Proficient",
+      "working": "Working Knowledge"
+    },
     "cat1": "Engineering & Process",
     "cat2": "Software & Tools",
     "cat3": "Languages",
@@ -361,7 +369,7 @@
     "tagline": "Process Engineer · Industrial Automation Specialist · Industry 4.0 · Barcelona, Spain",
     "navH": "Navigation",
     "contactH": "Contact",
-    "copyright": "© 2025 Adrià Martínez Colomer. All rights reserved.",
+    "copyright": "© {year} Adrià Martínez Colomer. All rights reserved.",
     "built": "Built with precision. Just like every production line."
   },
   "form": {
@@ -372,7 +380,8 @@
     "success": "Thank you! I'll get back to you within 24 hours."
   },
   "a11y": {
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "skip": "Skip to main content"
   },
   "ai": {
     "label": "Digital Innovation",
@@ -415,13 +424,13 @@
     "projTitle": "AI & Software Projects",
     "projects": [
       {
-        "tag": "Applied AI · Research",
-        "title": "AI-Powered Trading Research",
-        "description": "Research and development of quantitative systems combining data analysis, automation, and AI-assisted workflows to explore market patterns and decision models.",
+        "tag": "Applied AI · Engineering",
+        "title": "AI-Assisted PFMEA & Technical Documentation",
+        "description": "Using large language models to accelerate the drafting and review of engineering documentation — PFMEAs, control plans, 8D reports, and work instructions — always with an engineer in the loop for validation.",
         "highlights": [
-          "Data pipelines & automated backtesting",
-          "AI-assisted strategy research",
-          "Python-based quantitative tooling"
+          "LLM-assisted PFMEA & control-plan drafting",
+          "8D & root-cause analysis support",
+          "Faster, more consistent technical writing"
         ]
       },
       {

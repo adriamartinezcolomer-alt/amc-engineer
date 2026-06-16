@@ -1,10 +1,10 @@
 {
   "meta": {
     "title": "Adrià Martínez Colomer | Ingeniero Industrial y de Automatización · IA Aplicada",
-    "description": "Ingeniero industrial y de automatización que conecta fabricación, software e inteligencia artificial. Más de 10 años en carrocería (BIW) de automoción, además de desarrollo en Python, flujos con IA/LLM e ingeniería basada en datos. Barcelona, España.",
+    "description": "Ingeniero industrial y de automatización que conecta fabricación, software e inteligencia artificial. Más de 9 años en carrocería (BIW) de automoción, además de desarrollo en Python, flujos con IA/LLM e ingeniería basada en datos. Barcelona, España.",
     "keywords": "Ingeniero Industrial, Ingeniero de Automatización, IA Industrial, IA para Fabricación, Inteligencia Artificial para la Industria, Industria 4.0, Fabricación Inteligente, Ingeniería de Procesos, Desarrollador Python, LLM, IA Generativa, Ingeniería Basada en Datos, Transformación Digital, Soldadura BIW, Barcelona",
     "ogTitle": "Adrià Martínez Colomer | Ingeniero Industrial y de Automatización · IA Aplicada",
-    "ogDescription": "Ingeniero en la intersección de fabricación, automatización, software e IA. Más de 10 años en carrocería (BIW), además de automatización en Python, flujos con LLM e ingeniería basada en datos.",
+    "ogDescription": "Ingeniero en la intersección de fabricación, automatización, software e IA. Más de 9 años en carrocería (BIW), además de automatización en Python, flujos con LLM e ingeniería basada en datos.",
     "twitterTitle": "Adrià Martínez Colomer | Ingeniería · Automatización · IA Aplicada",
     "twitterDescription": "Ingeniero Industrial y de Automatización | IA Aplicada | Python | Industria 4.0 | Barcelona"
   },
@@ -34,20 +34,26 @@
       "Ingeniería Basada en Datos",
       "Sistemas de Industria 4.0"
     ],
-    "description": "Ingeniero industrial y de automatización que conecta <strong>fabricación</strong>, <strong>software</strong> e <strong>inteligencia artificial</strong>. Más de 10 años en carrocería (BIW) de automoción y, ahora, desarrollando automatización en Python y soluciones de ingeniería impulsadas por IA.",
+    "description": "Una década industrializando conjuntos soldados en <strong>SEAT</strong>, el <strong>Grupo Volkswagen</strong> y <strong>Jordan Group</strong> — desde celdas de soldadura robotizada (RSW, SPR, adhesivos estructurales) hasta PFMEA, puesta en marcha e ingeniería de procesos basada en datos.",
     "ctaContact": "Contactar",
     "ctaExperience": "Ver Experiencia",
     "ctaCV": "Descargar CV",
-    "cvHref": "../cvs/CV_ES_Adria_Martinez_Colomer.docx",
+    "cvHref": "cv/CV_ES_Adria_Martinez_Colomer.docx",
     "statYears": "Años de Experiencia",
     "statCompanies": "Empresas",
     "statDegrees": "Títulos de Ingeniería",
     "statLanguages": "Idiomas",
-    "scroll": "Desplázate"
+    "scroll": "Desplázate",
+    "headline": "Convierto conceptos de <strong>carrocería en bruto (BIW)</strong> en líneas de producción automatizadas en marcha — y llevo el <strong>software y la IA</strong> a la planta.",
+    "pillars": [
+      "Ingeniero de Automatización Industrial",
+      "Especialista en Fabricación BIW",
+      "Practicante de IA Aplicada"
+    ]
   },
   "about": {
     "label": "Sobre mí",
-    "title": "Excelencia en Ingeniería <span class=\"gradient-text\">Impulsada por la Pasión</span>",
+    "title": "Donde la Planta de Producción se Encuentra con el <span class=\"gradient-text\">Código y los Datos</span>",
     "photo": "Foto Profesional",
     "badge1": "Ingeniero Mecatrónico",
     "badge2": "Especialista en Automatización",
@@ -286,7 +292,13 @@
       "Flujos de Trabajo con IA",
       "Integración de APIs y Scripting",
       "Fundamentos de Machine Learning"
-    ]
+    ],
+    "levels": {
+      "expert": "Experto",
+      "advanced": "Avanzado",
+      "proficient": "Competente",
+      "working": "Conocimientos básicos"
+    }
   },
   "certs": {
     "label": "Credenciales",
@@ -361,7 +373,7 @@
     "tagline": "Ingeniero de Procesos · Especialista en Automatización Industrial · Industria 4.0 · Barcelona, España",
     "navH": "Navegación",
     "contactH": "Contacto",
-    "copyright": "© 2025 Adrià Martínez Colomer. Todos los derechos reservados.",
+    "copyright": "© {year} Adrià Martínez Colomer. Todos los derechos reservados.",
     "built": "Construido con precisión. Como cada línea de producción."
   },
   "form": {
@@ -372,7 +384,8 @@
     "success": "¡Gracias! Te responderé en menos de 24 horas."
   },
   "a11y": {
-    "backToTop": "Volver arriba"
+    "backToTop": "Volver arriba",
+    "skip": "Saltar al contenido principal"
   },
   "ai": {
     "label": "Innovación Digital",
@@ -415,13 +428,13 @@
     "projTitle": "Proyectos de IA y Software",
     "projects": [
       {
-        "tag": "IA Aplicada · Investigación",
-        "title": "Investigación en Trading con IA",
-        "description": "Investigación y desarrollo de sistemas cuantitativos que combinan análisis de datos, automatización y flujos asistidos por IA para explorar patrones de mercado y modelos de decisión.",
+        "tag": "IA Aplicada · Ingeniería",
+        "title": "PFMEA y Documentación Técnica Asistidos por IA",
+        "description": "Uso de grandes modelos de lenguaje para acelerar la redacción y revisión de documentación de ingeniería — PFMEA, planes de control, informes 8D e instrucciones de trabajo — siempre con un ingeniero validando los resultados.",
         "highlights": [
-          "Pipelines de datos y backtesting automatizado",
-          "Investigación de estrategias asistida por IA",
-          "Herramientas cuantitativas en Python"
+          "Redacción de PFMEA y planes de control asistida por LLM",
+          "Apoyo a análisis 8D y de causa raíz",
+          "Redacción técnica más rápida y coherente"
         ]
       },
       {

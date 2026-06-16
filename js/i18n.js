@@ -21,7 +21,7 @@
 
   const FALLBACK = 'en';
   const STORAGE_KEY = 'site_lang';
-  const SITE_URL = 'https://martinez.colomer.cat'; // used for hreflang / canonical
+  const SITE_URL = 'https://amc-engineer.com'; // production web domain — used for hreflang / canonical
   const codes = LANGS.map(l => l.code);
   const cache = {};   // loaded dictionaries by code
   let current = FALLBACK;
@@ -93,16 +93,16 @@
     // <html lang>
     document.documentElement.setAttribute('lang', cfg.htmlLang);
 
-    // SEO: og:locale + canonical + url
+    // SEO: og:locale + url (language-specific) + canonical (always the clean root,
+    // so query-param language variants don't split ranking signals)
     setMeta('property', 'og:locale', cfg.ogLocale);
-    const url = `${SITE_URL}/?lang=${code}`;
-    setMeta('property', 'og:url', url);
-    setLink('canonical', url);
+    setMeta('property', 'og:url', `${SITE_URL}/?lang=${code}`);
+    setLink('canonical', `${SITE_URL}/`);
 
     // update language switcher UI
     updateSwitcherUI(code);
 
-    // notify the rest of the app (typewriter, dynamic JS strings)
+    // notify the rest of the app (dynamic year stamp, form strings, etc.)
     document.dispatchEvent(new CustomEvent('i18n:changed', { detail: { lang: code, dict } }));
   }
 

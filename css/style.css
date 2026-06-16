@@ -16,8 +16,8 @@
   --green: #2ECC71;
   --purple: #7C3AED;
   --txt: #E6EDF3;
-  --txt2: #8B949E;
-  --txt3: #484F58;
+  --txt2: #9DA7B3;
+  --txt3: #7D8590;
   --border: #30363D;
   --border-acc: rgba(0,201,255,.25);
   --shadow: 0 4px 32px rgba(0,0,0,.4);
@@ -60,7 +60,7 @@
   --acc2: #E85D2F;
   --txt: #1A202C;
   --txt2: #4A5568;
-  --txt3: #A0AEC0;
+  --txt3: #5F6B7A;
   --border: #E2E8F0;
   --border-acc: rgba(0,102,204,.2);
   --shadow: 0 4px 24px rgba(0,0,0,.08);
@@ -191,7 +191,7 @@ input, textarea, select { font-family: var(--ff); }
   padding: .25em .75em;
   border-radius: var(--r-full);
   font-size: .75rem;
-  font-weight: 500;
+  font-weight: 600;
   background: rgba(var(--acc-rgb),.08);
   color: var(--acc);
   border: 1px solid rgba(var(--acc-rgb),.2);
@@ -272,7 +272,7 @@ input, textarea, select { font-family: var(--ff); }
 
 .nav__link {
   font-size: .875rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--txt2);
   position: relative;
   transition: color var(--t-fast);
@@ -378,20 +378,6 @@ input, textarea, select { font-family: var(--ff); }
   margin-bottom: var(--s6);
 }
 
-.hero__roles {
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  color: var(--txt2);
-  margin-bottom: var(--s6);
-  min-height: 2em;
-}
-.hero__role-prefix { color: var(--txt2); }
-.hero__typewriter {
-  color: var(--acc);
-  font-weight: 600;
-  border-right: 2px solid var(--acc);
-  animation: blink .75s step-end infinite;
-}
-@keyframes blink { 0%,100%{border-color: var(--acc);} 50%{border-color:transparent;} }
 
 .hero__description {
   font-size: clamp(.95rem, 2vw, 1.1rem);
@@ -488,31 +474,6 @@ input, textarea, select { font-family: var(--ff); }
   position: relative;
 }
 
-.about__image-placeholder {
-  aspect-ratio: 3/4;
-  background: var(--bg3);
-  border: 2px dashed var(--border);
-  border-radius: var(--r-xl);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--s4);
-  color: var(--txt3);
-  font-size: .875rem;
-  transition: border-color var(--t);
-  overflow: hidden;
-  position: relative;
-}
-.about__image-placeholder::before {
-  content:'';
-  position: absolute;
-  inset:0;
-  background: radial-gradient(circle at center, rgba(var(--acc-rgb),.05) 0%, transparent 70%);
-}
-.about__image-placeholder svg { width:80px; height:80px; stroke: var(--txt3); }
-.about__image-placeholder span { font-family: var(--mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; }
-
 .about__badges {
   display: flex;
   flex-wrap: wrap;
@@ -524,7 +485,7 @@ input, textarea, select { font-family: var(--ff); }
 
 .about__lead {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.7;
   color: var(--txt);
   margin-bottom: var(--s4);
@@ -771,7 +732,7 @@ input, textarea, select { font-family: var(--ff); }
 }
 .project-card__tech span {
   font-size:.7rem;
-  font-weight:500;
+  font-weight:600;
   padding:.2em .65em;
   border-radius: var(--r-full);
   background: rgba(var(--acc-rgb),.06);
@@ -805,32 +766,6 @@ input, textarea, select { font-family: var(--ff); }
   border-bottom: 1px solid var(--border);
 }
 .skills__category-title svg { width:18px; height:18px; color:var(--acc); flex-shrink:0; }
-
-/* Skill bars */
-.skill-bars { display:flex; flex-direction:column; gap:var(--s4); }
-
-.skill-bar__header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom: var(--s2);
-}
-.skill-bar__name { font-size:.82rem; font-weight:500; color:var(--txt2); }
-.skill-bar__pct { font-family:var(--mono); font-size:.75rem; color:var(--acc); font-weight:600; }
-
-.skill-bar__track {
-  height:6px;
-  background: var(--bg2);
-  border-radius: var(--r-full);
-  overflow:hidden;
-}
-.skill-bar__fill {
-  height:100%;
-  width:0%;
-  background: var(--grad);
-  border-radius: var(--r-full);
-  transition: width 1s cubic-bezier(.4,0,.2,1);
-}
 
 /* Language grid */
 .language-grid { display:flex; flex-direction:column; gap:var(--s4); }
@@ -1137,7 +1072,7 @@ html.i18n-pending body { visibility: hidden; }
   padding: .55em .7em;
   border-radius: var(--r-sm);
   font-size: .85rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--txt2);
   cursor: pointer;
   transition: all var(--t-fast);
@@ -1169,7 +1104,7 @@ html.i18n-pending body { visibility: hidden; }
   border: 1px solid rgba(46, 204, 113, .3);
   color: var(--green);
   font-size: .8rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: .01em;
 }
 .hero__banner-dot {
@@ -1324,3 +1259,130 @@ html.i18n-pending body { visibility: hidden; }
   .ai__bridge-link { display: none; }
   .ai__vision { padding: var(--s8) var(--s6); }
 }
+
+/* ── 20. ACCESSIBILITY: SKIP LINK & FOCUS STATES ─────────────── */
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  transform: translateX(-50%);
+  z-index: 2000;
+  background: var(--acc);
+  color: #fff;
+  font-weight: 700;
+  padding: .7em 1.4em;
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+  transition: top var(--t);
+}
+.skip-link:focus { top: 12px; outline: none; }
+
+/* Visible, consistent keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav__link:focus-visible,
+.social-btn:focus-visible,
+.lang-switch__btn:focus-visible,
+.lang-switch__option:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--acc);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+[data-theme="light"] .skip-link { color: #fff; }
+
+/* ── 21. HERO: HEADLINE + IDENTITY PILLARS ───────────────────── */
+.hero__headline {
+  font-size: clamp(1.15rem, 2.6vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--txt);
+  max-width: 760px;
+  margin: 0 auto var(--s6);
+}
+.hero__headline strong { color: var(--acc); font-weight: 700; }
+
+.hero__pillars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s3);
+  margin-bottom: var(--s6);
+}
+.hero__pillar {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--txt);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  padding: .55em 1.15em;
+  border-radius: var(--r-full);
+  transition: transform var(--t), border-color var(--t);
+}
+.hero__pillar:hover { transform: translateY(-2px); border-color: var(--border-acc); }
+.hero__pillar--accent {
+  color: #fff;
+  background: var(--grad);
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(var(--acc-rgb), .3);
+}
+
+/* ── 22. ABOUT: BRANDED AVATAR / PHOTO ───────────────────────── */
+.about__image {
+  aspect-ratio: 3 / 4;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  box-shadow: var(--shadow);
+}
+.about__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── 23. SKILLS: PROFICIENCY SYSTEM (replaces % bars) ────────── */
+.skills__legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s3);
+  margin-bottom: var(--s10);
+}
+.skill-list { display: flex; flex-direction: column; }
+.skill-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+  padding: .7em 0;
+  border-bottom: 1px solid var(--border);
+}
+.skill-row:last-child { border-bottom: none; }
+.skill-row__name { font-size: .85rem; font-weight: 600; color: var(--txt); }
+
+.skill-level {
+  font-family: var(--mono);
+  font-size: .66rem;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: .35em .85em;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.skill-level--expert     { color: var(--green);  background: rgba(46,204,113,.12);  border-color: rgba(46,204,113,.35); }
+.skill-level--advanced   { color: var(--acc);    background: rgba(var(--acc-rgb),.12); border-color: var(--border-acc); }
+.skill-level--proficient { color: var(--purple); background: rgba(124,58,237,.14);  border-color: rgba(124,58,237,.35); }
+.skill-level--working    { color: var(--txt2);   background: var(--bg2);            border-color: var(--border); }
+[data-theme="light"] .skill-level--purple,
+[data-theme="light"] .skill-level--proficient { color: #6D28D9; }

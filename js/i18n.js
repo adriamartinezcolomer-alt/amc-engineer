@@ -22,6 +22,10 @@
   const FALLBACK = 'en';
   const STORAGE_KEY = 'site_lang';
   const SITE_URL = 'https://amc-engineer.com'; // production web domain — used for hreflang / canonical
+  // Cache-buster for locale files. BUMP THIS on every deploy that changes any
+  // /locales/*.json — it forces browsers and CDNs to fetch the new content
+  // instead of serving a stale cached copy (use the deploy date or a build hash).
+  const ASSET_VERSION = '2026-06-16';
   const codes = LANGS.map(l => l.code);
   const cache = {};   // loaded dictionaries by code
   let current = FALLBACK;
@@ -57,7 +61,7 @@
   async function loadDict(code) {
     if (cache[code]) return cache[code];
     try {
-      const res = await fetch(`locales/${code}.json`, { cache: 'no-cache' });
+      const res = await fetch(`locales/${code}.json?v=${ASSET_VERSION}`, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const dict = await res.json();
       cache[code] = dict;

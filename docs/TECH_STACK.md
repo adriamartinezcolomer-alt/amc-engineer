@@ -51,6 +51,8 @@ Visitor ──▶ Cloudflare (DNS, TLS, CDN, headers, WAF) ──▶ GitHub Page
 - `js/i18n.js` detects language (`?lang=` → `localStorage.site_lang` → browser → `en`), fetches `/locales/<code>.json`, and fills `[data-i18n]` / `[data-i18n-*]` nodes.
 - Adding a language = add one entry in `i18n.js` `LANGS` + one JSON file.
 - Canonical stays `https://amc-engineer.com/`; `hreflang` alternates are static in `<head>` and kept in sync by `i18n.js`.
+- **Single source of truth:** the `/locales/*.json` files are the *only* place translations live. (A legacy generator, `output/update_locales_ai.py`, used to embed a second copy of the AI-section text and overwrite the JSON — it caused stale/contradictory Catalan content and was removed. Edit the JSON directly.)
+- **After changing any locale file, bump `ASSET_VERSION` in `js/i18n.js`** (e.g. to the deploy date). It is appended as `?v=` to each locale fetch so browsers/CDN can't serve stale translations. Pair with the Cloudflare "Bypass cache for locales" rule (see `CLOUDFLARE_DEPLOYMENT.md` §2.1).
 
 ## 6. Analytics architecture (privacy-first)
 - **No analytics loads before consent.** `js/consent.js` owns this.

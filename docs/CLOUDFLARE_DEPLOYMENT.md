@@ -63,6 +63,21 @@ _Last reviewed: 16 June 2026_
 > "Auto Minify" (it can interfere with already-optimised assets), and you do **not**
 > need any paid WAF rules.
 
+### 2.1 Cache Rule — never edge-cache the translation files
+The multilingual text lives in `/locales/*.json` and is loaded by the browser at
+runtime. If Cloudflare edge-caches these files, different visitors (and different
+Cloudflare locations) can be served **stale translations** after you publish an update.
+Add a small Cache Rule so these files always come fresh from the origin:
+
+`Caching → Cache Rules → Create rule`
+- **Name:** `Bypass cache for locales`
+- **If:** `URI Path starts with /locales/`  *(optionally also `or URI Path starts with /js/`)*
+- **Then:** **Bypass cache**
+
+Deploy. (The site code also appends a `?v=` version string to each locale request as a
+second safety net — see `js/i18n.js` → `ASSET_VERSION`. Bump that value whenever you
+change a translation file so even cached copies are invalidated.)
+
 ---
 
 ## 3. Response Header Transform Rule (security headers)

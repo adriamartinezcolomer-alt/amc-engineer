@@ -18,20 +18,25 @@ Visitor ──▶ Cloudflare (DNS, TLS, CDN, headers, WAF) ──▶ GitHub Page
 
 ## 2. Repository layout (this folder = site root)
 ```
-/index.html                 Main single-page site
+index.template.html         SOURCE template (edit this) — has data-i18n hooks
+build.py                    Pre-renders the template + locales into the pages below
+/index.html                 GENERATED — English home (do not edit by hand)
+/es/index.html              GENERATED — Spanish   "
+/ca/index.html              GENERATED — Catalan   "
+/de/index.html              GENERATED — German    "
 /404.html                   Custom not-found page
-/privacy-policy/index.html  Legal pages (clean URLs)
+/privacy-policy/index.html  Legal pages (clean URLs, English)
 /cookie-policy/index.html
 /legal-notice/index.html
 /css/style.css              All styling + design tokens + @font-face
 /js/
   theme-init.js             Pre-paint theme guard (no inline script → clean CSP)
-  i18n.js                   Multilingual engine (loads /locales/*.json)
+  lang-switch.js            Language menu links + legacy ?lang= redirect (no translation)
   main.js                   Nav, reveal, counters, contact form, year stamp
   consent.js                Cookie banner + consent-gated GA4
   legal.js                  Theme toggle + year for legal pages
-/locales/{en,es,ca,de}.json Translations
-/assets/                    Images, icons, og-image, self-hosted /fonts/
+/locales/{en,es,ca,de}.json Translations — single source of truth (build-time only)
+/assets/                    Images, icons, og cover, self-hosted /fonts/
 /sitemap.xml /robots.txt /site.webmanifest /CNAME /.nojekyll
 /.well-known/security.txt
 /docs/                      This documentation (disallowed in robots.txt)
@@ -47,12 +52,22 @@ Visitor ──▶ Cloudflare (DNS, TLS, CDN, headers, WAF) ──▶ GitHub Page
 - DNS for the domain; proxied (orange cloud) so CDN, TLS, caching, WAF and header rewriting apply.
 - Full config in `SECURITY.md` (SSL mode, HSTS, headers, Turnstile).
 
-## 5. Internationalisation
-- `js/i18n.js` detects language (`?lang=` → `localStorage.site_lang` → browser → `en`), fetches `/locales/<code>.json`, and fills `[data-i18n]` / `[data-i18n-*]` nodes.
-- Adding a language = add one entry in `i18n.js` `LANGS` + one JSON file.
-- Canonical stays `https://amc-engineer.com/`; `hreflang` alternates are static in `<head>` and kept in sync by `i18n.js`.
-- **Single source of truth:** the `/locales/*.json` files are the *only* place translations live. (A legacy generator, `output/update_locales_ai.py`, used to embed a second copy of the AI-section text and overwrite the JSON — it caused stale/contradictory Catalan content and was removed. Edit the JSON directly.)
-- **After changing any locale file, bump `ASSET_VERSION` in `js/i18n.js`** (e.g. to the deploy date). It is appended as `?v=` to each locale fetch so browsers/CDN can't serve stale translations. Pair with the Cloudflare "Bypass cache for locales" rule (see `CLOUDFLARE_DEPLOYMENT.md` §2.1).
+## 5. Internationalisation (path-based, pre-rendered)
+The site uses **SEO-friendly language directories**, each a fully translated static page:
+
+| Language | URL | File |
+|---|---|---|
+| English (default / x-default) | `https://amc-engineer.com/` | `index.html` |
+| Spanish | `/es/` | `es/index.html` |
+| Catalan | `/ca/` | `ca/index.html` |
+| German | `/de/` | `de/index.html` |
+
+- **Build step:** `python build.py` reads `index.template.html` + `locales/*.json` and writes the four `index.html` files. Run it before every deploy (or via a GitHub Action). **Edit `index.template.html` for structure/markup — never edit the generated `*/index.html` directly** (they're overwritten on each build).
+- **Translations live only in `/locales/*.json`** (single source of truth). They are consumed at *build time*; they are **not** fetched at runtime anymore.
+- Each generated page has its own `<html lang>`, `<title>`/meta, **self-referencing canonical**, a full reciprocal **hreflang** cluster (en→`/`, es→`/es/`, ca→`/ca/`, de→`/de/`, x-default→`/`), and localised Open Graph.
+- **Runtime JS:** `js/lang-switch.js` only builds the language menu as `<a href>` links, marks the current language, and redirects legacy `/?lang=xx` → `/xx/`. (The old `js/i18n.js` runtime translator was removed — content is now static, which also fixed the stale-Catalan/caching class of bugs entirely.)
+- **Adding a language:** add the JSON file, add one entry to `LANGS` in both `build.py` and `js/lang-switch.js`, add it to the hreflang block in `index.template.html` + `sitemap.xml`, then run `build.py`.
+- A legacy generator `output/update_locales_ai.py` (which duplicated/overwrote AI-section text) was removed; edit the JSON directly.
 
 ## 6. Analytics architecture (privacy-first)
 - **No analytics loads before consent.** `js/consent.js` owns this.

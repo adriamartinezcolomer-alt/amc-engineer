@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="ca">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Content Security Policy (enforced on GitHub Pages via meta; mirror as a real
+       header at Cloudflare — see docs/SECURITY.md — to also send frame-ancestors). -->
+<meta content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://formspree.io https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; form-action 'self' https://formspree.io; manifest-src 'self'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<title data-i18n="meta.title">Adrià Martínez Colomer | Enginyer Industrial i d'Automatització · IA Aplicada</title>
+<meta content="Enginyer industrial i d'automatització que connecta fabricació, programari i intel·ligència artificial. Més de 9 anys en carrosseria (BIW) d'automoció, a més de desenvolupament en Python, fluxos amb IA/LLM i enginyeria basada en dades. Barcelona, Catalunya." data-i18n-content="meta.description" name="description"/>
+<meta content="Adrià Martínez Colomer" name="author"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="#0D1117" name="theme-color"/>
+<link href="https://amc-engineer.com/ca/" rel="canonical"/>
+<!-- Favicons & PWA -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<!-- Open Graph (title/description localised at build time by build.py; image is static) -->
+<meta content="website" property="og:type"/>
+<meta content="https://amc-engineer.com/ca/" property="og:url"/>
+<meta content="AMC Engineer" property="og:site_name"/>
+<meta content="ca_ES" property="og:locale"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ca_ES" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="Adrià Martínez Colomer | Enginyer de Processos i Automatització" data-i18n-content="meta.ogTitle" property="og:title"/>
+<meta content="Enginyeria de processos, automatització industrial, robòtica i IA aplicada a la fabricació. Portfolio personal d'enginyeria — Barcelona." data-i18n-content="meta.ogDescription" property="og:description"/>
+<meta content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" property="og:image"/>
+<meta content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" property="og:image:secure_url"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Adrià Martínez Colomer — Process &amp; Automation Engineer. Personal engineering portfolio." property="og:image:alt"/>
+<!-- Twitter / X Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Adrià Martínez Colomer | Enginyer de Processos i Automatització" data-i18n-content="meta.twitterTitle" name="twitter:title"/>
+<meta content="Enginyeria de processos, automatització industrial, robòtica i IA aplicada a la fabricació. Portfolio personal d'enginyeria — Barcelona." data-i18n-content="meta.twitterDescription" name="twitter:description"/>
+<meta content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" name="twitter:image"/>
+<meta content="Adrià Martínez Colomer — Process &amp; Automation Engineer. Personal engineering portfolio." name="twitter:image:alt"/>
+<!-- hreflang (static, crawlable; per-language hrefs written by build.py) -->
+<link href="https://amc-engineer.com/" hreflang="en" rel="alternate"/>
+<link href="https://amc-engineer.com/es/" hreflang="es" rel="alternate"/>
+<link href="https://amc-engineer.com/ca/" hreflang="ca" rel="alternate"/>
+<link href="https://amc-engineer.com/de/" hreflang="de" rel="alternate"/>
+<link href="https://amc-engineer.com/" hreflang="x-default" rel="alternate"/>
+<!-- Anti-flicker: apply saved theme before first paint (external for CSP) -->
+<script src="/js/theme-init.js"></script>
+<!-- Self-hosted fonts (no external Google Fonts requests) -->
+<link as="font" crossorigin="" href="/assets/fonts/inter-latin.woff2" rel="preload" type="font/woff2"/>
+<!-- Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Structured Data: Person + WebSite + ProfilePage (Schema.org / JSON-LD @graph) -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://amc-engineer.com/#person",
+        "name": "Adrià Martínez Colomer",
+        "givenName": "Adrià",
+        "familyName": "Martínez Colomer",
+        "jobTitle": "Process & Automation Engineer",
+        "description": "Process and automation engineer focused on manufacturing engineering, industrial automation, robotics, and AI applied to manufacturing.",
+        "url": "https://amc-engineer.com/",
+        "image": "https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png",
+        "email": "mailto:adria@martinez.colomer.cat",
+        "telephone": "+34686584989",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressRegion": "Catalonia",
+          "addressCountry": "ES"
+        },
+        "nationality": "Spanish",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Vic – Central University of Catalonia"
+        },
+        "knowsLanguage": ["ca", "es", "en", "de"],
+        "knowsAbout": [
+          "Process Engineering",
+          "Industrial Automation",
+          "Manufacturing Engineering",
+          "Robotics",
+          "BIW Manufacturing",
+          "Resistance Spot Welding",
+          "PLC Systems",
+          "PFMEA",
+          "Lean Manufacturing",
+          "Industry 4.0",
+          "Applied Artificial Intelligence",
+          "Python"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Jordan Group"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://amc-engineer.com/#website",
+        "url": "https://amc-engineer.com/",
+        "name": "AMC Engineer",
+        "description": "Personal engineering portfolio of Adrià Martínez Colomer — process engineering, industrial automation, robotics, and AI applied to manufacturing.",
+        "inLanguage": ["en", "es", "ca", "de"],
+        "author": { "@id": "https://amc-engineer.com/#person" },
+        "publisher": { "@id": "https://amc-engineer.com/#person" },
+        "about": { "@id": "https://amc-engineer.com/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://amc-engineer.com/#profilepage",
+        "url": "https://amc-engineer.com/",
+        "name": "Adrià Martínez Colomer | Process & Automation Engineer",
+        "isPartOf": { "@id": "https://amc-engineer.com/#website" },
+        "mainEntity": { "@id": "https://amc-engineer.com/#person" },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" data-i18n="a11y.skip" href="#home">Vés al contingut principal</a>
+<!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+<nav aria-label="Main navigation" class="nav" id="navbar" role="navigation">
+<div class="nav__container">
+<a aria-label="Home" class="nav__logo" href="#home">
+<span class="nav__logo-text">AMC</span>
+<span class="nav__logo-dot"></span>
+</a>
+<ul class="nav__links" id="navLinks" role="list">
+<li><a class="nav__link" data-i18n="nav.about" href="#about">Sobre mi</a></li>
+<li><a class="nav__link" data-i18n="nav.experience" href="#experience">Experiència</a></li>
+<li><a class="nav__link" data-i18n="nav.projects" href="#projects">Projectes</a></li>
+<li><a class="nav__link" data-i18n="nav.ai" href="#ai">IA i Innovació</a></li>
+<li><a class="nav__link" data-i18n="nav.skills" href="#skills">Competències</a></li>
+<li><a class="nav__link" data-i18n="nav.certifications" href="#certifications">Certificacions</a></li>
+<li><a class="nav__link" data-i18n="nav.contact" href="#contact">Contacte</a></li>
+</ul>
+<div class="nav__actions">
+<!-- Language Switcher -->
+<div class="lang-switch" data-lang-switch="">
+<button aria-expanded="false" aria-haspopup="listbox" aria-label="Seleccionar idioma" class="lang-switch__btn" data-i18n-aria-label="nav.langLabel" data-lang-btn="">
+<span class="lang-switch__flag" data-lang-current-flag="">🇬🇧</span>
+<span class="lang-switch__short" data-lang-current-code="">EN</span>
+<svg class="lang-switch__chevron" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<ul aria-label="Language options" class="lang-switch__menu" data-lang-menu="" role="listbox"></ul>
+</div>
+<button aria-label="Canviar mode clar/fosc" class="theme-toggle" data-i18n-aria-label="nav.themeToggle" data-i18n-title="nav.themeToggle" id="themeToggle" title="Canviar mode clar/fosc">
+<svg class="icon-sun" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+<svg class="icon-moon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+</button>
+<button aria-expanded="false" aria-label="Obrir menú mòbil" class="nav__hamburger" data-i18n-aria-label="nav.menuToggle" id="hamburger">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</nav>
+<main id="main">
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section aria-label="Introduction" class="hero" id="home">
+<div class="hero__bg-canvas" id="heroCanvas"></div>
+<div class="hero__content">
+<div class="hero__banner animate-fade-up" data-delay="0">
+<span class="hero__banner-dot"></span>
+<span data-i18n="hero.banner">Disponible per a oportunitats a Catalunya, Espanya i Europa.</span>
+</div>
+<h1 class="hero__name animate-fade-up" data-delay="100">Adrià Martínez<br/><span class="gradient-text">Colomer</span></h1>
+<p class="hero__headline animate-fade-up" data-delay="200" data-i18n="hero.headline" data-i18n-html="">Converteixo conceptes de <strong>carrosseria en brut (BIW)</strong> en línies de producció automatitzades en marxa — i porto el <strong>programari i la IA</strong> a la planta.</p>
+<div aria-label="Core specializations" class="hero__pillars animate-fade-up" data-delay="300" role="list">
+<span class="hero__pillar" data-i18n="hero.pillars.0" role="listitem">Enginyer d'Automatització Industrial</span>
+<span class="hero__pillar" data-i18n="hero.pillars.1" role="listitem">Especialista en Fabricació BIW</span>
+<span class="hero__pillar hero__pillar--accent" data-i18n="hero.pillars.2" role="listitem">Practicant d'IA Aplicada</span>
+</div>
+<p class="hero__description animate-fade-up" data-delay="380" data-i18n="hero.description" data-i18n-html="">Una dècada industrialitzant conjunts soldats a <strong>SEAT</strong>, el <strong>Grup Volkswagen</strong> i <strong>Jordan Group</strong> — des de cel·les de soldadura robotitzada (RSW, SPR, adhesius estructurals) fins a PFMEA, posada en marxa i enginyeria de processos basada en dades.</p>
+<div class="hero__cta animate-fade-up" data-delay="460">
+<a class="btn btn--primary" href="#contact">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+<span data-i18n="hero.ctaContact">Contactar</span>
+</a>
+<a class="btn btn--secondary" href="#experience">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" ry="2" width="20" x="2" y="7"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+<span data-i18n="hero.ctaExperience">Veure Experiència</span>
+</a>
+<a class="btn btn--outline" data-i18n-href="hero.cvHref" download="" href="/cv/CV_CA_Adria_Martinez_Colomer.docx">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+<span data-i18n="hero.ctaCV">Descarregar CV</span>
+</a>
+</div>
+<div class="hero__stats animate-fade-up" data-delay="560">
+<div class="stat">
+<span class="stat__number" data-target="10">0</span><span class="stat__plus">+</span>
+<span class="stat__label" data-i18n="hero.statYears">Anys d'Experiència</span>
+</div>
+<div class="stat__divider"></div>
+<div class="stat">
+<span class="stat__number" data-target="4">0</span>
+<span class="stat__label" data-i18n="hero.statCompanies">Empreses</span>
+</div>
+<div class="stat__divider"></div>
+<div class="stat">
+<span class="stat__number" data-target="2">0</span>
+<span class="stat__label" data-i18n="hero.statDegrees">Titulacions d'Enginyeria</span>
+</div>
+<div class="stat__divider"></div>
+<div class="stat">
+<span class="stat__number" data-target="4">0</span>
+<span class="stat__label" data-i18n="hero.statLanguages">Idiomes</span>
+</div>
+</div>
+</div>
+<div class="hero__scroll-indicator">
+<a aria-label="Scroll to About section" href="#about">
+<div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+<span data-i18n="hero.scroll">Desplaça't</span>
+</a>
+</div>
+</section>
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section aria-labelledby="about-title" class="section about" id="about">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="about.label">Sobre mi</span>
+<h2 class="section__title" data-i18n="about.title" data-i18n-html="" id="about-title">On la Planta de Producció es Troba amb el <span class="gradient-text">Codi i les Dades</span></h2>
+</div>
+<div class="about__grid">
+<div class="about__image-wrapper reveal">
+<div class="about__image">
+<!-- Drop-in: replace the line below with a real headshot, e.g.
+                 <img src="/assets/adria.jpg" alt="Adrià Martínez Colomer" class="about__photo" width="600" height="800" /> -->
+<img alt="Adrià Martínez Colomer — Industrial, Automation &amp; AI engineer" class="about__photo" height="800" loading="lazy" src="/assets/avatar.svg" width="600"/>
+</div>
+<div class="about__badges">
+<div class="badge badge--accent" data-i18n="about.badge1">Enginyer Mecatrònic</div>
+<div class="badge badge--secondary" data-i18n="about.badge2">Especialista en Automatització</div>
+<div class="badge badge--accent" data-i18n="about.badge4">Desenvolupador d'IA</div>
+<div class="badge badge--outline" data-i18n="about.badge3">Indústria 4.0</div>
+</div>
+</div>
+<div class="about__content reveal">
+<p class="about__lead" data-i18n="about.lead" data-i18n-html="">Soc Enginyer de Processos de Barcelona, amb doble titulació en <strong>Enginyeria Mecatrònica</strong> i <strong>Enginyeria Electrònica Industrial i Automàtica</strong>, combinant una base teòrica sòlida amb experiència pràctica a planta.</p>
+<p class="about__text" data-i18n="about.text1">La meva trajectòria s'ha forjat durant una dècada en els entorns d'automoció més exigents d'Espanya —principalment donant suport a SEAT S.A. i al Grup Volkswagen— on he treballat en tot el cicle de vida de la fabricació: des dels processos d'ensamblatge de carrosseria i els sistemes de soldadura robotitzada fins al disseny i la posada en marxa de cel·les de producció automatitzades.</p>
+<p class="about__text" data-i18n="about.text2">Actualment, a Jordan Group, lidero la industrialització de conjunts soldats de nova generació que integren soldadura per resistència, reblons autoperforants i adhesius estructurals: les tecnologies que defineixen les estratègies modernes d'alleugeriment en l'automoció.</p>
+<p class="about__text" data-i18n="about.text3">Més enllà de la planta, treballo de manera pràctica amb programari i intel·ligència artificial: desenvolupo automatització en Python, aplico models de llenguatge (LLM) i IA generativa als fluxos d'enginyeria i faig servir l'anàlisi de dades per prendre millors decisions tècniques. Opero a la intersecció entre fabricació, automatització, programari i IA.</p>
+<div class="about__values">
+<div class="value-card">
+<span class="value-card__icon">⚙️</span>
+<h3 data-i18n="about.v1t">Precisió en l'Enginyeria</h3>
+<p data-i18n="about.v1p">Cada procés que dissenyo es basa en estàndards mesurables, dades validades i rigor en l'enginyeria.</p>
+</div>
+<div class="value-card">
+<span class="value-card__icon">🚀</span>
+<h3 data-i18n="about.v2t">Millora Contínua</h3>
+<p data-i18n="about.v2p">Crec que tota línia de producció amaga un potencial d'eficiència que s'allibera mitjançant l'anàlisi sistemàtica.</p>
+</div>
+<div class="value-card">
+<span class="value-card__icon">🔗</span>
+<h3 data-i18n="about.v3t">Col·laboració Multidisciplinària</h3>
+<p data-i18n="about.v3p">Les millors solucions sorgeixen quan enginyeria, qualitat, manteniment i producció parlen el mateix idioma.</p>
+</div>
+</div>
+<div class="about__location">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span data-i18n="about.location">Barcelona, Catalunya, Espanya — Disponible per a reubicació i oportunitats internacionals</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+<section aria-labelledby="experience-title" class="section experience" id="experience">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="exp.label">Trajectòria Professional</span>
+<h2 class="section__title" data-i18n="exp.title" data-i18n-html="" id="experience-title">Experiència <span class="gradient-text">Professional</span></h2>
+</div>
+<div class="timeline">
+<div class="timeline__item timeline__item--left reveal">
+<div class="timeline__dot"></div>
+<div class="timeline__card">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.0.role">Enginyer de Processos</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.0.company">Jordan Group</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.0.dates">2023 – Actualitat</span>
+<span class="timeline__location" data-i18n="exp.jobs.0.location">Barcelona, Catalunya</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.0.bullets.0">Vaig liderar la industrialització de conjunts soldats integrant Soldadura per Resistència (RSW), Reblons Autoperforants (SPR) i adhesius estructurals per a programes d'automoció</li>
+<li data-i18n="exp.jobs.0.bullets.1">Vaig dissenyar i implementar cel·les de producció automatitzades de principi a fi: des de l'especificació tècnica i l'homologació de proveïdors fins a la posada en marxa i el lliurament a producció</li>
+<li data-i18n="exp.jobs.0.bullets.2">Vaig gestionar els processos de selecció de proveïdors i vaig dur a terme revisions tècniques amb integradors d'automatització en programes concurrents</li>
+<li data-i18n="exp.jobs.0.bullets.3">Vaig elaborar documentació completa de procés: PFMEA, plans de control, estudis de temps de cicle i instruccions de treball</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.0.tags.0">RSW</span><span class="tag" data-i18n="exp.jobs.0.tags.1">SPR</span><span class="tag" data-i18n="exp.jobs.0.tags.2">Adhesius Estructurals</span>
+<span class="tag" data-i18n="exp.jobs.0.tags.3">Disseny de Cel·les</span><span class="tag" data-i18n="exp.jobs.0.tags.4">Posada en Marxa</span><span class="tag" data-i18n="exp.jobs.0.tags.5">PFMEA</span>
+</div>
+</div>
+</div>
+<div class="timeline__item timeline__item--right reveal">
+<div class="timeline__dot"></div>
+<div class="timeline__card">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.1.role">Enginyer de Processos</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.1.company">Volkswagen Group Services</span> <span class="timeline__client" data-i18n="exp.jobs.1.client">@ SEAT, S.A.</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.1.dates">2022 – 2023</span>
+<span class="timeline__location" data-i18n="exp.jobs.1.location">Martorell, Catalunya</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.1.bullets.0">Vaig donar suport a les activitats de validació de processos per a les operacions d'ensamblatge de carrosseria (BIW) al complex de fabricació de SEAT a Martorell</li>
+<li data-i18n="exp.jobs.1.bullets.1">Vaig diagnosticar i resoldre defectes en línia de producció, reduint les aturades no planificades i donant suport als objectius de millora de l'OEE</li>
+<li data-i18n="exp.jobs.1.bullets.2">Vaig contribuir a projectes de millora contínua orientats a la reducció de temps de cicle i a l'augment de la productivitat</li>
+<li data-i18n="exp.jobs.1.bullets.3">Vaig col·laborar amb equips multidisciplinaris de qualitat, manteniment i planificació de la producció</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.1.tags.0">Validació de Processos</span><span class="tag" data-i18n="exp.jobs.1.tags.1">OEE</span><span class="tag" data-i18n="exp.jobs.1.tags.2">Resolució d'Incidències</span>
+<span class="tag" data-i18n="exp.jobs.1.tags.3">Millora Contínua</span><span class="tag" data-i18n="exp.jobs.1.tags.4">BIW</span>
+</div>
+</div>
+</div>
+<div class="timeline__item timeline__item--left reveal">
+<div class="timeline__dot"></div>
+<div class="timeline__card">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.2.role">Enginyer de Processos</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.2.company">Quality Continent, SL</span> <span class="timeline__client" data-i18n="exp.jobs.2.client">@ SEAT, S.A.</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.2.dates">2017 – 2022</span>
+<span class="timeline__location" data-i18n="exp.jobs.2.location">Martorell, Catalunya</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.2.bullets.0">Vaig prestar 5 anys de suport especialitzat en enginyeria de processos per a l'ensamblatge de Carrosseria en Blanc (BIW) de SEAT, una de les naus de carrosseria de més volum d'Europa</li>
+<li data-i18n="exp.jobs.2.bullets.1">Vaig optimitzar els paràmetres del procés de soldadura en múltiples estacions de producció, millorant els KPI de qualitat de soldadura i reduint el rebuig</li>
+<li data-i18n="exp.jobs.2.bullets.2">Vaig donar suport a revisions de FMEA, Anàlisi de Sistemes de Mesurament (MSA) i aprovacions PPAP per a noves eines i canvis de procés</li>
+<li data-i18n="exp.jobs.2.bullets.3">Vaig formar operaris i tècnics en estàndards de soldadura actualitzats, punts de control de qualitat i procediments de producció</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.2.tags.0">Soldadura BIW</span><span class="tag" data-i18n="exp.jobs.2.tags.1">FMEA</span><span class="tag" data-i18n="exp.jobs.2.tags.2">PPAP</span>
+<span class="tag" data-i18n="exp.jobs.2.tags.3">MSA</span><span class="tag" data-i18n="exp.jobs.2.tags.4">5 Anys</span><span class="tag" data-i18n="exp.jobs.2.tags.5">SEAT</span>
+</div>
+</div>
+</div>
+<div class="timeline__item timeline__item--right reveal">
+<div class="timeline__dot timeline__dot--intern"></div>
+<div class="timeline__card timeline__card--intern">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.3.role">Becari d'Enginyeria de Manteniment</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.3.company">SEAT, S.A.</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.3.dates">2015 – 2016</span>
+<span class="timeline__location" data-i18n="exp.jobs.3.location">Martorell, Catalunya</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.3.bullets.0">Vaig donar suport a l'oficina tècnica del departament de manteniment de Carrosseria en una de les plantes de fabricació d'automoció més grans d'Europa</li>
+<li data-i18n="exp.jobs.3.bullets.1">Vaig col·laborar en la documentació, planificació i execució de programes de manteniment preventiu d'estacions de soldadura robotitzades</li>
+<li data-i18n="exp.jobs.3.bullets.2">Primer contacte amb entorns de producció de carrosseria (BIW) a gran escala, sistemes robotitzats i fluxos de treball d'enginyeria</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.3.tags.0">Carrosseria</span><span class="tag" data-i18n="exp.jobs.3.tags.1">Manteniment Preventiu</span>
+<span class="tag" data-i18n="exp.jobs.3.tags.2">Soldadura Robotitzada</span><span class="tag" data-i18n="exp.jobs.3.tags.3">SEAT S.A.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+<section aria-labelledby="projects-title" class="section projects" id="projects">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="proj.label">Portafoli</span>
+<h2 class="section__title" data-i18n="proj.title" data-i18n-html="" id="projects-title">Projectes d'<span class="gradient-text">Enginyeria</span></h2>
+</div>
+<div class="projects__grid">
+<article aria-label="Automated Assembly Cell Design project" class="project-card reveal">
+<div class="project-card__icon">🤖</div>
+<div class="project-card__tag" data-i18n="proj.cards.0.tag">Automatització · 2023–Actualitat</div>
+<h3 class="project-card__title" data-i18n="proj.cards.0.title">Disseny i Posada en Marxa de Cel·les d'Ensamblatge Automatitzades</h3>
+<p class="project-card__description" data-i18n="proj.cards.0.description">Industrialització integral de cel·les de producció automatitzades que integren tecnologies RSW, SPR i d'adhesius estructurals. Gestió del cicle de vida complet, des de l'especificació conceptual fins al lliurament a producció, coordinant amb integradors d'automatització en múltiples programes simultanis.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.0.highlights.0">Integració de processos d'unió multitecnologia</li>
+<li data-i18n="proj.cards.0.highlights.1">Homologació de proveïdors i gestió de revisions tècniques</li>
+<li data-i18n="proj.cards.0.highlights.2">PFMEA, plans de control i documentació de procés</li>
+</ul>
+<div class="project-card__tech">
+<span>RSW</span><span>SPR</span><span>Adhesives</span><span>Robotics</span><span>PLC</span>
+</div>
+</article>
+<article aria-label="BIW Process Optimization project" class="project-card reveal">
+<div class="project-card__icon">⚡</div>
+<div class="project-card__tag" data-i18n="proj.cards.1.tag">Enginyeria de Processos · 2017–2022</div>
+<h3 class="project-card__title" data-i18n="proj.cards.1.title">Optimització del Procés de Soldadura BIW — Carrosseria SEAT</h3>
+<p class="project-card__description" data-i18n="proj.cards.1.description">Programa de millora contínua de cinc anys per a l'ensamblatge de Carrosseria en Blanc de SEAT, una de les naus de carrosseria de més volum d'Europa. Optimització sistemàtica dels paràmetres del procés de soldadura, els KPI de qualitat i l'eficiència de les estacions en múltiples plataformes de vehicles.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.1.highlights.0">Optimització i estandardització de paràmetres de qualitat de soldadura</li>
+<li data-i18n="proj.cards.1.highlights.1">Iniciatives de reducció de rebuig i millora de l'OEE</li>
+<li data-i18n="proj.cards.1.highlights.2">Formació d'operaris i implantació de treball estàndard</li>
+</ul>
+<div class="project-card__tech">
+<span>BIW</span><span>Welding</span><span>Lean</span><span>FMEA</span><span>PPAP</span>
+</div>
+</article>
+<article aria-label="Production Validation project" class="project-card reveal">
+<div class="project-card__icon">🔍</div>
+<div class="project-card__tag" data-i18n="proj.cards.2.tag">Qualitat i Validació · 2022–2023</div>
+<h3 class="project-card__title" data-i18n="proj.cards.2.title">Validació de Producció en Automoció — Grup VW</h3>
+<p class="project-card__description" data-i18n="proj.cards.2.description">Enginyeria de validació de processos per a les operacions d'ensamblatge del Grup Volkswagen a SEAT Martorell. Centrada en l'anàlisi de causa arrel de defectes, la resolució d'incidències de producció i la implantació d'accions correctives per mantenir els objectius de qualitat i productivitat.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.2.highlights.0">Validació i aprovació de la capacitat de procés</li>
+<li data-i18n="proj.cards.2.highlights.1">Desplegament de la metodologia de resolució de problemes 8D</li>
+<li data-i18n="proj.cards.2.highlights.2">Equips multidisciplinaris de resolució d'incidències</li>
+</ul>
+<div class="project-card__tech">
+<span>8D</span><span>PPAP</span><span>SPC</span><span>IATF 16949</span>
+</div>
+</article>
+<article aria-label="Industry 4.0 initiative" class="project-card reveal">
+<div class="project-card__icon">🏭</div>
+<div class="project-card__tag" data-i18n="proj.cards.3.tag">Indústria 4.0 · Iniciativa Futura</div>
+<h3 class="project-card__title" data-i18n="proj.cards.3.title">Fabricació Intel·ligent i Transformació Digital</h3>
+<p class="project-card__description" data-i18n="proj.cards.3.description">Aplicació dels principis de la Indústria 4.0 a les operacions de fabricació: cel·les de producció connectades, monitoratge de processos en temps real, analítica predictiva de qualitat i conceptes de bessó digital per a entorns d'ensamblatge automatitzats.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.3.highlights.0">Monitoratge de producció connectada (IoT)</li>
+<li data-i18n="proj.cards.3.highlights.1">Optimització de processos basada en dades</li>
+<li data-i18n="proj.cards.3.highlights.2">Bessó digital per a la validació de cel·les d'ensamblatge</li>
+</ul>
+<div class="project-card__tech">
+<span>IoT</span><span>MES</span><span>Data Analytics</span><span>Digital Twin</span>
+</div>
+</article>
+<article aria-label="Robotics Integration project" class="project-card reveal">
+<div class="project-card__icon">🦾</div>
+<div class="project-card__tag" data-i18n="proj.cards.4.tag">Robòtica · En curs</div>
+<h3 class="project-card__title" data-i18n="proj.cards.4.title">Integració de Sistemes de Soldadura Robotitzada</h3>
+<p class="project-card__description" data-i18n="proj.cards.4.description">Especificació tècnica, selecció i integració de sistemes de soldadura robotitzada en línies d'ensamblatge de carrosseria. Coordinació amb fabricants de robots (KUKA, FANUC, ABB) i proveïdors de PLC per a la posada en marxa completa de cel·les i el lliurament a producció.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.4.highlights.0">Especificacions tècniques independents de la marca de robot</li>
+<li data-i18n="proj.cards.4.highlights.1">Integració PLC/SCADA</li>
+<li data-i18n="proj.cards.4.highlights.2">Validació de sistemes de seguretat i conformitat CE</li>
+</ul>
+<div class="project-card__tech">
+<span>KUKA</span><span>FANUC</span><span>ABB</span><span>Siemens PLC</span><span>SCADA</span>
+</div>
+</article>
+<article aria-label="Mechatronics Engineering thesis" class="project-card reveal">
+<div class="project-card__icon">🎓</div>
+<div class="project-card__tag" data-i18n="proj.cards.5.tag">Acadèmic · 2016–2018</div>
+<h3 class="project-card__title" data-i18n="proj.cards.5.title">Recerca en Enginyeria — Universitat de Vic</h3>
+<p class="project-card__description" data-i18n="proj.cards.5.description">Doble formació en enginyeria que combina un grau de 4 anys en Enginyeria Mecatrònica amb una especialització en Electrònica Industrial i Automàtica. Projectes acadèmics que connecten les disciplines d'enginyeria mecànica, electrònica i de programari.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.5.highlights.0">Disseny i prototipatge de sistemes mecatrònics</li>
+<li data-i18n="proj.cards.5.highlights.1">Programació de PLC i sistemes de control</li>
+<li data-i18n="proj.cards.5.highlights.2">Integració de sensors i sistemes encastats</li>
+</ul>
+<div class="project-card__tech">
+<span>Mechatronics</span><span>PLC</span><span>Electronics</span><span>CAD</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ AI & DIGITAL INNOVATION ═══════════════════════ -->
+<section aria-labelledby="ai-title" class="section ai" id="ai">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="ai.label">Innovació Digital</span>
+<h2 class="section__title" data-i18n="ai.title" data-i18n-html="" id="ai-title">Intel·ligència Artificial i <span class="gradient-text">Innovació Digital</span></h2>
+<p class="section__subtitle" data-i18n="ai.subtitle">Enginyeria més enllà de la planta, on la fabricació es troba amb el programari, les dades i la IA.</p>
+</div>
+<!-- Bridge: the central theme -->
+<div class="ai__bridge reveal">
+<span class="ai__bridge-node" data-i18n="ai.bridge.0">Fabricació</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node" data-i18n="ai.bridge.1">Automatització</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node" data-i18n="ai.bridge.2">Programari</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node" data-i18n="ai.bridge.3">Dades</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node ai__bridge-node--accent" data-i18n="ai.bridge.4">Intel·ligència Artificial</span>
+</div>
+<p class="ai__intro reveal" data-i18n="ai.intro">Aporto el rigor d'un enginyer a la resolució de problemes digitals. Al costat de la meva feina en fabricació, desenvolupo programari de manera activa, automatitzo processos i aplico intel·ligència artificial perquè l'enginyeria sigui més ràpida, intel·ligent i basada en dades.</p>
+<!-- Capabilities -->
+<div class="ai__caps">
+<div class="ai-card reveal">
+<span class="ai-card__icon">🧠</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.0.title">Eines d'IA i LLM</h3>
+<p class="ai-card__text" data-i18n="ai.caps.0.text">Ús diari de models de llenguatge i IA generativa per accelerar l'anàlisi d'enginyeria, la documentació i la presa de decisions.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">🐍</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.1.title">Desenvolupament en Python</h3>
+<p class="ai-card__text" data-i18n="ai.caps.1.text">Creació de scripts i eines a mida que automatitzen tasques d'enginyeria repetitives, el processament de dades i els informes.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">⚙️</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.2.title">Automatització de Processos</h3>
+<p class="ai-card__text" data-i18n="ai.caps.2.text">Automatització de fluxos de documentació, gestió de dades i càlculs d'enginyeria per estalviar temps i reduir errors.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">📊</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.3.title">Anàlisi de Dades</h3>
+<p class="ai-card__text" data-i18n="ai.caps.3.text">Convertir les dades de fabricació i procés en informació accionable que dona suport a millors decisions d'enginyeria.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">🔗</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.4.title">Fluxos Assistits per IA</h3>
+<p class="ai-card__text" data-i18n="ai.caps.4.text">Integració de la IA en fluxos d'enginyeria reals: des de la redacció tècnica fins a la resolució d'incidències i el prototipatge ràpid.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">🧩</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.5.title">Sistemes Algorítmics</h3>
+<p class="ai-card__text" data-i18n="ai.caps.5.text">Disseny de solucions lògiques i algorítmiques i de programari lleuger que connecta dades, automatització i producció.</p>
+</div>
+</div>
+<!-- AI & Software Projects -->
+<h3 class="ai__subhead reveal" data-i18n="ai.projTitle">Projectes d'IA i Programari</h3>
+<div class="projects__grid">
+<article aria-label="AI-Assisted Engineering Documentation project" class="project-card reveal">
+<div class="project-card__icon">📝</div>
+<div class="project-card__tag" data-i18n="ai.projects.0.tag">IA Aplicada · Enginyeria</div>
+<h3 class="project-card__title" data-i18n="ai.projects.0.title">PFMEA i Documentació Tècnica Assistits per IA</h3>
+<p class="project-card__description" data-i18n="ai.projects.0.description">Ús de grans models de llenguatge per accelerar la redacció i revisió de documentació d'enginyeria — PFMEA, plans de control, informes 8D i instruccions de treball — sempre amb un enginyer validant els resultats.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.0.highlights.0">Redacció de PFMEA i plans de control assistida per LLM</li>
+<li data-i18n="ai.projects.0.highlights.1">Suport a l'anàlisi 8D i de causa arrel</li>
+<li data-i18n="ai.projects.0.highlights.2">Redacció tècnica més ràpida i coherent</li>
+</ul>
+<div class="project-card__tech">
+<span>Python</span><span>LLMs</span><span>Prompt Eng.</span><span>PFMEA</span>
+</div>
+</article>
+<article aria-label="Industrial Engineering Automation Tools project" class="project-card reveal">
+<div class="project-card__icon">🧰</div>
+<div class="project-card__tag" data-i18n="ai.projects.1.tag">Eines d'Enginyeria · En curs</div>
+<h3 class="project-card__title" data-i18n="ai.projects.1.title">Eines d'Automatització per a Enginyeria Industrial</h3>
+<p class="project-card__description" data-i18n="ai.projects.1.description">Programari a mida que automatitza tasques d'enginyeria repetitives: des de l'extracció de dades i la generació d'informes fins als càlculs de procés.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.1.highlights.0">Scripts d'automatització en Python</li>
+<li data-i18n="ai.projects.1.highlights.1">Informes i documentació automatitzats</li>
+<li data-i18n="ai.projects.1.highlights.2">Reducció de l'esforç manual</li>
+</ul>
+<div class="project-card__tech">
+<span>Python</span><span>Automation</span><span>Excel/CSV</span><span>Scripting</span>
+</div>
+</article>
+<article aria-label="Data-Driven Manufacturing Analysis project" class="project-card reveal">
+<div class="project-card__icon">🗂️</div>
+<div class="project-card__tag" data-i18n="ai.projects.2.tag">Analítica de Dades</div>
+<h3 class="project-card__title" data-i18n="ai.projects.2.title">Anàlisi de Fabricació Basat en Dades</h3>
+<p class="project-card__description" data-i18n="ai.projects.2.description">Analítica i automatització que transformen les dades de producció i procés en informació per millorar la presa de decisions d'enginyeria.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.2.highlights.0">Anàlisi de dades de procés i qualitat</li>
+<li data-i18n="ai.projects.2.highlights.1">Processament de dades automatitzat</li>
+<li data-i18n="ai.projects.2.highlights.2">Taulers de suport a la decisió</li>
+</ul>
+<div class="project-card__tech">
+<span>Data Analysis</span><span>Python</span><span>KPIs</span><span>Dashboards</span>
+</div>
+</article>
+<article aria-label="AI-Enhanced Engineering Workflows project" class="project-card reveal">
+<div class="project-card__icon">✨</div>
+<div class="project-card__tag" data-i18n="ai.projects.3.tag">IA Generativa</div>
+<h3 class="project-card__title" data-i18n="ai.projects.3.title">Fluxos d'Enginyeria Millorats amb IA</h3>
+<p class="project-card__description" data-i18n="ai.projects.3.description">Aplicació de models de llenguatge a la documentació tècnica, l'enginyeria de processos i l'execució de projectes per treballar més de pressa i amb més qualitat.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.3.highlights.0">LLMs per a documentació tècnica</li>
+<li data-i18n="ai.projects.3.highlights.1">Resolució d'incidències assistida per IA</li>
+<li data-i18n="ai.projects.3.highlights.2">Execució de projectes més ràpida</li>
+</ul>
+<div class="project-card__tech">
+<span>LLMs</span><span>Generative AI</span><span>Prompt Eng.</span><span>Docs</span>
+</div>
+</article>
+</div>
+<!-- Industry 4.0 & Smart Manufacturing -->
+<h3 class="ai__subhead reveal" data-i18n="ai.i40Title">Indústria 4.0 i Fabricació Intel·ligent</h3>
+<p class="ai__intro ai__intro--tight reveal" data-i18n="ai.i40Intro">Portar dades, connectivitat i intel·ligència a la planta per convertir la producció tradicional en una fabricació intel·ligent i receptiva.</p>
+<div class="ai__i40 reveal">
+<span class="tag tag--lg" data-i18n="ai.i40.0">Fabricació Intel·ligent</span>
+<span class="tag tag--lg" data-i18n="ai.i40.1">Transformació Digital</span>
+<span class="tag tag--lg" data-i18n="ai.i40.2">Fabricació Basada en Dades</span>
+<span class="tag tag--lg" data-i18n="ai.i40.3">Enginyeria Assistida per IA</span>
+<span class="tag tag--lg" data-i18n="ai.i40.4">Digitalització Industrial</span>
+<span class="tag tag--lg" data-i18n="ai.i40.5">Analítica Predictiva</span>
+<span class="tag tag--lg" data-i18n="ai.i40.6">Sistemes Connectats</span>
+<span class="tag tag--lg" data-i18n="ai.i40.7">Intel·ligència de Fabricació</span>
+</div>
+<!-- Future Vision -->
+<div class="ai__vision reveal">
+<h3 class="ai__vision-title" data-i18n="ai.visionTitle">El Futur de l'Enginyeria</h3>
+<p class="ai__vision-text" data-i18n="ai.visionText">Crec que la propera dècada de l'enginyeria pertany a qui connecta el físic i el digital, combinant un coneixement profund de fabricació amb programari, dades i intel·ligència artificial.</p>
+<div class="ai__vision-grid">
+<div class="ai__vision-point">
+<span class="ai__vision-icon">🤖</span>
+<h4 data-i18n="ai.visionPoints.0.title">IA en la Fabricació</h4>
+<p data-i18n="ai.visionPoints.0.text">Passar de projectes pilot a decisions quotidianes d'enginyeria i producció.</p>
+</div>
+<div class="ai__vision-point">
+<span class="ai__vision-icon">⚡</span>
+<h4 data-i18n="ai.visionPoints.1.title">Automatització Intel·ligent</h4>
+<p data-i18n="ai.visionPoints.1.text">Sistemes que s'adapten, aprenen i s'optimitzen en temps real.</p>
+</div>
+<div class="ai__vision-point">
+<span class="ai__vision-icon">🤝</span>
+<h4 data-i18n="ai.visionPoints.2.title">Col·laboració Persona–IA</h4>
+<p data-i18n="ai.visionPoints.2.text">Enginyers potenciats per la IA: anàlisi més ràpida i resolució més creativa.</p>
+</div>
+<div class="ai__vision-point">
+<span class="ai__vision-icon">🌐</span>
+<h4 data-i18n="ai.visionPoints.3.title">Indústria 5.0</h4>
+<p data-i18n="ai.visionPoints.3.text">La persona de nou al centre, amb el suport de sistemes intel·ligents, sostenibles i connectats.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+<section aria-labelledby="skills-title" class="section skills" id="skills">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="skills.label">Especialització</span>
+<h2 class="section__title" data-i18n="skills.title" data-i18n-html="" id="skills-title">Competències <span class="gradient-text">Tècniques</span></h2>
+</div>
+<div aria-hidden="true" class="skills__legend reveal">
+<span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Expert</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+<span class="skill-level skill-level--working" data-i18n="skills.levels.working">Coneixements bàsics</span>
+</div>
+<div class="skills__grid">
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
+<span data-i18n="skills.cat1">Enginyeria i Processos</span>
+</h3>
+<ul class="skill-list">
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.0">Soldadura BIW (RSW, SPR, Adhesius)</span>
+<span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Expert</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.1">Industrialització de Processos</span>
+<span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Expert</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.2">Automatització Industrial i Disseny de Cel·les</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.3">Lean i Millora Contínua</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.4">FMEA / Sistemes de Qualitat (IATF 16949)</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.5">Gestió de Proveïdors i Revisions Tècniques</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+</ul>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+<span data-i18n="skills.cat2">Programari i Eines</span>
+</h3>
+<ul class="skill-list">
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.0">CAD (AutoCAD / SolidWorks / CATIA)</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.1">Microsoft Office (Excel Avançat)</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.2">Programari PLC (Siemens TIA / Allen-Bradley)</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.3">Sistemes SAP / ERP</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.4">Indústria 4.0 / IoT / MES</span>
+<span class="skill-level skill-level--working" data-i18n="skills.levels.working">Coneixements bàsics</span>
+</li>
+</ul>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+<span data-i18n="skills.cat3">Idiomes</span>
+</h3>
+<div class="language-grid">
+<div class="language-item">
+<div class="language-flag">🏴󠁥󠁳󠁣󠁴󠁿</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.0.name">Català</span>
+<span class="language-level native" data-i18n="skills.langs.0.level">Nadiu</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+</div>
+</div>
+<div class="language-item">
+<div class="language-flag">🇪🇸</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.1.name">Castellà</span>
+<span class="language-level native" data-i18n="skills.langs.1.level">Nadiu</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+</div>
+</div>
+<div class="language-item">
+<div class="language-flag">🇬🇧</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.2.name">Anglès</span>
+<span class="language-level b2" data-i18n="skills.langs.2.level">B2 Intermedi Alt</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+</div>
+</div>
+<div class="language-item">
+<div class="language-flag">🇩🇪</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.3.name">Alemany</span>
+<span class="language-level a1" data-i18n="skills.langs.3.level">A1 Bàsic</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+<span data-i18n="skills.cat4">Competències Clau</span>
+</h3>
+<div class="tag-cloud">
+<span class="tag tag--lg" data-i18n="skills.cloud.0">Fabricació BIW</span>
+<span class="tag tag--lg" data-i18n="skills.cloud.1">Soldadura per Punts</span>
+<span class="tag tag--lg" data-i18n="skills.cloud.2">Industrialització de Processos</span>
+<span class="tag tag--md" data-i18n="skills.cloud.3">Reblons Autoperforants</span>
+<span class="tag tag--md" data-i18n="skills.cloud.4">Adhesius Estructurals</span>
+<span class="tag tag--md" data-i18n="skills.cloud.5">Disseny d'Automatització</span>
+<span class="tag tag--md" data-i18n="skills.cloud.6">PFMEA</span>
+<span class="tag tag--md" data-i18n="skills.cloud.7">Plans de Control</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.8">Optimització de Temps de Cicle</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.9">Gestió de Proveïdors</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.10">IATF 16949</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.11">Resolució de Problemes 8D</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.12">Kaizen</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.13">OEE</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.14">PPAP</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.15">Disseny CAD</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.16">Indústria 4.0</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.17">Gestió de Projectes Tècnics</span>
+</div>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="7" width="7" x="3" y="3"></rect><rect height="7" width="7" x="14" y="3"></rect><rect height="7" width="7" x="14" y="14"></rect><rect height="7" width="7" x="3" y="14"></rect></svg>
+<span data-i18n="skills.cat5">Tecnologies Digitals i IA</span>
+</h3>
+<ul class="skill-list">
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.0">Desenvolupament en Python</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.1">IA Generativa i LLMs</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.2">Enginyeria de Prompts</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.3">Anàlisi de Dades i Automatització</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.4">Fluxos de Treball amb IA</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Avançat</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.5">Integració d'APIs i Scripting</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Competent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.6">Fonaments de Machine Learning</span>
+<span class="skill-level skill-level--working" data-i18n="skills.levels.working">Coneixements bàsics</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ CERTIFICATIONS ═══════════════════════ -->
+<section aria-labelledby="certs-title" class="section certifications" id="certifications">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="certs.label">Credencials</span>
+<h2 class="section__title" data-i18n="certs.title" data-i18n-html="" id="certs-title">Formació i <span class="gradient-text">Certificacions</span></h2>
+</div>
+<div class="certs__grid">
+<div class="cert-card cert-card--education reveal">
+<div class="cert-card__icon">🎓</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.0.type">Grau Universitari</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.0.title">Enginyeria Electrònica Industrial i Automàtica</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.0.issuer">Universitat de Vic – Universitat Central de Catalunya</p>
+<p class="cert-card__date" data-i18n="certs.cards.0.date">2016 – 2018 · Barcelona, Catalunya</p>
+</div>
+</div>
+<div class="cert-card cert-card--education reveal">
+<div class="cert-card__icon">🎓</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.1.type">Grau Universitari</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.1.title">Enginyeria Mecatrònica</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.1.issuer">Universitat de Vic – Universitat Central de Catalunya</p>
+<p class="cert-card__date" data-i18n="certs.cards.1.date">2012 – 2016 · Barcelona, Catalunya</p>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-card__icon">🚗</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.2.type">Permís</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.2.title">Permís de Conduir – Categoria B</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.2.issuer">Dirección General de Tráfico</p>
+<p class="cert-card__date" data-i18n="certs.cards.2.date">Espanya</p>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-card__icon">⛵</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.3.type">Titulació</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.3.title">PER – Patró d'Embarcacions d'Esbarjo</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.3.issuer">Ministeri de Transports, Mobilitat i Agenda Urbana</p>
+<p class="cert-card__date" data-i18n="certs.cards.3.date">Espanya</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section aria-labelledby="contact-title" class="section contact" id="contact">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="contact.label">Connectem</span>
+<h2 class="section__title" data-i18n="contact.title" data-i18n-html="" id="contact-title">Posa't en <span class="gradient-text">Contacte</span></h2>
+<p class="section__subtitle" data-i18n="contact.subtitle">Obert a noves oportunitats, col·laboracions i reptes d'enginyeria.</p>
+</div>
+<div class="contact__grid">
+<div class="contact__info reveal">
+<div class="contact__info-item">
+<div class="contact__info-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+</div>
+<div>
+<h3 data-i18n="contact.emailH">Correu electrònic</h3>
+<a href="mailto:adria@martinez.colomer.cat">adria@martinez.colomer.cat</a>
+</div>
+</div>
+<div class="contact__info-item">
+<div class="contact__info-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.42 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"></path></svg>
+</div>
+<div>
+<h3 data-i18n="contact.phoneH">Telèfon</h3>
+<a href="tel:+34686584989">+34 686 584 989</a>
+</div>
+</div>
+<div class="contact__info-item">
+<div class="contact__info-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</div>
+<div>
+<h3 data-i18n="contact.locationH">Ubicació</h3>
+<span data-i18n="contact.locationV">Barcelona, Catalunya, Espanya</span>
+</div>
+</div>
+<div class="contact__social">
+<a aria-label="LinkedIn profile (opens in a new tab)" class="social-btn" href="https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+<span data-i18n="contact.linkedin">LinkedIn</span>
+</a>
+<a aria-label="Send email" class="social-btn" href="mailto:adria@martinez.colomer.cat">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+<span data-i18n="contact.emailMe">Escriu-me</span>
+</a>
+</div>
+</div>
+<form action="https://formspree.io/f/mqeonjaj" aria-label="Contact form" class="contact__form reveal" data-msg-captcha="Completa la verificació per enviar." data-msg-consent="Accepta la Política de Privadesa per enviar el teu missatge." data-msg-email="Si us plau, introdueix un correu electrònic vàlid." data-msg-required="Si us plau, omple tots els camps obligatoris." data-msg-sending="Enviant…" data-msg-sent="Missatge Enviat!" data-msg-submit="Enviar Missatge" data-msg-success="Gràcies! Et respondré en menys de 24 hores." id="contactForm" method="POST" novalidate="">
+<!-- Honeypot: hidden from real users; Formspree's _gotcha auto-discards spam -->
+<div aria-hidden="true" class="form__hp">
+<label for="company_url">Leave this field empty</label>
+<input autocomplete="off" id="company_url" name="_gotcha" tabindex="-1" type="text"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fName" for="name">Nom complet</label>
+<input aria-required="true" autocomplete="name" class="form__input" data-i18n-placeholder="contact.pName" id="name" maxlength="100" name="name" placeholder="El teu nom complet" required="" type="text"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fEmail" for="email">Correu electrònic</label>
+<input aria-required="true" autocomplete="email" class="form__input" data-i18n-placeholder="contact.pEmail" id="email" inputmode="email" maxlength="150" name="email" placeholder="el-teu@correu.com" required="" type="email"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fCompany" for="company">Empresa / Organització</label>
+<input autocomplete="organization" class="form__input" data-i18n-placeholder="contact.pCompany" id="company" maxlength="120" name="company" placeholder="Nom de l'empresa (opcional)" type="text"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fSubject" for="subject">Assumpte</label>
+<select class="form__input form__select" id="subject" name="subject" required="">
+<option data-i18n="contact.selDefault" value="">Selecciona un assumpte…</option>
+<option data-i18n="contact.optJob" value="job">Oferta de Feina</option>
+<option data-i18n="contact.optCollab" value="collab">Col·laboració</option>
+<option data-i18n="contact.optConsulting" value="networking">Networking professional</option>
+<option data-i18n="contact.optOther" value="other">Altres</option>
+</select>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fMessage" for="message">Missatge</label>
+<textarea aria-required="true" class="form__input form__textarea" data-i18n-placeholder="contact.pMessage" id="message" maxlength="2000" name="message" placeholder="Explica'm sobre l'oportunitat o com et puc ajudar…" required="" rows="5"></textarea>
+</div>
+<div class="form__consent">
+<input aria-required="true" class="form__check" id="consent" name="consent" required="" type="checkbox"/>
+<label class="form__consent-label" data-i18n="contact.consent" data-i18n-html="" for="consent">Consento el tractament de les meves dades per respondre la meva consulta, d’acord amb la <a href="/privacy-policy/" rel="noopener" target="_blank">Política de Privadesa</a>.</label>
+</div>
+<!-- Cloudflare Turnstile (privacy-friendly CAPTCHA). Inactive until a site key
+               is set in js/main.js (TURNSTILE_SITEKEY) — see docs/SECURITY.md. -->
+<div class="cf-turnstile form__turnstile" data-sitekey="" data-size="flexible" data-theme="auto"></div>
+<button class="btn btn--primary btn--full" id="submitBtn" type="submit">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+<span data-i18n="contact.submit">Enviar Missatge</span>
+</button>
+<p class="form__note" data-i18n="contact.note">Normalment responc en menys de 24 hores.</p>
+</form>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__brand">
+<a class="nav__logo" href="#home">AMC<span class="nav__logo-dot"></span></a>
+<p data-i18n="footer.tagline">Enginyer de Processos · Especialista en Automatització Industrial · Indústria 4.0 · Barcelona, Catalunya</p>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer.navH">Navegació</h4>
+<ul>
+<li><a data-i18n="nav.about" href="#about">Sobre mi</a></li>
+<li><a data-i18n="nav.experience" href="#experience">Experiència</a></li>
+<li><a data-i18n="nav.projects" href="#projects">Projectes</a></li>
+<li><a data-i18n="nav.ai" href="#ai">IA i Innovació</a></li>
+<li><a data-i18n="nav.skills" href="#skills">Competències</a></li>
+<li><a data-i18n="nav.contact" href="#contact">Contacte</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer.contactH">Contacte</h4>
+<p><a href="mailto:adria@martinez.colomer.cat">adria@martinez.colomer.cat</a></p>
+<p><a href="tel:+34686584989">+34 686 584 989</a></p>
+<p data-i18n="contact.locationV">Barcelona, Catalunya, Espanya</p>
+</div>
+</div>
+<div class="footer__bottom">
+<p data-i18n="footer.copyright" data-year="">© 2026 Adrià Martínez Colomer. Tots els drets reservats.</p>
+<nav aria-label="Legal" class="footer__legal">
+<a data-i18n="footer.privacy" href="/privacy-policy/">Política de Privadesa</a>
+<a data-i18n="footer.cookies" href="/cookie-policy/">Política de Galetes</a>
+<a data-i18n="footer.legalNotice" href="/legal-notice/">Avís Legal</a>
+<button data-cookie-settings="" data-i18n="footer.cookieSettings" type="button">Configurar galetes</button>
+</nav>
+<p data-i18n="footer.built">Construït amb precisió. Com cada línia de producció.</p>
+</div>
+</div>
+</footer>
+</main>
+<a aria-label="Tornar a dalt" class="back-to-top" data-i18n-aria-label="a11y.backToTop" href="#home" id="backToTop">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</a>
+<script defer="" src="/js/lang-switch.js"></script>
+<script src="/js/main.js"></script>
+<script defer="" src="/js/consent.js"></script>
+</body>
+</html>

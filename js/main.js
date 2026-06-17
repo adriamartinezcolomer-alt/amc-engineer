@@ -170,10 +170,21 @@ backToTop?.addEventListener('click', e => {
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 
-// Translatable strings with English fallback.
+// Localised form strings are baked onto the <form> as data-* attributes by
+// build.py (per language). Falls back to the English literal if absent.
+const MSG_MAP = {
+  'form.errRequired': 'msgRequired',
+  'form.errEmail':    'msgEmail',
+  'form.errConsent':  'msgConsent',
+  'form.errCaptcha':  'msgCaptcha',
+  'form.sending':     'msgSending',
+  'form.sent':        'msgSent',
+  'form.success':     'msgSuccess',
+  'contact.submit':   'msgSubmit'
+};
 function tf(key, fallback) {
-  const v = window.I18n && window.I18n.t(key);
-  return v != null ? v : fallback;
+  const ds = MSG_MAP[key] && contactForm ? contactForm.dataset[MSG_MAP[key]] : null;
+  return ds != null ? ds : fallback;
 }
 
 /* Cloudflare Turnstile — privacy-friendly bot protection.

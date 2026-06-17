@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Content Security Policy (enforced on GitHub Pages via meta; mirror as a real
+       header at Cloudflare — see docs/SECURITY.md — to also send frame-ancestors). -->
+<meta content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' https://www.googletagmanager.com https://challenges.cloudflare.com; connect-src 'self' https://formspree.io https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; form-action 'self' https://formspree.io; manifest-src 'self'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<title data-i18n="meta.title">Adrià Martínez Colomer | Industrie- &amp; Automatisierungsingenieur · Angewandte KI</title>
+<meta content="Industrie- und Automatisierungsingenieur an der Schnittstelle von Fertigung, Software und künstlicher Intelligenz. Über 9 Jahre im Karosserierohbau (BIW) der Automobilindustrie, dazu Python-Entwicklung, KI-/LLM-Workflows und datengetriebene Ingenieurarbeit. Barcelona, Spanien." data-i18n-content="meta.description" name="description"/>
+<meta content="Adrià Martínez Colomer" name="author"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="#0D1117" name="theme-color"/>
+<link href="https://amc-engineer.com/de/" rel="canonical"/>
+<!-- Favicons & PWA -->
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<!-- Open Graph (title/description localised at build time by build.py; image is static) -->
+<meta content="website" property="og:type"/>
+<meta content="https://amc-engineer.com/de/" property="og:url"/>
+<meta content="AMC Engineer" property="og:site_name"/>
+<meta content="de_DE" property="og:locale"/>
+<meta content="es_ES" property="og:locale:alternate"/>
+<meta content="ca_ES" property="og:locale:alternate"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="Adrià Martínez Colomer | Prozess- &amp; Automatisierungsingenieur" data-i18n-content="meta.ogTitle" property="og:title"/>
+<meta content="Prozesstechnik, industrielle Automatisierung, Robotik und KI in der Fertigung. Persönliches Engineering-Portfolio — Barcelona, Spanien." data-i18n-content="meta.ogDescription" property="og:description"/>
+<meta content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" property="og:image"/>
+<meta content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" property="og:image:secure_url"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Adrià Martínez Colomer — Process &amp; Automation Engineer. Personal engineering portfolio." property="og:image:alt"/>
+<!-- Twitter / X Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Adrià Martínez Colomer | Prozess- &amp; Automatisierungsingenieur" data-i18n-content="meta.twitterTitle" name="twitter:title"/>
+<meta content="Prozesstechnik, industrielle Automatisierung, Robotik und KI in der Fertigung. Persönliches Engineering-Portfolio — Barcelona, Spanien." data-i18n-content="meta.twitterDescription" name="twitter:description"/>
+<meta content="https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png" name="twitter:image"/>
+<meta content="Adrià Martínez Colomer — Process &amp; Automation Engineer. Personal engineering portfolio." name="twitter:image:alt"/>
+<!-- hreflang (static, crawlable; per-language hrefs written by build.py) -->
+<link href="https://amc-engineer.com/" hreflang="en" rel="alternate"/>
+<link href="https://amc-engineer.com/es/" hreflang="es" rel="alternate"/>
+<link href="https://amc-engineer.com/ca/" hreflang="ca" rel="alternate"/>
+<link href="https://amc-engineer.com/de/" hreflang="de" rel="alternate"/>
+<link href="https://amc-engineer.com/" hreflang="x-default" rel="alternate"/>
+<!-- Anti-flicker: apply saved theme before first paint (external for CSP) -->
+<script src="/js/theme-init.js"></script>
+<!-- Self-hosted fonts (no external Google Fonts requests) -->
+<link as="font" crossorigin="" href="/assets/fonts/inter-latin.woff2" rel="preload" type="font/woff2"/>
+<!-- Stylesheet -->
+<link href="/css/style.css" rel="stylesheet"/>
+<!-- Structured Data: Person + WebSite + ProfilePage (Schema.org / JSON-LD @graph) -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://amc-engineer.com/#person",
+        "name": "Adrià Martínez Colomer",
+        "givenName": "Adrià",
+        "familyName": "Martínez Colomer",
+        "jobTitle": "Process & Automation Engineer",
+        "description": "Process and automation engineer focused on manufacturing engineering, industrial automation, robotics, and AI applied to manufacturing.",
+        "url": "https://amc-engineer.com/",
+        "image": "https://amc-engineer.com/assets/images/adria-martinez-colomer-og-cover.png",
+        "email": "mailto:adria@martinez.colomer.cat",
+        "telephone": "+34686584989",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressRegion": "Catalonia",
+          "addressCountry": "ES"
+        },
+        "nationality": "Spanish",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Vic – Central University of Catalonia"
+        },
+        "knowsLanguage": ["ca", "es", "en", "de"],
+        "knowsAbout": [
+          "Process Engineering",
+          "Industrial Automation",
+          "Manufacturing Engineering",
+          "Robotics",
+          "BIW Manufacturing",
+          "Resistance Spot Welding",
+          "PLC Systems",
+          "PFMEA",
+          "Lean Manufacturing",
+          "Industry 4.0",
+          "Applied Artificial Intelligence",
+          "Python"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Jordan Group"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://amc-engineer.com/#website",
+        "url": "https://amc-engineer.com/",
+        "name": "AMC Engineer",
+        "description": "Personal engineering portfolio of Adrià Martínez Colomer — process engineering, industrial automation, robotics, and AI applied to manufacturing.",
+        "inLanguage": ["en", "es", "ca", "de"],
+        "author": { "@id": "https://amc-engineer.com/#person" },
+        "publisher": { "@id": "https://amc-engineer.com/#person" },
+        "about": { "@id": "https://amc-engineer.com/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://amc-engineer.com/#profilepage",
+        "url": "https://amc-engineer.com/",
+        "name": "Adrià Martínez Colomer | Process & Automation Engineer",
+        "isPartOf": { "@id": "https://amc-engineer.com/#website" },
+        "mainEntity": { "@id": "https://amc-engineer.com/#person" },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" data-i18n="a11y.skip" href="#home">Zum Hauptinhalt springen</a>
+<!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+<nav aria-label="Main navigation" class="nav" id="navbar" role="navigation">
+<div class="nav__container">
+<a aria-label="Home" class="nav__logo" href="#home">
+<span class="nav__logo-text">AMC</span>
+<span class="nav__logo-dot"></span>
+</a>
+<ul class="nav__links" id="navLinks" role="list">
+<li><a class="nav__link" data-i18n="nav.about" href="#about">Über mich</a></li>
+<li><a class="nav__link" data-i18n="nav.experience" href="#experience">Berufserfahrung</a></li>
+<li><a class="nav__link" data-i18n="nav.projects" href="#projects">Projekte</a></li>
+<li><a class="nav__link" data-i18n="nav.ai" href="#ai">KI &amp; Innovation</a></li>
+<li><a class="nav__link" data-i18n="nav.skills" href="#skills">Kompetenzen</a></li>
+<li><a class="nav__link" data-i18n="nav.certifications" href="#certifications">Qualifikationen</a></li>
+<li><a class="nav__link" data-i18n="nav.contact" href="#contact">Kontakt</a></li>
+</ul>
+<div class="nav__actions">
+<!-- Language Switcher -->
+<div class="lang-switch" data-lang-switch="">
+<button aria-expanded="false" aria-haspopup="listbox" aria-label="Sprache auswählen" class="lang-switch__btn" data-i18n-aria-label="nav.langLabel" data-lang-btn="">
+<span class="lang-switch__flag" data-lang-current-flag="">🇬🇧</span>
+<span class="lang-switch__short" data-lang-current-code="">EN</span>
+<svg class="lang-switch__chevron" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<ul aria-label="Language options" class="lang-switch__menu" data-lang-menu="" role="listbox"></ul>
+</div>
+<button aria-label="Hell-/Dunkelmodus wechseln" class="theme-toggle" data-i18n-aria-label="nav.themeToggle" data-i18n-title="nav.themeToggle" id="themeToggle" title="Hell-/Dunkelmodus wechseln">
+<svg class="icon-sun" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
+<svg class="icon-moon" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+</button>
+<button aria-expanded="false" aria-label="Mobiles Menü öffnen" class="nav__hamburger" data-i18n-aria-label="nav.menuToggle" id="hamburger">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</nav>
+<main id="main">
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section aria-label="Introduction" class="hero" id="home">
+<div class="hero__bg-canvas" id="heroCanvas"></div>
+<div class="hero__content">
+<div class="hero__banner animate-fade-up" data-delay="0">
+<span class="hero__banner-dot"></span>
+<span data-i18n="hero.banner">Offen für Karrieremöglichkeiten in Deutschland und Europa.</span>
+</div>
+<h1 class="hero__name animate-fade-up" data-delay="100">Adrià Martínez<br/><span class="gradient-text">Colomer</span></h1>
+<p class="hero__headline animate-fade-up" data-delay="200" data-i18n="hero.headline" data-i18n-html="">Ich verwandle <strong>Rohbau-Konzepte (BIW)</strong> in laufende, automatisierte Produktionslinien — und bringe <strong>Software &amp; KI</strong> in die Fertigung.</p>
+<div aria-label="Core specializations" class="hero__pillars animate-fade-up" data-delay="300" role="list">
+<span class="hero__pillar" data-i18n="hero.pillars.0" role="listitem">Ingenieur für industrielle Automatisierung</span>
+<span class="hero__pillar" data-i18n="hero.pillars.1" role="listitem">Spezialist für BIW-Fertigung</span>
+<span class="hero__pillar hero__pillar--accent" data-i18n="hero.pillars.2" role="listitem">Praktiker für angewandte KI</span>
+</div>
+<p class="hero__description animate-fade-up" data-delay="380" data-i18n="hero.description" data-i18n-html="">Ein Jahrzehnt Industrialisierung geschweißter Baugruppen bei <strong>SEAT</strong>, dem <strong>Volkswagen-Konzern</strong> und der <strong>Jordan Group</strong> — von robotergestützten Schweißzellen (RSW, SPR, Strukturklebstoffe) bis zu PFMEA, Inbetriebnahme und datengetriebener Prozesstechnik.</p>
+<div class="hero__cta animate-fade-up" data-delay="460">
+<a class="btn btn--primary" href="#contact">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+<span data-i18n="hero.ctaContact">Kontakt aufnehmen</span>
+</a>
+<a class="btn btn--secondary" href="#experience">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" ry="2" width="20" x="2" y="7"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+<span data-i18n="hero.ctaExperience">Berufserfahrung ansehen</span>
+</a>
+<a class="btn btn--outline" data-i18n-href="hero.cvHref" download="" href="/cv/CV_EN_Adria_Martinez_Colomer.docx">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
+<span data-i18n="hero.ctaCV">Lebenslauf herunterladen</span>
+</a>
+</div>
+<div class="hero__stats animate-fade-up" data-delay="560">
+<div class="stat">
+<span class="stat__number" data-target="10">0</span><span class="stat__plus">+</span>
+<span class="stat__label" data-i18n="hero.statYears">Jahre Erfahrung</span>
+</div>
+<div class="stat__divider"></div>
+<div class="stat">
+<span class="stat__number" data-target="4">0</span>
+<span class="stat__label" data-i18n="hero.statCompanies">Unternehmen</span>
+</div>
+<div class="stat__divider"></div>
+<div class="stat">
+<span class="stat__number" data-target="2">0</span>
+<span class="stat__label" data-i18n="hero.statDegrees">Ingenieurabschlüsse</span>
+</div>
+<div class="stat__divider"></div>
+<div class="stat">
+<span class="stat__number" data-target="4">0</span>
+<span class="stat__label" data-i18n="hero.statLanguages">Sprachen</span>
+</div>
+</div>
+</div>
+<div class="hero__scroll-indicator">
+<a aria-label="Scroll to About section" href="#about">
+<div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+<span data-i18n="hero.scroll">Nach unten scrollen</span>
+</a>
+</div>
+</section>
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section aria-labelledby="about-title" class="section about" id="about">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="about.label">Über mich</span>
+<h2 class="section__title" data-i18n="about.title" data-i18n-html="" id="about-title">Wo die Fertigung auf <span class="gradient-text">Code &amp; Daten</span> trifft</h2>
+</div>
+<div class="about__grid">
+<div class="about__image-wrapper reveal">
+<div class="about__image">
+<!-- Drop-in: replace the line below with a real headshot, e.g.
+                 <img src="/assets/adria.jpg" alt="Adrià Martínez Colomer" class="about__photo" width="600" height="800" /> -->
+<img alt="Adrià Martínez Colomer — Industrial, Automation &amp; AI engineer" class="about__photo" height="800" loading="lazy" src="/assets/avatar.svg" width="600"/>
+</div>
+<div class="about__badges">
+<div class="badge badge--accent" data-i18n="about.badge1">Mechatronikingenieur</div>
+<div class="badge badge--secondary" data-i18n="about.badge2">Automatisierungsspezialist</div>
+<div class="badge badge--accent" data-i18n="about.badge4">KI-Entwickler</div>
+<div class="badge badge--outline" data-i18n="about.badge3">Industrie 4.0</div>
+</div>
+</div>
+<div class="about__content reveal">
+<p class="about__lead" data-i18n="about.lead" data-i18n-html="">Ich bin Prozessingenieur aus Barcelona mit einem doppelten Ingenieurabschluss in <strong>Mechatronik</strong> und <strong>industrieller Elektronik &amp; Automatisierungstechnik</strong> und verbinde fundiertes Fachwissen mit praktischer Fertigungserfahrung.</p>
+<p class="about__text" data-i18n="about.text1">Meine Laufbahn ist geprägt von einem Jahrzehnt in den anspruchsvollsten Automobilumgebungen Spaniens – vorwiegend für SEAT S.A. und den Volkswagen Konzern –, in denen ich den gesamten Lebenszyklus der Fertigung begleitet habe: von den Montageprozessen im Karosserierohbau und robotergestützten Schweißanlagen bis hin zur Konzeption und Inbetriebnahme automatisierter Produktionszellen.</p>
+<p class="about__text" data-i18n="about.text2">Heute verantworte ich bei der Jordan Group die Industrialisierung geschweißter Baugruppen der nächsten Generation, die Widerstandspunktschweißen, Stanznieten und Strukturkleben kombinieren – Technologien, die moderne Leichtbaustrategien in der Automobilindustrie definieren.</p>
+<p class="about__text" data-i18n="about.text3">Über die Fertigung hinaus arbeite ich praktisch mit Software und künstlicher Intelligenz: Ich entwickle Python-Automatisierung, setze große Sprachmodelle (LLMs) und generative KI in Ingenieur-Workflows ein und nutze Datenanalyse für bessere technische Entscheidungen. Ich bewege mich an der Schnittstelle von Fertigung, Automatisierung, Software und KI.</p>
+<div class="about__values">
+<div class="value-card">
+<span class="value-card__icon">⚙️</span>
+<h3 data-i18n="about.v1t">Ingenieurtechnische Präzision</h3>
+<p data-i18n="about.v1p">Jeder Prozess, den ich konzipiere, basiert auf messbaren Standards, validierten Daten und ingenieurtechnischer Sorgfalt.</p>
+</div>
+<div class="value-card">
+<span class="value-card__icon">🚀</span>
+<h3 data-i18n="about.v2t">Kontinuierliche Verbesserung</h3>
+<p data-i18n="about.v2p">Ich bin überzeugt, dass jede Produktionslinie ungenutztes Effizienzpotenzial birgt, das sich durch systematische Analyse erschließen lässt.</p>
+</div>
+<div class="value-card">
+<span class="value-card__icon">🔗</span>
+<h3 data-i18n="about.v3t">Bereichsübergreifende Zusammenarbeit</h3>
+<p data-i18n="about.v3p">Die besten Lösungen entstehen, wenn Entwicklung, Qualität, Instandhaltung und Produktion dieselbe Sprache sprechen.</p>
+</div>
+</div>
+<div class="about__location">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<span data-i18n="about.location">Barcelona, Katalonien, Spanien — Offen für Umzug und internationale Möglichkeiten</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+<section aria-labelledby="experience-title" class="section experience" id="experience">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="exp.label">Beruflicher Werdegang</span>
+<h2 class="section__title" data-i18n="exp.title" data-i18n-html="" id="experience-title">Berufliche <span class="gradient-text">Erfahrung</span></h2>
+</div>
+<div class="timeline">
+<div class="timeline__item timeline__item--left reveal">
+<div class="timeline__dot"></div>
+<div class="timeline__card">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.0.role">Prozessingenieur</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.0.company">Jordan Group</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.0.dates">2023 – heute</span>
+<span class="timeline__location" data-i18n="exp.jobs.0.location">Barcelona, Spanien</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.0.bullets.0">Leitung der Industrialisierung geschweißter Baugruppen mit Integration von Widerstandspunktschweißen (RSW), Stanznieten (SPR) und Strukturkleben für Automobilprogramme</li>
+<li data-i18n="exp.jobs.0.bullets.1">Durchgängige Konzeption und Umsetzung automatisierter Produktionszellen: von der technischen Spezifikation und Lieferantenqualifizierung bis zur Inbetriebnahme und Produktionsübergabe</li>
+<li data-i18n="exp.jobs.0.bullets.2">Steuerung der Lieferantenauswahl und Durchführung technischer Reviews mit Automatisierungsintegratoren über mehrere parallele Industrialisierungsprogramme hinweg</li>
+<li data-i18n="exp.jobs.0.bullets.3">Erstellung umfassender Prozessdokumentation: PFMEA, Control-Pläne, Taktzeitstudien und Arbeitsanweisungen</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.0.tags.0">RSW</span><span class="tag" data-i18n="exp.jobs.0.tags.1">SPR</span><span class="tag" data-i18n="exp.jobs.0.tags.2">Strukturkleben</span>
+<span class="tag" data-i18n="exp.jobs.0.tags.3">Zellenkonzeption</span><span class="tag" data-i18n="exp.jobs.0.tags.4">Inbetriebnahme</span><span class="tag" data-i18n="exp.jobs.0.tags.5">PFMEA</span>
+</div>
+</div>
+</div>
+<div class="timeline__item timeline__item--right reveal">
+<div class="timeline__dot"></div>
+<div class="timeline__card">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.1.role">Prozessingenieur</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.1.company">Volkswagen Group Services</span> <span class="timeline__client" data-i18n="exp.jobs.1.client">@ SEAT, S.A.</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.1.dates">2022 – 2023</span>
+<span class="timeline__location" data-i18n="exp.jobs.1.location">Martorell, Spanien</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.1.bullets.0">Unterstützung der Prozessvalidierung für die Karosserierohbau-Montage (BIW) im Fertigungswerk von SEAT in Martorell</li>
+<li data-i18n="exp.jobs.1.bullets.1">Diagnose und Behebung von Fehlern in der Produktionslinie zur Reduzierung ungeplanter Stillstände und zur Unterstützung der OEE-Verbesserungsziele</li>
+<li data-i18n="exp.jobs.1.bullets.2">Mitarbeit an Projekten der kontinuierlichen Verbesserung mit Fokus auf Taktzeitreduzierung und Durchsatzsteigerung</li>
+<li data-i18n="exp.jobs.1.bullets.3">Bereichsübergreifende Zusammenarbeit mit den Abteilungen Qualität, Instandhaltung und Produktionsplanung</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.1.tags.0">Prozessvalidierung</span><span class="tag" data-i18n="exp.jobs.1.tags.1">OEE</span><span class="tag" data-i18n="exp.jobs.1.tags.2">Störungsbehebung</span>
+<span class="tag" data-i18n="exp.jobs.1.tags.3">Kont. Verbesserung</span><span class="tag" data-i18n="exp.jobs.1.tags.4">BIW</span>
+</div>
+</div>
+</div>
+<div class="timeline__item timeline__item--left reveal">
+<div class="timeline__dot"></div>
+<div class="timeline__card">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.2.role">Prozessingenieur</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.2.company">Quality Continent, SL</span> <span class="timeline__client" data-i18n="exp.jobs.2.client">@ SEAT, S.A.</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.2.dates">2017 – 2022</span>
+<span class="timeline__location" data-i18n="exp.jobs.2.location">Martorell, Spanien</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.2.bullets.0">Fünf Jahre spezialisierte prozesstechnische Unterstützung für die Karosserierohbau-Montage (BIW) von SEAT – einem der produktionsstärksten Karosseriewerke Europas</li>
+<li data-i18n="exp.jobs.2.bullets.1">Optimierung der Schweißprozessparameter an mehreren Produktionsstationen zur Verbesserung der Schweißqualitäts-KPIs und Reduzierung des Ausschusses</li>
+<li data-i18n="exp.jobs.2.bullets.2">Unterstützung bei FMEA-Reviews, Messsystemanalysen (MSA) und PPAP-Freigaben für neue Werkzeuge und Prozessänderungen</li>
+<li data-i18n="exp.jobs.2.bullets.3">Schulung von Bedienern und Technikern zu aktualisierten Schweißstandards, Qualitätsprüfpunkten und Produktionsabläufen</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.2.tags.0">Schweißtechnik (BIW)</span><span class="tag" data-i18n="exp.jobs.2.tags.1">FMEA</span><span class="tag" data-i18n="exp.jobs.2.tags.2">PPAP</span>
+<span class="tag" data-i18n="exp.jobs.2.tags.3">MSA</span><span class="tag" data-i18n="exp.jobs.2.tags.4">5 Jahre</span><span class="tag" data-i18n="exp.jobs.2.tags.5">SEAT</span>
+</div>
+</div>
+</div>
+<div class="timeline__item timeline__item--right reveal">
+<div class="timeline__dot timeline__dot--intern"></div>
+<div class="timeline__card timeline__card--intern">
+<div class="timeline__card-header">
+<div>
+<h3 class="timeline__role" data-i18n="exp.jobs.3.role">Praktikant Instandhaltungstechnik</h3>
+<p class="timeline__company"><span data-i18n="exp.jobs.3.company">SEAT, S.A.</span></p>
+</div>
+<div class="timeline__meta">
+<span class="timeline__date" data-i18n="exp.jobs.3.dates">2015 – 2016</span>
+<span class="timeline__location" data-i18n="exp.jobs.3.location">Martorell, Spanien</span>
+</div>
+</div>
+<ul class="timeline__achievements">
+<li data-i18n="exp.jobs.3.bullets.0">Unterstützung des technischen Büros der Instandhaltungsabteilung im Karosseriebau eines der größten Automobilwerke Europas</li>
+<li data-i18n="exp.jobs.3.bullets.1">Mitwirkung bei Dokumentation, Planung und Durchführung von Programmen zur vorbeugenden Instandhaltung automatisierter Roboter-Schweißstationen</li>
+<li data-i18n="exp.jobs.3.bullets.2">Erster Einblick in die großtechnische Karosserierohbau-Produktion (BIW), Robotersysteme und ingenieurtechnische Arbeitsabläufe</li>
+</ul>
+<div class="timeline__tags">
+<span class="tag" data-i18n="exp.jobs.3.tags.0">Karosseriebau</span><span class="tag" data-i18n="exp.jobs.3.tags.1">Vorbeugende Instandhaltung</span>
+<span class="tag" data-i18n="exp.jobs.3.tags.2">Roboterschweißen</span><span class="tag" data-i18n="exp.jobs.3.tags.3">SEAT S.A.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+<section aria-labelledby="projects-title" class="section projects" id="projects">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="proj.label">Portfolio</span>
+<h2 class="section__title" data-i18n="proj.title" data-i18n-html="" id="projects-title">Ingenieur<span class="gradient-text">projekte</span></h2>
+</div>
+<div class="projects__grid">
+<article aria-label="Automated Assembly Cell Design project" class="project-card reveal">
+<div class="project-card__icon">🤖</div>
+<div class="project-card__tag" data-i18n="proj.cards.0.tag">Automatisierung · 2023–heute</div>
+<h3 class="project-card__title" data-i18n="proj.cards.0.title">Konzeption und Inbetriebnahme automatisierter Montagezellen</h3>
+<p class="project-card__description" data-i18n="proj.cards.0.description">Durchgängige Industrialisierung automatisierter Produktionszellen mit Integration der Technologien RSW, SPR und Strukturkleben. Verantwortung für den gesamten Lebenszyklus von der Konzeptspezifikation bis zur Produktionsübergabe, in Abstimmung mit Automatisierungsintegratoren über mehrere parallele Programme hinweg.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.0.highlights.0">Integration von Fügeprozessen mit mehreren Technologien</li>
+<li data-i18n="proj.cards.0.highlights.1">Lieferantenqualifizierung und Steuerung technischer Reviews</li>
+<li data-i18n="proj.cards.0.highlights.2">PFMEA, Control-Pläne und Prozessdokumentation</li>
+</ul>
+<div class="project-card__tech">
+<span>RSW</span><span>SPR</span><span>Adhesives</span><span>Robotics</span><span>PLC</span>
+</div>
+</article>
+<article aria-label="BIW Process Optimization project" class="project-card reveal">
+<div class="project-card__icon">⚡</div>
+<div class="project-card__tag" data-i18n="proj.cards.1.tag">Prozesstechnik · 2017–2022</div>
+<h3 class="project-card__title" data-i18n="proj.cards.1.title">Optimierung des BIW-Schweißprozesses — Karosseriebau SEAT</h3>
+<p class="project-card__description" data-i18n="proj.cards.1.description">Fünfjähriges Programm zur kontinuierlichen Verbesserung der Karosserierohbau-Montage von SEAT – einem der produktionsstärksten Karosseriewerke Europas. Systematische Optimierung der Schweißprozessparameter, Qualitäts-KPIs und Stationseffizienz über mehrere Fahrzeugplattformen hinweg.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.1.highlights.0">Optimierung und Standardisierung der Schweißqualitätsparameter</li>
+<li data-i18n="proj.cards.1.highlights.1">Initiativen zur Ausschussreduzierung und OEE-Steigerung</li>
+<li data-i18n="proj.cards.1.highlights.2">Bedienerschulung und Einführung von Standardarbeit</li>
+</ul>
+<div class="project-card__tech">
+<span>BIW</span><span>Welding</span><span>Lean</span><span>FMEA</span><span>PPAP</span>
+</div>
+</article>
+<article aria-label="Production Validation project" class="project-card reveal">
+<div class="project-card__icon">🔍</div>
+<div class="project-card__tag" data-i18n="proj.cards.2.tag">Qualität &amp; Validierung · 2022–2023</div>
+<h3 class="project-card__title" data-i18n="proj.cards.2.title">Produktionsvalidierung in der Automobilfertigung — VW Konzern</h3>
+<p class="project-card__description" data-i18n="proj.cards.2.description">Prozessvalidierung für die Montageprozesse des Volkswagen Konzerns bei SEAT Martorell. Schwerpunkt auf Ursachenanalyse von Fehlern, Störungsbehebung in der Produktion und Umsetzung von Korrekturmaßnahmen zur Einhaltung der Qualitäts- und Durchsatzziele.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.2.highlights.0">Validierung und Freigabe der Prozessfähigkeit</li>
+<li data-i18n="proj.cards.2.highlights.1">Einsatz der 8D-Problemlösungsmethodik</li>
+<li data-i18n="proj.cards.2.highlights.2">Bereichsübergreifende Teams zur Problembehebung</li>
+</ul>
+<div class="project-card__tech">
+<span>8D</span><span>PPAP</span><span>SPC</span><span>IATF 16949</span>
+</div>
+</article>
+<article aria-label="Industry 4.0 initiative" class="project-card reveal">
+<div class="project-card__icon">🏭</div>
+<div class="project-card__tag" data-i18n="proj.cards.3.tag">Industrie 4.0 · Zukunftsinitiative</div>
+<h3 class="project-card__title" data-i18n="proj.cards.3.title">Smart Manufacturing und digitale Transformation</h3>
+<p class="project-card__description" data-i18n="proj.cards.3.description">Anwendung der Industrie-4.0-Prinzipien auf Fertigungsprozesse: vernetzte Produktionszellen, Prozessüberwachung in Echtzeit, prädiktive Qualitätsanalytik und Konzepte des digitalen Zwillings für automatisierte Montageumgebungen.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.3.highlights.0">Vernetzte Produktionsüberwachung (IoT)</li>
+<li data-i18n="proj.cards.3.highlights.1">Datenbasierte Prozessoptimierung</li>
+<li data-i18n="proj.cards.3.highlights.2">Digitaler Zwilling zur Validierung von Montagezellen</li>
+</ul>
+<div class="project-card__tech">
+<span>IoT</span><span>MES</span><span>Data Analytics</span><span>Digital Twin</span>
+</div>
+</article>
+<article aria-label="Robotics Integration project" class="project-card reveal">
+<div class="project-card__icon">🦾</div>
+<div class="project-card__tag" data-i18n="proj.cards.4.tag">Robotik · Laufend</div>
+<h3 class="project-card__title" data-i18n="proj.cards.4.title">Integration robotergestützter Schweißsysteme</h3>
+<p class="project-card__description" data-i18n="proj.cards.4.description">Technische Spezifikation, Auswahl und Integration robotergestützter Schweißsysteme in Karosseriemontagelinien. Abstimmung mit Roboterherstellern (KUKA, FANUC, ABB) und SPS-Lieferanten für die vollständige Inbetriebnahme der Zellen und die Produktionsübergabe.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.4.highlights.0">Herstellerunabhängige technische Spezifikationen für Roboter</li>
+<li data-i18n="proj.cards.4.highlights.1">SPS-/SCADA-Integration</li>
+<li data-i18n="proj.cards.4.highlights.2">Validierung von Sicherheitssystemen und CE-Konformität</li>
+</ul>
+<div class="project-card__tech">
+<span>KUKA</span><span>FANUC</span><span>ABB</span><span>Siemens PLC</span><span>SCADA</span>
+</div>
+</article>
+<article aria-label="Mechatronics Engineering thesis" class="project-card reveal">
+<div class="project-card__icon">🎓</div>
+<div class="project-card__tag" data-i18n="proj.cards.5.tag">Akademisch · 2016–2018</div>
+<h3 class="project-card__title" data-i18n="proj.cards.5.title">Ingenieurforschung — Universität Vic</h3>
+<p class="project-card__description" data-i18n="proj.cards.5.description">Doppelte Ingenieurausbildung, die einen vierjährigen Studiengang in Mechatronik mit einer Spezialisierung in industrieller Elektronik und Automatisierungstechnik verbindet. Akademische Projekte an der Schnittstelle von Maschinenbau, Elektronik und Softwaretechnik.</p>
+<ul class="project-card__highlights">
+<li data-i18n="proj.cards.5.highlights.0">Konzeption und Prototyping mechatronischer Systeme</li>
+<li data-i18n="proj.cards.5.highlights.1">SPS-Programmierung und Steuerungstechnik</li>
+<li data-i18n="proj.cards.5.highlights.2">Sensorintegration und eingebettete Systeme</li>
+</ul>
+<div class="project-card__tech">
+<span>Mechatronics</span><span>PLC</span><span>Electronics</span><span>CAD</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ AI & DIGITAL INNOVATION ═══════════════════════ -->
+<section aria-labelledby="ai-title" class="section ai" id="ai">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="ai.label">Digitale Innovation</span>
+<h2 class="section__title" data-i18n="ai.title" data-i18n-html="" id="ai-title">Künstliche Intelligenz &amp; <span class="gradient-text">Digitale Innovation</span></h2>
+<p class="section__subtitle" data-i18n="ai.subtitle">Technik jenseits der Werkshalle – wo Fertigung auf Software, Daten und KI trifft.</p>
+</div>
+<!-- Bridge: the central theme -->
+<div class="ai__bridge reveal">
+<span class="ai__bridge-node" data-i18n="ai.bridge.0">Fertigung</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node" data-i18n="ai.bridge.1">Automatisierung</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node" data-i18n="ai.bridge.2">Software</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node" data-i18n="ai.bridge.3">Daten</span>
+<span aria-hidden="true" class="ai__bridge-link">+</span>
+<span class="ai__bridge-node ai__bridge-node--accent" data-i18n="ai.bridge.4">Künstliche Intelligenz</span>
+</div>
+<p class="ai__intro reveal" data-i18n="ai.intro">Ich bringe die Sorgfalt eines Ingenieurs in die digitale Problemlösung ein. Neben meiner Arbeit in der Fertigung entwickle ich aktiv Software, automatisiere Prozesse und setze künstliche Intelligenz ein, um die Technik schneller, intelligenter und datengetriebener zu machen.</p>
+<!-- Capabilities -->
+<div class="ai__caps">
+<div class="ai-card reveal">
+<span class="ai-card__icon">🧠</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.0.title">KI- &amp; LLM-Tools</h3>
+<p class="ai-card__text" data-i18n="ai.caps.0.text">Täglicher Einsatz großer Sprachmodelle und generativer KI zur Beschleunigung von Analyse, Dokumentation und Entscheidungsfindung.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">🐍</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.1.title">Python-Entwicklung</h3>
+<p class="ai-card__text" data-i18n="ai.caps.1.text">Entwicklung von Skripten und individuellen Tools, die wiederkehrende Ingenieuraufgaben, Datenverarbeitung und Berichte automatisieren.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">⚙️</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.2.title">Prozessautomatisierung</h3>
+<p class="ai-card__text" data-i18n="ai.caps.2.text">Automatisierung von Abläufen in Dokumentation, Datenhandling und Ingenieurberechnungen, um Zeit zu sparen und Fehler zu reduzieren.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">📊</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.3.title">Datenanalyse</h3>
+<p class="ai-card__text" data-i18n="ai.caps.3.text">Umwandlung von Fertigungs- und Prozessdaten in verwertbare Erkenntnisse für bessere Ingenieurentscheidungen.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">🔗</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.4.title">KI-gestützte Workflows</h3>
+<p class="ai-card__text" data-i18n="ai.caps.4.text">Integration von KI in reale Ingenieur-Workflows – von technischer Dokumentation bis Störungsbehebung und Rapid Prototyping.</p>
+</div>
+<div class="ai-card reveal">
+<span class="ai-card__icon">🧩</span>
+<h3 class="ai-card__title" data-i18n="ai.caps.5.title">Algorithmische Systeme</h3>
+<p class="ai-card__text" data-i18n="ai.caps.5.text">Konzeption logischer, algorithmischer Lösungen und schlanker Software, die Daten, Automatisierung und Produktion verbindet.</p>
+</div>
+</div>
+<!-- AI & Software Projects -->
+<h3 class="ai__subhead reveal" data-i18n="ai.projTitle">KI- &amp; Software-Projekte</h3>
+<div class="projects__grid">
+<article aria-label="AI-Assisted Engineering Documentation project" class="project-card reveal">
+<div class="project-card__icon">📝</div>
+<div class="project-card__tag" data-i18n="ai.projects.0.tag">Angewandte KI · Engineering</div>
+<h3 class="project-card__title" data-i18n="ai.projects.0.title">KI-gestützte PFMEA &amp; technische Dokumentation</h3>
+<p class="project-card__description" data-i18n="ai.projects.0.description">Einsatz großer Sprachmodelle zur schnelleren Erstellung und Prüfung technischer Dokumentation — PFMEA, Control-Pläne, 8D-Berichte und Arbeitsanweisungen — stets mit einem Ingenieur zur Validierung.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.0.highlights.0">LLM-gestützte PFMEA- &amp; Control-Plan-Erstellung</li>
+<li data-i18n="ai.projects.0.highlights.1">Unterstützung bei 8D- &amp; Ursachenanalyse</li>
+<li data-i18n="ai.projects.0.highlights.2">Schnellere, konsistentere technische Dokumentation</li>
+</ul>
+<div class="project-card__tech">
+<span>Python</span><span>LLMs</span><span>Prompt Eng.</span><span>PFMEA</span>
+</div>
+</article>
+<article aria-label="Industrial Engineering Automation Tools project" class="project-card reveal">
+<div class="project-card__icon">🧰</div>
+<div class="project-card__tag" data-i18n="ai.projects.1.tag">Engineering-Tools · Laufend</div>
+<h3 class="project-card__title" data-i18n="ai.projects.1.title">Automatisierungstools für die Industrietechnik</h3>
+<p class="project-card__description" data-i18n="ai.projects.1.description">Individuelle Software, die wiederkehrende Ingenieuraufgaben automatisiert – von Datenextraktion und Berichterstellung bis zu Prozessberechnungen.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.1.highlights.0">Individuelle Python-Automatisierungsskripte</li>
+<li data-i18n="ai.projects.1.highlights.1">Automatisierte Berichte &amp; Dokumentation</li>
+<li data-i18n="ai.projects.1.highlights.2">Reduzierung manueller Arbeit</li>
+</ul>
+<div class="project-card__tech">
+<span>Python</span><span>Automation</span><span>Excel/CSV</span><span>Scripting</span>
+</div>
+</article>
+<article aria-label="Data-Driven Manufacturing Analysis project" class="project-card reveal">
+<div class="project-card__icon">🗂️</div>
+<div class="project-card__tag" data-i18n="ai.projects.2.tag">Datenanalytik</div>
+<h3 class="project-card__title" data-i18n="ai.projects.2.title">Datengetriebene Fertigungsanalyse</h3>
+<p class="project-card__description" data-i18n="ai.projects.2.description">Analytik und Automatisierung, die Produktions- und Prozessdaten in Erkenntnisse für bessere Ingenieurentscheidungen verwandeln.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.2.highlights.0">Analyse von Prozess- &amp; Qualitätsdaten</li>
+<li data-i18n="ai.projects.2.highlights.1">Automatisierte Datenverarbeitung</li>
+<li data-i18n="ai.projects.2.highlights.2">Dashboards zur Entscheidungsunterstützung</li>
+</ul>
+<div class="project-card__tech">
+<span>Data Analysis</span><span>Python</span><span>KPIs</span><span>Dashboards</span>
+</div>
+</article>
+<article aria-label="AI-Enhanced Engineering Workflows project" class="project-card reveal">
+<div class="project-card__icon">✨</div>
+<div class="project-card__tag" data-i18n="ai.projects.3.tag">Generative KI</div>
+<h3 class="project-card__title" data-i18n="ai.projects.3.title">KI-gestützte Ingenieur-Workflows</h3>
+<p class="project-card__description" data-i18n="ai.projects.3.description">Einsatz großer Sprachmodelle in technischer Dokumentation, Prozesstechnik und Projektabwicklung, um schneller und in höherer Qualität zu arbeiten.</p>
+<ul class="project-card__highlights">
+<li data-i18n="ai.projects.3.highlights.0">LLMs für technische Dokumentation</li>
+<li data-i18n="ai.projects.3.highlights.1">KI-gestützte Störungsbehebung</li>
+<li data-i18n="ai.projects.3.highlights.2">Schnellere Projektabwicklung</li>
+</ul>
+<div class="project-card__tech">
+<span>LLMs</span><span>Generative AI</span><span>Prompt Eng.</span><span>Docs</span>
+</div>
+</article>
+</div>
+<!-- Industry 4.0 & Smart Manufacturing -->
+<h3 class="ai__subhead reveal" data-i18n="ai.i40Title">Industrie 4.0 &amp; Smart Manufacturing</h3>
+<p class="ai__intro ai__intro--tight reveal" data-i18n="ai.i40Intro">Daten, Vernetzung und Intelligenz in die Werkshalle bringen – und traditionelle Produktion in eine smarte, reaktionsfähige Fertigung verwandeln.</p>
+<div class="ai__i40 reveal">
+<span class="tag tag--lg" data-i18n="ai.i40.0">Smart Manufacturing</span>
+<span class="tag tag--lg" data-i18n="ai.i40.1">Digitale Transformation</span>
+<span class="tag tag--lg" data-i18n="ai.i40.2">Datengetriebene Fertigung</span>
+<span class="tag tag--lg" data-i18n="ai.i40.3">KI-gestützte Technik</span>
+<span class="tag tag--lg" data-i18n="ai.i40.4">Industrielle Digitalisierung</span>
+<span class="tag tag--lg" data-i18n="ai.i40.5">Vorausschauende Analytik</span>
+<span class="tag tag--lg" data-i18n="ai.i40.6">Vernetzte Systeme</span>
+<span class="tag tag--lg" data-i18n="ai.i40.7">Manufacturing Intelligence</span>
+</div>
+<!-- Future Vision -->
+<div class="ai__vision reveal">
+<h3 class="ai__vision-title" data-i18n="ai.visionTitle">Die Zukunft der Technik</h3>
+<p class="ai__vision-text" data-i18n="ai.visionText">Ich bin überzeugt: Das nächste Jahrzehnt der Technik gehört denen, die das Physische und das Digitale verbinden – tiefes Fertigungs-Know-how mit Software, Daten und künstlicher Intelligenz.</p>
+<div class="ai__vision-grid">
+<div class="ai__vision-point">
+<span class="ai__vision-icon">🤖</span>
+<h4 data-i18n="ai.visionPoints.0.title">KI in der Fertigung</h4>
+<p data-i18n="ai.visionPoints.0.text">Vom Pilotprojekt zur alltäglichen Ingenieur- und Produktionsentscheidung.</p>
+</div>
+<div class="ai__vision-point">
+<span class="ai__vision-icon">⚡</span>
+<h4 data-i18n="ai.visionPoints.1.title">Intelligente Automatisierung</h4>
+<p data-i18n="ai.visionPoints.1.text">Systeme, die sich in Echtzeit anpassen, lernen und selbst optimieren.</p>
+</div>
+<div class="ai__vision-point">
+<span class="ai__vision-icon">🤝</span>
+<h4 data-i18n="ai.visionPoints.2.title">Mensch-KI-Zusammenarbeit</h4>
+<p data-i18n="ai.visionPoints.2.text">Ingenieure, gestärkt durch KI – schnellere Analyse und kreativere Lösungen.</p>
+</div>
+<div class="ai__vision-point">
+<span class="ai__vision-icon">🌐</span>
+<h4 data-i18n="ai.visionPoints.3.title">Industrie 5.0</h4>
+<p data-i18n="ai.visionPoints.3.text">Der Mensch wieder im Mittelpunkt, gestützt von intelligenten, nachhaltigen, vernetzten Systemen.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+<section aria-labelledby="skills-title" class="section skills" id="skills">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="skills.label">Fachkompetenz</span>
+<h2 class="section__title" data-i18n="skills.title" data-i18n-html="" id="skills-title">Technische <span class="gradient-text">Kompetenzen</span></h2>
+</div>
+<div aria-hidden="true" class="skills__legend reveal">
+<span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Experte</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+<span class="skill-level skill-level--working" data-i18n="skills.levels.working">Grundkenntnisse</span>
+</div>
+<div class="skills__grid">
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
+<span data-i18n="skills.cat1">Ingenieurwesen &amp; Prozesse</span>
+</h3>
+<ul class="skill-list">
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.0">Schweißtechnik BIW (RSW, SPR, Kleben)</span>
+<span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Experte</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.1">Prozessindustrialisierung</span>
+<span class="skill-level skill-level--expert" data-i18n="skills.levels.expert">Experte</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.2">Automatisierungstechnik &amp; Zellenkonzeption</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.3">Lean &amp; Kontinuierliche Verbesserung</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.4">FMEA / Qualitätsmanagement (IATF 16949)</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars1.5">Lieferantenmanagement &amp; Technische Reviews</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+</ul>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+<span data-i18n="skills.cat2">Software &amp; Werkzeuge</span>
+</h3>
+<ul class="skill-list">
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.0">CAD (AutoCAD / SolidWorks / CATIA)</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.1">Microsoft Office (Excel fortgeschritten)</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.2">SPS-Software (Siemens TIA / Allen-Bradley)</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.3">SAP / ERP-Systeme</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars2.4">Industrie 4.0 / IoT / MES</span>
+<span class="skill-level skill-level--working" data-i18n="skills.levels.working">Grundkenntnisse</span>
+</li>
+</ul>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+<span data-i18n="skills.cat3">Sprachen</span>
+</h3>
+<div class="language-grid">
+<div class="language-item">
+<div class="language-flag">🏴󠁥󠁳󠁣󠁴󠁿</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.0.name">Katalanisch</span>
+<span class="language-level native" data-i18n="skills.langs.0.level">Muttersprache</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+</div>
+</div>
+<div class="language-item">
+<div class="language-flag">🇪🇸</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.1.name">Spanisch</span>
+<span class="language-level native" data-i18n="skills.langs.1.level">Muttersprache</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span>
+</div>
+</div>
+<div class="language-item">
+<div class="language-flag">🇬🇧</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.2.name">Englisch</span>
+<span class="language-level b2" data-i18n="skills.langs.2.level">B2 Gehobenes Mittelstufenniveau</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span>
+</div>
+</div>
+<div class="language-item">
+<div class="language-flag">🇩🇪</div>
+<div class="language-info">
+<span class="language-name" data-i18n="skills.langs.3.name">Deutsch</span>
+<span class="language-level a1" data-i18n="skills.langs.3.level">A1 Grundkenntnisse</span>
+</div>
+<div class="language-dots">
+<span class="dot filled"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+<span data-i18n="skills.cat4">Kernkompetenzen</span>
+</h3>
+<div class="tag-cloud">
+<span class="tag tag--lg" data-i18n="skills.cloud.0">Karosserierohbau</span>
+<span class="tag tag--lg" data-i18n="skills.cloud.1">Punktschweißen</span>
+<span class="tag tag--lg" data-i18n="skills.cloud.2">Prozessindustrialisierung</span>
+<span class="tag tag--md" data-i18n="skills.cloud.3">Stanznieten</span>
+<span class="tag tag--md" data-i18n="skills.cloud.4">Strukturkleben</span>
+<span class="tag tag--md" data-i18n="skills.cloud.5">Automatisierungskonzeption</span>
+<span class="tag tag--md" data-i18n="skills.cloud.6">PFMEA</span>
+<span class="tag tag--md" data-i18n="skills.cloud.7">Control-Pläne</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.8">Taktzeitoptimierung</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.9">Lieferantenmanagement</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.10">IATF 16949</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.11">8D-Problemlösung</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.12">Kaizen</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.13">OEE</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.14">PPAP</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.15">CAD-Konstruktion</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.16">Industrie 4.0</span>
+<span class="tag tag--sm" data-i18n="skills.cloud.17">Technisches Projektmanagement</span>
+</div>
+</div>
+<div class="skills__category reveal">
+<h3 class="skills__category-title">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="7" width="7" x="3" y="3"></rect><rect height="7" width="7" x="14" y="3"></rect><rect height="7" width="7" x="14" y="14"></rect><rect height="7" width="7" x="3" y="14"></rect></svg>
+<span data-i18n="skills.cat5">Digital- &amp; KI-Technologien</span>
+</h3>
+<ul class="skill-list">
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.0">Python-Entwicklung</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.1">Generative KI &amp; LLMs</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.2">Prompt-Engineering</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.3">Datenanalyse &amp; Automatisierung</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.4">KI-gestützte Workflows</span>
+<span class="skill-level skill-level--advanced" data-i18n="skills.levels.advanced">Fortgeschritten</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.5">API-Integration &amp; Scripting</span>
+<span class="skill-level skill-level--proficient" data-i18n="skills.levels.proficient">Kompetent</span>
+</li>
+<li class="skill-row">
+<span class="skill-row__name" data-i18n="skills.bars5.6">Machine-Learning-Grundlagen</span>
+<span class="skill-level skill-level--working" data-i18n="skills.levels.working">Grundkenntnisse</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ CERTIFICATIONS ═══════════════════════ -->
+<section aria-labelledby="certs-title" class="section certifications" id="certifications">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="certs.label">Nachweise</span>
+<h2 class="section__title" data-i18n="certs.title" data-i18n-html="" id="certs-title">Ausbildung &amp; <span class="gradient-text">Qualifikationen</span></h2>
+</div>
+<div class="certs__grid">
+<div class="cert-card cert-card--education reveal">
+<div class="cert-card__icon">🎓</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.0.type">Bachelorabschluss</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.0.title">Industrielle Elektronik &amp; Automatisierungstechnik</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.0.issuer">Universität Vic – Zentraluniversität von Katalonien</p>
+<p class="cert-card__date" data-i18n="certs.cards.0.date">2016 – 2018 · Barcelona, Spanien</p>
+</div>
+</div>
+<div class="cert-card cert-card--education reveal">
+<div class="cert-card__icon">🎓</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.1.type">Bachelorabschluss</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.1.title">Mechatronik</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.1.issuer">Universität Vic – Zentraluniversität von Katalonien</p>
+<p class="cert-card__date" data-i18n="certs.cards.1.date">2012 – 2016 · Barcelona, Spanien</p>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-card__icon">🚗</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.2.type">Führerschein</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.2.title">Führerschein – Klasse B</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.2.issuer">Dirección General de Tráfico</p>
+<p class="cert-card__date" data-i18n="certs.cards.2.date">Spanien</p>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-card__icon">⛵</div>
+<div class="cert-card__body">
+<span class="cert-card__type" data-i18n="certs.cards.3.type">Befähigungsnachweis</span>
+<h3 class="cert-card__title" data-i18n="certs.cards.3.title">PER – Sportbootführerschein</h3>
+<p class="cert-card__issuer" data-i18n="certs.cards.3.issuer">Ministerium für Verkehr und Mobilität</p>
+<p class="cert-card__date" data-i18n="certs.cards.3.date">Spanien</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section aria-labelledby="contact-title" class="section contact" id="contact">
+<div class="container">
+<div class="section__header reveal">
+<span class="section__label" data-i18n="contact.label">Vernetzen wir uns</span>
+<h2 class="section__title" data-i18n="contact.title" data-i18n-html="" id="contact-title">Kontakt <span class="gradient-text">aufnehmen</span></h2>
+<p class="section__subtitle" data-i18n="contact.subtitle">Offen für neue Möglichkeiten, Kooperationen und ingenieurtechnische Herausforderungen.</p>
+</div>
+<div class="contact__grid">
+<div class="contact__info reveal">
+<div class="contact__info-item">
+<div class="contact__info-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+</div>
+<div>
+<h3 data-i18n="contact.emailH">E-Mail</h3>
+<a href="mailto:adria@martinez.colomer.cat">adria@martinez.colomer.cat</a>
+</div>
+</div>
+<div class="contact__info-item">
+<div class="contact__info-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.42 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"></path></svg>
+</div>
+<div>
+<h3 data-i18n="contact.phoneH">Telefon</h3>
+<a href="tel:+34686584989">+34 686 584 989</a>
+</div>
+</div>
+<div class="contact__info-item">
+<div class="contact__info-icon">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</div>
+<div>
+<h3 data-i18n="contact.locationH">Standort</h3>
+<span data-i18n="contact.locationV">Barcelona, Katalonien, Spanien</span>
+</div>
+</div>
+<div class="contact__social">
+<a aria-label="LinkedIn profile (opens in a new tab)" class="social-btn" href="https://www.linkedin.com/in/adri%C3%A0-mart%C3%ADnez-i-colomer-8b1340160/" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+<span data-i18n="contact.linkedin">LinkedIn</span>
+</a>
+<a aria-label="Send email" class="social-btn" href="mailto:adria@martinez.colomer.cat">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+<span data-i18n="contact.emailMe">E-Mail schreiben</span>
+</a>
+</div>
+</div>
+<form action="https://formspree.io/f/mqeonjaj" aria-label="Contact form" class="contact__form reveal" data-msg-captcha="Bitte schließen Sie die Verifizierung ab." data-msg-consent="Bitte akzeptieren Sie die Datenschutzerklärung, um Ihre Nachricht zu senden." data-msg-email="Bitte geben Sie eine gültige E-Mail-Adresse ein." data-msg-required="Bitte füllen Sie alle Pflichtfelder aus." data-msg-sending="Wird gesendet…" data-msg-sent="Nachricht gesendet!" data-msg-submit="Nachricht senden" data-msg-success="Vielen Dank! Ich melde mich innerhalb von 24 Stunden bei Ihnen." id="contactForm" method="POST" novalidate="">
+<!-- Honeypot: hidden from real users; Formspree's _gotcha auto-discards spam -->
+<div aria-hidden="true" class="form__hp">
+<label for="company_url">Leave this field empty</label>
+<input autocomplete="off" id="company_url" name="_gotcha" tabindex="-1" type="text"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fName" for="name">Vollständiger Name</label>
+<input aria-required="true" autocomplete="name" class="form__input" data-i18n-placeholder="contact.pName" id="name" maxlength="100" name="name" placeholder="Ihr vollständiger Name" required="" type="text"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fEmail" for="email">E-Mail-Adresse</label>
+<input aria-required="true" autocomplete="email" class="form__input" data-i18n-placeholder="contact.pEmail" id="email" inputmode="email" maxlength="150" name="email" placeholder="ihre@email.com" required="" type="email"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fCompany" for="company">Unternehmen / Organisation</label>
+<input autocomplete="organization" class="form__input" data-i18n-placeholder="contact.pCompany" id="company" maxlength="120" name="company" placeholder="Name des Unternehmens (optional)" type="text"/>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fSubject" for="subject">Betreff</label>
+<select class="form__input form__select" id="subject" name="subject" required="">
+<option data-i18n="contact.selDefault" value="">Betreff auswählen…</option>
+<option data-i18n="contact.optJob" value="job">Stellenangebot</option>
+<option data-i18n="contact.optCollab" value="collab">Zusammenarbeit</option>
+<option data-i18n="contact.optConsulting" value="networking">Networking / Kontakt</option>
+<option data-i18n="contact.optOther" value="other">Sonstiges</option>
+</select>
+</div>
+<div class="form__group">
+<label class="form__label" data-i18n="contact.fMessage" for="message">Nachricht</label>
+<textarea aria-required="true" class="form__input form__textarea" data-i18n-placeholder="contact.pMessage" id="message" maxlength="2000" name="message" placeholder="Erzählen Sie mir von der Möglichkeit oder wie ich helfen kann…" required="" rows="5"></textarea>
+</div>
+<div class="form__consent">
+<input aria-required="true" class="form__check" id="consent" name="consent" required="" type="checkbox"/>
+<label class="form__consent-label" data-i18n="contact.consent" data-i18n-html="" for="consent">Ich willige in die Verarbeitung meiner Daten zur Beantwortung meiner Anfrage gemäß der <a href="/privacy-policy/" rel="noopener" target="_blank">Datenschutzerklärung</a> ein.</label>
+</div>
+<!-- Cloudflare Turnstile (privacy-friendly CAPTCHA). Inactive until a site key
+               is set in js/main.js (TURNSTILE_SITEKEY) — see docs/SECURITY.md. -->
+<div class="cf-turnstile form__turnstile" data-sitekey="" data-size="flexible" data-theme="auto"></div>
+<button class="btn btn--primary btn--full" id="submitBtn" type="submit">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+<span data-i18n="contact.submit">Nachricht senden</span>
+</button>
+<p class="form__note" data-i18n="contact.note">Ich antworte in der Regel innerhalb von 24 Stunden.</p>
+</form>
+</div>
+</div>
+</section>
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="footer" role="contentinfo">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__brand">
+<a class="nav__logo" href="#home">AMC<span class="nav__logo-dot"></span></a>
+<p data-i18n="footer.tagline">Prozessingenieur · Spezialist für Automatisierungstechnik · Industrie 4.0 · Barcelona, Spanien</p>
+</div>
+<div class="footer__links">
+<h4 data-i18n="footer.navH">Navigation</h4>
+<ul>
+<li><a data-i18n="nav.about" href="#about">Über mich</a></li>
+<li><a data-i18n="nav.experience" href="#experience">Berufserfahrung</a></li>
+<li><a data-i18n="nav.projects" href="#projects">Projekte</a></li>
+<li><a data-i18n="nav.ai" href="#ai">KI &amp; Innovation</a></li>
+<li><a data-i18n="nav.skills" href="#skills">Kompetenzen</a></li>
+<li><a data-i18n="nav.contact" href="#contact">Kontakt</a></li>
+</ul>
+</div>
+<div class="footer__contact">
+<h4 data-i18n="footer.contactH">Kontakt</h4>
+<p><a href="mailto:adria@martinez.colomer.cat">adria@martinez.colomer.cat</a></p>
+<p><a href="tel:+34686584989">+34 686 584 989</a></p>
+<p data-i18n="contact.locationV">Barcelona, Katalonien, Spanien</p>
+</div>
+</div>
+<div class="footer__bottom">
+<p data-i18n="footer.copyright" data-year="">© 2026 Adrià Martínez Colomer. Alle Rechte vorbehalten.</p>
+<nav aria-label="Legal" class="footer__legal">
+<a data-i18n="footer.privacy" href="/privacy-policy/">Datenschutzerklärung</a>
+<a data-i18n="footer.cookies" href="/cookie-policy/">Cookie-Richtlinie</a>
+<a data-i18n="footer.legalNotice" href="/legal-notice/">Impressum</a>
+<button data-cookie-settings="" data-i18n="footer.cookieSettings" type="button">Cookie-Einstellungen</button>
+</nav>
+<p data-i18n="footer.built">Mit Präzision gebaut. Wie jede Produktionslinie.</p>
+</div>
+</div>
+</footer>
+</main>
+<a aria-label="Nach oben" class="back-to-top" data-i18n-aria-label="a11y.backToTop" href="#home" id="backToTop">
+<svg fill="none" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</a>
+<script defer="" src="/js/lang-switch.js"></script>
+<script src="/js/main.js"></script>
+<script defer="" src="/js/consent.js"></script>
+</body>
+</html>

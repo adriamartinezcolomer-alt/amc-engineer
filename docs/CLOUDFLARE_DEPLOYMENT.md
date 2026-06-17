@@ -63,20 +63,29 @@ _Last reviewed: 16 June 2026_
 > "Auto Minify" (it can interfere with already-optimised assets), and you do **not**
 > need any paid WAF rules.
 
-### 2.1 Cache Rule — never edge-cache the translation files
-The multilingual text lives in `/locales/*.json` and is loaded by the browser at
-runtime. If Cloudflare edge-caches these files, different visitors (and different
-Cloudflare locations) can be served **stale translations** after you publish an update.
-Add a small Cache Rule so these files always come fresh from the origin:
+### 2.1 Redirect Rule — legacy `?lang=xx` → `/xx/`
+The site now uses pre-rendered language directories (`/`, `/es/`, `/ca/`, `/de/`).
+Old query-string links (e.g. `/?lang=es`) should 301-redirect to the path version so
+no link equity or shared link is lost. A JS fallback also handles this client-side, but
+a Cloudflare 301 is cleaner for SEO.
 
-`Caching → Cache Rules → Create rule`
-- **Name:** `Bypass cache for locales`
-- **If:** `URI Path starts with /locales/`  *(optionally also `or URI Path starts with /js/`)*
-- **Then:** **Bypass cache**
+`Rules → Redirect Rules → Create rule`
+- **Name:** `lang query to path`
+- **If (custom expression):** `http.request.uri.query contains "lang="`
+- **Then:** Dynamic redirect, **Status 301**, expression:
+  ```
+  concat("https://amc-engineer.com/",
+         lower(substring(http.request.uri.query, add(index(http.request.uri.query,"lang="),5), 2)),
+         "/")
+  ```
+  *(Simpler alternative if the expression editor is fiddly: create three Static
+  redirects — `/?lang=es → /es/`, `/?lang=ca → /ca/`, `/?lang=de → /de/`, and
+  `/?lang=en → /`.)*
 
-Deploy. (The site code also appends a `?v=` version string to each locale request as a
-second safety net — see `js/i18n.js` → `ASSET_VERSION`. Bump that value whenever you
-change a translation file so even cached copies are invalidated.)
+> Note: a previous version edge-cached/​bypassed `/locales/*.json`. Translations are no
+> longer fetched at runtime (they're baked into each page at build time), so **no locale
+> cache rule is needed anymore.** You can delete the old "Bypass cache for locales" rule
+> if you created one.
 
 ---
 

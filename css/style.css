@@ -239,12 +239,20 @@ input, textarea, select { font-family: var(--ff); }
 .badge--secondary { background: rgba(var(--acc2-rgb),.12); color: var(--acc2); border: 1px solid rgba(var(--acc2-rgb),.25); }
 .badge--outline { background: transparent; color: var(--txt2); border: 1px solid var(--border); }
 
-/* Scroll animations */
-.reveal { opacity:0; transform:translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+/* Scroll animations — content is VISIBLE by default; the hidden start state is
+   applied only when JS is active (html.js), so if JS fails or the
+   IntersectionObserver never fires, nothing is left invisible. */
+.reveal { opacity:1; transform:none; }
+.js .reveal { opacity:0; transform:translateY(28px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.visible { opacity:1; transform:none; }
 
-.animate-fade-up { opacity:0; transform:translateY(24px); }
+.animate-fade-up { opacity:1; transform:none; }
+.js .animate-fade-up { opacity:0; transform:translateY(24px); }
 .animate-fade-up.in { opacity:1; transform:none; transition: opacity .7s ease, transform .7s ease; }
+
+/* Failsafe: if the main script doesn't finish initialising, force everything visible. */
+.reveal-all .reveal,
+.reveal-all .animate-fade-up { opacity:1 !important; transform:none !important; }
 
 /* ── 4. NAVIGATION ───────────────────────────────────────────── */
 .nav {
@@ -990,8 +998,10 @@ input, textarea, select { font-family: var(--ff); }
   }
   .timeline__item--left .timeline__dot,
   .timeline__item--right .timeline__dot { grid-column:1; }
-  .timeline__item--left > :last-child,
-  .timeline__item--right > :first-child { display:none; }
+  /* NOTE: every item has exactly two children (dot + card). On mobile both must
+     show — dot in column 1, card in column 2. The previous rule hid the
+     `:last-child`/`:first-child`, which on left-aligned items IS the card, so the
+     first card (Jordan Group) was display:none on phones. Do not re-add it. */
   .footer__grid { grid-template-columns:1fr 1fr; }
 }
 
@@ -1022,7 +1032,8 @@ input, textarea, select { font-family: var(--ff); }
 /* ── 14. REDUCED MOTION ──────────────────────────────────────── */
 @media (prefers-reduced-motion:reduce) {
   *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
-  .reveal { opacity:1; transform:none; }
+  .reveal, .js .reveal,
+  .animate-fade-up, .js .animate-fade-up { opacity:1 !important; transform:none !important; }
 }
 
 /* ── 15. PRINT ───────────────────────────────────────────────── */

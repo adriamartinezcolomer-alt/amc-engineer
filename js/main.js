@@ -94,20 +94,49 @@ function stampYear() {
 document.addEventListener('i18n:changed', stampYear);
 stampYear();
 
-/* ── 6. SCROLL REVEAL (INTERSECTION OBSERVER) ──────────────── */
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      const delay = entry.target.dataset.delay || 0;
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, parseInt(delay));
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+/* ── 6. SCROLL REVEAL (INTERSECTION OBSERVER + safety nets) ──────
+   Visibility must never depend solely on the observer firing. We animate with
+   IntersectionObserver, but also (a) reveal anything already on screen, (b) re-reveal
+   on bfcache restore (iOS Safari back/forward), and (c) reveal everything if the
+   browser lacks IntersectionObserver. The head failsafe covers main.js failing to load. */
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+// main.js loaded → cancel the "force reveal everything" failsafe set in theme-init.js
+clearTimeout(window.__amcRevealFailsafe);
+
+let revealObserver = null;
+
+function reveal(el) {
+  const delay = parseInt(el.dataset.delay || 0, 10);
+  if (delay) setTimeout(() => el.classList.add('visible'), delay);
+  else el.classList.add('visible');
+  if (revealObserver) revealObserver.unobserve(el);
+}
+
+// Reveal any .reveal element currently within the viewport (covers missed/late
+// observer callbacks without forcing below-the-fold items — keeps the scroll animation).
+function revealInView() {
+  const vh = window.innerHeight || document.documentElement.clientHeight;
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < vh && r.bottom > 0) el.classList.add('visible');
+  });
+}
+
+if ('IntersectionObserver' in window) {
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) reveal(entry.target); });
+  }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+} else {
+  // No IntersectionObserver → just show everything.
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+}
+
+// Safety sweeps: anything actually on screen must be visible.
+revealInView();
+window.addEventListener('load', revealInView);
+window.addEventListener('pageshow', revealInView);  // iOS Safari bfcache restore
+setTimeout(revealInView, 1200);
 
 /* ── 7. HERO ENTRY ANIMATIONS ───────────────────────────────── */
 window.addEventListener('DOMContentLoaded', () => {

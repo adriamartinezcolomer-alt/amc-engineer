@@ -175,7 +175,7 @@
 
   <!-- name -->
   <text x="84" y="262" font-family="Inter Display, Inter, sans-serif" font-weight="800"
-        font-size="60" letter-spacing="-0.8" fill="#EAF1FB">Adri&#224; Mart&#237;nez Colomer</text>
+        font-size="60" letter-spacing="-0.8" fill="#EAF1FB">Adri&#224; Mart&#237;nez i Colomer</text>
 
   <!-- title -->
   <text x="86" y="308" font-family="Inter, sans-serif" font-weight="500" font-size="30"

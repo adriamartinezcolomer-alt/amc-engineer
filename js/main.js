@@ -339,5 +339,5 @@ document.addEventListener('keydown', e => {
   }
 });
 
-console.log('%c Adrià Martínez Colomer — Portfolio', 'background:#0D1117;color:#00C9FF;font-size:14px;font-weight:bold;padding:8px 16px;border-radius:4px;');
+console.log('%c Adrià Martínez i Colomer — Portfolio', 'background:#0D1117;color:#00C9FF;font-size:14px;font-weight:bold;padding:8px 16px;border-radius:4px;');
 console.log('%c Process Engineer | Industrial Automation | Industry 4.0', 'color:#8B949E;font-size:11px;padding:4px 16px;');

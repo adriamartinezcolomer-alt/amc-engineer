@@ -4,7 +4,7 @@
 > manual actions only the owner can perform. Keep this file up to date when a
 > provider, plan, or credential changes.
 
-_Last reviewed: 16 June 2026 · Owner: Adrià Martínez Colomer (adria@martinez.colomer.cat)_
+_Last reviewed: 16 June 2026 · Owner: Adrià Martínez i Colomer (adria@martinez.colomer.cat)_
 
 | Service | Provider | Purpose | Credentials live in | Renewal / expiry | Owner actions |
 |---|---|---|---|---|---|

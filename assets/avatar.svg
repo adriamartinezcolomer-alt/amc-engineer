@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img"
-     aria-label="Adrià Martínez Colomer — Industrial, Automation and AI Engineer">
+     aria-label="Adrià Martínez i Colomer — Industrial, Automation and AI Engineer">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0D1117"/>
@@ -42,7 +42,7 @@
 
   <!-- name + role -->
   <text x="300" y="470" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
-        font-weight="700" font-size="40" fill="#E6EDF3">Adrià Martínez Colomer</text>
+        font-weight="700" font-size="40" fill="#E6EDF3">Adrià Martínez i Colomer</text>
   <text x="300" y="520" text-anchor="middle" font-family="Consolas, monospace"
         font-weight="500" font-size="22" letter-spacing="3" fill="#8B949E">INDUSTRIAL · AUTOMATION · AI</text>
 
